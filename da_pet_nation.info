@@ -1,0 +1,4 @@
+name = DrupalAcademy Pet Nation
+description = Drupal Academy Pet Nation install profile
+version = VERSION
+core = 7.x
