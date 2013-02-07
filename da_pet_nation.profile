@@ -1,7 +1,8 @@
 <?php
 /**
  * @file
- * Enables modules and site configuration for a CitCon Starter site installation.
+ * Enables modules and site configuration for Drupal Academy Pet Nation 
+ * site installation.
  */
 
 /**
