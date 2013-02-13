@@ -26,6 +26,7 @@ function da_pet_nation_install() {
     'entity',
     'features',
     'file',
+    'field_ui,
     'i18n',
     'image',
     'list',
