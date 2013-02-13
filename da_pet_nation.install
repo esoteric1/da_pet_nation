@@ -23,11 +23,11 @@ function da_pet_nation_install() {
     $module_enable = 'custom_config_module_enable';
   }
 
-
   // Enable modules
   $module_enable(array(
     
     // Contrib
+    'update',
     'admin_menu',
     'block',
     'ctools',

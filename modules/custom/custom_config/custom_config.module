@@ -8,12 +8,12 @@
 /**
  * Project machine name.
  */
-define('PROJECT_NAME', 'changeme');
+define('PROJECT_NAME', 'da_pet_nation');
 
 /**
  * Project label.
  */
-define('PROJECT_LABEL', 'Change Me');
+define('PROJECT_LABEL', 'Pet Nation');
 
 /**
  * Config admin path.
@@ -74,6 +74,7 @@ function custom_config_permission() {
  * We use this instead of an install hook because we need to do some
  * actions after the entire site is fully built.
  */
+ /*
 function custom_config_init() {
   // If this is the very first page hit... we need to do stuff.
   // TODO: Would be nice to have a supplementary module which turns itself
@@ -89,7 +90,7 @@ function custom_config_init() {
   // Call function to run post install routines.
   custom_config_postinstall();
 }
-
+*/
 /**
  * Fire the install hooks of our custom and feature modules.
  */
