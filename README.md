@@ -142,13 +142,13 @@ Navigate to your new drupal site.  Provided you are logged in, you will have a m
 Creating a Feature
 ------------------
 
-Once that is done, go to Structure Features and add a new Feature.  You will be able to select the new Event content type you just created.  You can then download the feature tar ball. this will include a module that will tell drupal to add your content type when it is enabled on a site.
+Once that is done, go to Structure>Features and add a new Feature.  You will be able to select the new Event content type you just created.  You can then download the event_feature tar ball. this will include a module that will tell drupal to add your content type when it is enabled on a site.
 
 
 Adding the Feature to a local branch in your git repo.
 ------------------------------------------------------
 
-Create a new branch on your local git repository called "02-added-event-feature".  make sure that branch is checked out and then untar the features file you downloaded and copy it to your module directory in /profiles/projectname/modules/features/.  you should now have a directory called /profiles/projectname/features/event_feature/  which contains the module files for your event content type.
+Create a new branch on your local git repository called "02-added-event-feature".  make sure that branch is checked out and then untar the features file you downloaded and copy it to your module directory in /profiles/projectname/modules/features/.  you should now have a directory called /profiles/projectname/modules/features/event_feature/  which contains the module files for your event content type.
 
 Doing a git status will show a new feature directory.  Run the git add command to add your directory
 <pre>
@@ -163,7 +163,7 @@ git add modules/features/event_features
 Editing the Profile projectname.install file to include your feature
 --------------------------------------------------------------------
 
-Navigate to the projectname.install and inside you will see a list of modules to be enabled when the profile is run.  You can add your feature there under the //Features section
+Navigate to the projectname.install and inside you will see a list of modules to be enabled when the profile is installed.  You can add your feature there under the //Features section
 'event_featues',
 
 Save your changes. If you now do a git status you will see that you've modified the .install file.  Do a "git add" command to add this file and now commit all your changes
