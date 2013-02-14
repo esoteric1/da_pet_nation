@@ -1,9 +1,5 @@
-t
-drupalacademy
-=============
-
-Drupal Academy
-
+Drupal Academy / Fellowship Install Profile
+==========================================
 
 Profile Installation Instructions:
 ==================================
