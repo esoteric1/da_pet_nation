@@ -17,7 +17,7 @@ Prerequisites:
 Steps to Install:
 ----------------
 
-1. You will navigating to your basic http directory and install the drupal core files. You can do this by executing the following drush command:
+Step 1: You will navigating to your basic http directory and install the drupal core files. You can do this by executing the following drush command:
 
 <pre>
 drush dl drupal
@@ -29,15 +29,15 @@ This will install the drupal core files into a folder called drupal-7.xx.  If yo
 mv drupal-7.xx mydrupal
 </pre>
 
-2. Next up we will want to add the profile for our site.  This will involve cloning the repository containing our files into the appropriate place. Navigate to the profiles directory and clone the git repository:
+Step 2: Next up we will want to add the profile for our site.  This will involve cloning the repository containing our files into the appropriate place. Navigate to the profiles directory and clone the git repository:
 
 <pre>
 ../mydrupal/profiles>git clone url_to_repository
 </pre>
 
-This will create a folder with the machine name of your install profile in your profiles folder.  This will be the root directory where most of your work on the website will go.  Let's assume that the repository is called "pet_nation" for the remainder of this readme.
+This will create a folder with the machine name of your install profile in your profiles folder.  This will be the root directory where most of your work on the website will go.
 
-3. The next step will be to create the mysql database for the site if you haven't already.  You can do this using phpmyadmin or you can use the following commands.
+Step 3: The next step will be to create the mysql database for the site if you haven't already.  You can do this using phpmyadmin or you can use the following commands.
 <pre>
 mysqladmin -u USER -pPASSWORD create DBNAME;
 </pre>
@@ -50,17 +50,91 @@ GRANT ALL PRIVILEGES ON *.* TO 'user'@'localhost' WITH GRANT OPTION;
 
 you probably won't need to do that though.
 
+Step 4: At this point you should have the repository cloned and the files in your /profiles/projectname/ directory, you should have a mysql database setup and you should have the drupal core files installed.  You should now run the rebuild.sh script which will install the modules specified in the install profile.
+<pre>
+../mydrupal/profiles/projectname>./rebuild.sh
+</pre>
 
+There could be a few issues when running this.  One is if you do not have execute permissions on rebuild.sh.  You can fix this with the command 
+<pre>
+chmod u+x rebuild.sh
+</pre>
 
+Another would be if somehow you don't have access to write in your drush cache directories. you would locate your .drush directory (often times it will be a hidden directory in your home directory and either change the owner or set the permissions to be able to write in those cache directories
 
+Step 5: To install drupal, you will need a few folders and files to be writeable by the server,  you would go to the mydrupal/sites/default folder and run the following commands:
+<pre>
+cp default.settings.php settings.php
+mkdir files
+chmod g+w settings.php
+chmod g+w files
+chmod g+w ../default
+</pre>
 
+You are now ready to install your profile.  You should doublecheck you've done the following things:
+* downloaded drupal core
+* cloned the git repo for your profile into /profiles
+* create a database for your site
+* created a settings.php file, a files directory and changed permissions on the necessary files and folders to be able to run the install.
+* run the rebuild.sh script and confirmed that it downloaded the modules it was supposed to.
 
+Step 6: You navigate to the url of your drupal install and run install.php.  One of the options should be your install profile.  select that one and give drupal all the info it wants during the process.
 
+Git Workflow
+=============
 
+Creating and committing a branch
+--------------------------------
 
+When committing changes to the repository, you will first give yourself a local branch specific to the task you are working on.  If you are using an issue tracker, it is customary to include the Issue Id in the name of the branch so that people can find the issue that relates to your branch.  Suppose we wanted to edit this README.md file and append some additional instructions to it.  We begin by creating a branch to work on:
+<pre>
+/profiles/projectname>git checkout -b 01-adding-blah-to-readme
+Switched to a new branch '01-adding-blah-to-readme'
+</pre>
 
+You will now edit the README.md file and save your changes.  You can run
+<pre>
+git status
+</pre>
+to see that git has noticed that you changed that file.  You should now add the file so that the changes will be added when you commit them.
+<pre>
+git add README.md
+</pre>
+You can now commit the changes and you should add a message indicating what you did
+<pre>
+git commit -m"Added extra git workflow steps to the README.md"
+</pre>
+You now need to push the changes back to the remote repository.  If your branch does not exist there, simply doing git push may not work.  You should run the command:
+<pre>
+git push -u origin 01-adding-blah-to-readme
+</pre>
+Your remote repository should now have your branch and whomever is in charge of merging should take over from there.
 
+Merging the changes
+-------------------
 
+To merge the changes, you would first inspect the difference between the current branch and the new branch.
+<pre>
+git fetch origin
+git checkout master
+git diff 01-adding-blah-to-readme
+</pre>
+
+Once you are satisfied everything is alright
+<pre>
+git merge 01-adding-blah-to-readme
+git push
+</pre>
+
+Features
+========
+
+Features allows us to take information that would normally be stored in the database and move it into code.  This is very useful especially for things like version control.  As an example of how to use features, we will create a content type and then export it to a module and add it to our repository.
+
+Creating a Content Type
+-----------------------
+
+Navigate to your new drupal site.  Provided you are logged in, you will have a menu at the top.  Go to Structure>Content Types and Add a new content Type.  
 
 
 
