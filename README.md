@@ -39,6 +39,10 @@ Step 3: The next step will be to create the mysql database for the site if you h
 mysqladmin -u USER -pPASSWORD create DBNAME;
 </pre>
 
+
+Troubleshooting:
+---------------
+
 There could be some issues if you haven't create a user for yourself in mysql with the appropriate privileges.  If that is the case, you can create a new user with mysql superpowers using the following command. (you will need to be logged into mysql using the root user)
 <pre>
 CREATE USER 'user'@'localhost' IDENTIFIED by 'password';
@@ -51,6 +55,10 @@ Step 4: At this point you should have the repository cloned and the files in you
 <pre>
 ../mydrupal/profiles/projectname>./rebuild.sh
 </pre>
+
+
+Troubleshooting:
+---------------
 
 There could be a few issues when running this.  One is if you do not have execute permissions on rebuild.sh.  You can fix this with the command 
 <pre>
@@ -160,7 +168,39 @@ Editing the Profile projectname.install file to include your feature
 --------------------------------------------------------------------
 
 Navigate to the projectname.install and inside you will see a list of modules to be enabled when the profile is installed.  You can add your feature there under the //Features section
-'event_featues',
+'event_feature',
+
+The insides of the .install file will look like this:
+<pre>
+...
+// Enable modules
+$module_enable(array(
+ //Contrib
+ 'update',
+ ...
+ //Custom modules.
+ custom_config,
+ //Features.
+ ...
+</pre>
+
+You should add it so that the file looks like:
+
+<pre>
+...
+// Enable modules
+$module_enable(array(
+ //Contrib
+ 'update',
+ ...
+ //Custom modules.
+ custom_config,
+ //Features.
+ 'event_feature',
+ ...
+</pre>
+
+
 
 Save your changes. If you now do a git status you will see that you've modified the .install file.  Do a "git add" command to add this file and now commit all your changes
 <pre>
