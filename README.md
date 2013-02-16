@@ -11,6 +11,70 @@ Prerequisites:
 
 2. You should have access to some sort of command line/shell so you can type in the commands necessary to get this up and running
 
+
+Troubleshooting for Mac
+-----------------------
+This section is thanks to Tina Holly.
+
+Installing Git
+---
+Installing Git
+
+Download the package off of the main Git website: http://git-scm.com/book/en/Getting-Started-Installing-Git
+
+The Github app gives you the option to install the command line tool from the Application menu but this does not work and it is best to install it off the site.
+Error: command not found
+
+If you are getting "command not found" error, you may have to add an alias for git to your current bash profile. Follow these steps:
+Go to your home directory to find your current bash profile.
+
+<pre>
+cd ~
+ls -a
+</pre>
+
+You will see a list of files. Look for the following:
+
+<pre>
+.bash_profile
+.profile
+.bashrc
+</pre>
+
+The above order is the order in which bash will read the profiles, e.g. if bash_profile exists, it will use it first even if the others exist. (unconfirmed) You may by default have .profile as the only active one. Open the used profile and add the following line. Do not replace existing text!
+<pre>
+export PATH=$PATH:/usr/local/git/bin
+</pre>
+Reload your profile
+
+Reload your bash profile by relaunching Terminal or running the following command (unconfirmed):
+<pre>
+. .profile
+</pre>
+
+Replace .profile with whichever you're using.
+Changing your profile
+
+You can specify which profile to use with the following command:
+<pre>
+source ./bash_profile
+</pre>
+
+This changes your bash profile source to the specified. You must be within your home directory to do that.
+
+
+Running MySQL from the command line on a Mac
+--------------------------------------------
+
+Using the above method to add a command to your .profile, you should add the following command
+
+<pre>
+alias mysql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot"
+</pre>
+
+the "-u" and "-p" are followed by root and root, these correspond to the username and password for the root user of your mysql database.  If you changed those during the install process, then change this accordingly.
+
+
 Steps to Install:
 ----------------
 
