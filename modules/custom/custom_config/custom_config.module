@@ -32,7 +32,6 @@ function custom_config_menu() {
     'page callback' => 'custom_config_admin_page',
     'access arguments' => array('access custom config'),
     'file' => 'custom_config.admin.inc',
-    'type' => MENU_NORMAL_ITEM,
   );
   $items[CUSTOM_CONFIG_ADMIN_PATH . '/info'] = array(
     'title' => PROJECT_LABEL . ' - Info',
