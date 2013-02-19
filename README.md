@@ -75,7 +75,7 @@ alias mysql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
 the "-u" and "-p" are followed by root and root, these correspond to the username and password for the root user of your mysql database.  If you changed those during the install process, then change this accordingly.
 
 
-Steps to Install:
+Steps to Install Drupal using an Install Profile:
 ----------------
 
 Step 1: You will be navigating to your basic http directory and installing the drupal core files. Once in your http/www directory, you can do this by executing the following drush command:
@@ -93,7 +93,7 @@ mv drupal-7.xx mydrupal
 Step 2: Next up we will want to add the profile for our site.  This will involve cloning the repository containing our files into the appropriate place. Navigate to the profiles directory and clone the git repository:
 
 <pre>
-../mydrupal/profiles>git clone url_to_repository
+pathto/mydrupal/profiles>git clone url_to_repository
 </pre>
 
 This will create a folder with the machine name of your install profile in your profiles folder.  This will be the root directory where most of your work on the website will go.
@@ -264,7 +264,7 @@ $module_enable(array(
  'update',
  ...
  //Custom modules.
- custom_config,
+ 'custom_config',
  //Features.
  ...
 </pre>
@@ -279,7 +279,7 @@ $module_enable(array(
  'update',
  ...
  //Custom modules.
- custom_config,
+ 'custom_config',
  //Features.
  'event_feature',
  ...
@@ -311,7 +311,7 @@ Once we have created our branch 01-add-og-to-profile, we now navigate to the Org
 Step 3
 ------
 
-Edit the drupal-org.make file to include those contrib modules as follows:
+Edit the drupal-org.make file to include those contrib modules.  The subdir is the destination directory and the version allows you to specify a specific version of the module to download.
 <pre>
 ...
 projects[entityreference][subdir] = contrib
