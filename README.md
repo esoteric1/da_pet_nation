@@ -295,17 +295,106 @@ git push -u origin 02-added-event-feature
 
 Your new feature should now be in a branch on the remote repository, ready to be merged.
 
+Adding a Module to your install profile
+======================================
 
+Step 1
+------
 
+Create an Issue in your issue tracker and then create a local branch with that issue number and a description.  For this readme, we will consider installing the OG module.
 
+Step 2
+------
 
+Once we have created our branch 01-add-og-to-profile, we now navigate to the Organic Groups homepage and get the machine name of the module.  We should also determine if there are any module dependencies and add those.  In our case, we need Organic Groups(og) and Entity Reference (entityreference)
 
+Step 3
+------
 
+Edit the drupal-org.make file to include those contrib modules as follows:
+<pre>
+...
+projects[entityreference][subdir] = contrib
+projects[entityreference][version] = 1.0
 
+projects[og][subdir] = contrib
+projects[og][version] = 2.0
+...
+</pre>
 
+Step 4
+------
 
+You can now run ./rebuild.sh and the script will download the two modules but the modules won't be enabled.  To enable them, you will edit the .install file in your profile directory and add the two modules to the list of modules being enabled:
+<pre>
+//Contrib
+...
+'field_ui',
+'entityreference',
+'og',
+//Custom modules
+...
+</pre>
 
+Step 5
+------
 
+We now need to use our browser and navigate to Configuration > PetNation > Run Install Hooks.  This will enable Organic Groups and Entity Reference.
 
+Step 6
+------
+
+We now want to share our changes so that others can update their profiles with our changes, to this end, we will begin by adding our modified files to the git branch we are currently checked out in.
+<pre>
+git add drupal-org.make
+git add da_pet_nation.install
+</pre>
+
+We now want to commit our changes to our local branch:
+<pre>
+git commit -m"added OG and entityreference to install profile"
+</pre>
+Finally we push our branch to the remote repo
+<pre>
+git push -u origin 01-add-og-to-profile
+</pre>
+
+Additional Steps
+================
+
+You can merge your changes to master a couple of different ways.  On the drupal.org website, you will notice that a lot of changes to modules are done using patches.  So we will look at how to make a simple patch that will update our master branch with the changes on the 01-add-og-to-profile branch.
+
+Step 7
+------
+
+We will fetch master and make sure that there are no local changes that need to be committed:
+<pre>
+git fetch
+git status
+</pre>
+Provided everything looks clean, we will use the git diff command to generate a patch.  If you forgot the name of the branch, you can do:
+<pre>
+git branch -a
+</pre>
+to list all the branches.  To make our patch, we will run the command:
+<pre>
+git diff master 01-add-og-to-profile > 01-add-og-to-profile.patch
+</pre>
+This will redirect the output of the diff into the file called 01-add-og-to-profile.patch.  You can then inspect the file and take a look at the changes being made.  If everything looks good, you can apply the patch to master:
+<pre>
+git apply 01-add-og-to-profile.patch
+git status
+</pre>
+you will now see the modifications to the .install and .make files but they won't be committed by default.  You would then add each of them:
+<pre>
+git add drupal-org.make
+git add da_pet_nation.install
+</pre>
+Provided everything went well, you can commit your changes and then push to the remote repo.
+<pre>
+git commit -m"added og and entityreference to profile"
+git push
+rm 01-add-og-to-profile.patch
+</pre>
 
 
