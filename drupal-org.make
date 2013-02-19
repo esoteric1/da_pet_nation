@@ -66,6 +66,12 @@ projects[variable][version] = 2.1
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][version] = 2.2
 
+projects[entityreference][subdir] = contrib
+projects[entityreference][version] = 1.0
+
+projects[og][subdir] = contrib
+projects[og][version] = 2.0
+
 ; THEMES
 
 ; LIBRARIES

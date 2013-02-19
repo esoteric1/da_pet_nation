@@ -54,6 +54,8 @@ function da_pet_nation_install() {
     'translation',
     'variable',
     'field_ui',
+    'entityreference',
+    'og',
 
     // Custom modules.
     'custom_config',
