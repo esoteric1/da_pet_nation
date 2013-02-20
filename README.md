@@ -364,9 +364,6 @@ Additional Steps
 
 You can merge your changes to master a couple of different ways.  On the drupal.org website, you will notice that a lot of changes to modules are done using patches.  So we will look at how to make a simple patch that will update our master branch with the changes on the 01-add-og-to-profile branch.
 
-Step 7
-------
-
 We will fetch master and make sure that there are no local changes that need to be committed:
 <pre>
 git fetch
