@@ -72,7 +72,6 @@ function da_pet_nation_install() {
     'custom_config',
 
     // Features modules.
-    'event_feature',
     )
   );
 }
