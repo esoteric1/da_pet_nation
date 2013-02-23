@@ -84,6 +84,12 @@ projects[module_filter][version] = 1.7
 projects[ds][subdir] = contrib
 projects[ds][version] = 2.2
 
+projects[entityreference_prepopulate][subdir] = contrib
+projects[entityreference_prepopulate][version] = 1.2
+
+projects[eva][subdir] = contrib
+projects[eva][version] = 1.2
+
 ; THEMES
 
 ; LIBRARIES
