@@ -72,6 +72,9 @@ projects[entityreference][version] = 1.0
 projects[og][subdir] = contrib
 projects[og][version] = 2.0
 
+projects[views_bulk_operations][subdir] = contrib
+projects[views_bulk_operations][version] = 3.1
+
 ; THEMES
 
 ; LIBRARIES
