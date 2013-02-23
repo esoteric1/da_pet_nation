@@ -65,7 +65,6 @@ function da_pet_nation_install() {
     'ds_forms',
     'ds_ui',
     'devel_generate',
-    'admin_devel',
 
     // Custom modules.
     'custom_config',
