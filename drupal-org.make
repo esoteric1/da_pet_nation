@@ -81,6 +81,9 @@ projects[views_bulk_operations][version] = 3.1
 projects[module_filter][subdir] = contrib
 projects[module_filter][version] = 1.7
 
+projects[ds][subdir] = contrib
+projects[ds][version] = 2.2
+
 
 ; THEMES
 
