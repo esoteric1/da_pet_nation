@@ -56,6 +56,7 @@ function da_pet_nation_install() {
     'field_ui',
     'entityreference',
     'og',
+    'views',
     'view_bulk_operations',
 
     // Custom modules.
