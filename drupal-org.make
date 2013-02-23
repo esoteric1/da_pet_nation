@@ -84,6 +84,8 @@ projects[module_filter][version] = 1.7
 projects[ds][subdir] = contrib
 projects[ds][version] = 2.2
 
+projects[admin_devel][subdir] = contrib
+projects[admin_devel][version] = 3.0-rc3
 
 ; THEMES
 
