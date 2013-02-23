@@ -73,6 +73,7 @@ function da_pet_nation_install() {
 
     // Features modules.
     'event_feature',
+    'dog_profile',
     )
   );
 }
