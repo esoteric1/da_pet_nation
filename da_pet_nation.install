@@ -58,6 +58,7 @@ function da_pet_nation_install() {
     'og',
     'views',
     'view_bulk_operations',
+    'module_filter',
 
     // Custom modules.
     'custom_config',
