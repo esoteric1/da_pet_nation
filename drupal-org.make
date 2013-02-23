@@ -78,6 +78,10 @@ projects[views][version] = 3.5
 projects[views_bulk_operations][subdir] = contrib
 projects[views_bulk_operations][version] = 3.1
 
+projects[module_filter][subdir] = contrib
+projects[module_filter][version] = 1.7
+
+
 ; THEMES
 
 ; LIBRARIES
