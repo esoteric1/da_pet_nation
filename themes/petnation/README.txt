@@ -1,3 +1,8 @@
+This is the Zen Starter Subtheme readme file.
+
+For the theme documentation for Pet Nation theme development, see [readme_theme.md](https://github.com/esoteric1/da_pet_nation/blob/tina_theme/themes/petnation/readme_theme.md)
+
+
 BUILD A THEME WITH ZEN
 ----------------------
 

@@ -56,7 +56,7 @@ Please read the following articles to learn about SASS (mandatory reading).
 
 #### Variable
 ```scss
-$ptsans: 'pt sans caption', 'helvetica neue' tahoma, sans-serif;
+$ptsans: 'pt sans caption', 'helvetica neue', tahoma, sans-serif;
 ```
 ##### Usage
 ```scss
