@@ -73,6 +73,7 @@ function da_pet_nation_install() {
 
     // Features modules.
     'pn_theme',
+    'pn_event_feature',
     )
   );
 }
