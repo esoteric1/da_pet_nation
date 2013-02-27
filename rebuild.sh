@@ -11,5 +11,6 @@ for d in $DIRS; do
   rm -Rf "$d.bak"
 done
 drush make --yes --working-copy --no-core --contrib-destination=. drupal-org.make
+drush cc-ri
 
 # TODO: Copy default.settings.php and append snippets again.
