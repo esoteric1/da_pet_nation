@@ -394,4 +394,7 @@ git push
 rm 01-add-og-to-profile.patch
 </pre>
 
+## Theme Development
+
+Please read the [README for theme development](https://github.com/esoteric1/da_pet_nation/blob/tina_theme/themes/petnation/readme_theme.md) found in the theme directory.
 
