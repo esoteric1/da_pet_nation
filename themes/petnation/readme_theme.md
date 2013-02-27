@@ -2,6 +2,8 @@
 
 By Tina Holly
 
+![Screenshot of Pet Nation theme under development](https://github.com/esoteric1/da_pet_nation/blob/tina_theme/themes/petnation/screenshot.png)
+
 This is the theme-specific readme file. It contains information on how to work with the theme.
 
 1. Install the Ruby command line tool Compass
