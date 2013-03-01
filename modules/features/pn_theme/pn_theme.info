@@ -1,0 +1,9 @@
+name = Pet Nation Theme
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = admin_theme
+features[variable][] = theme_default
