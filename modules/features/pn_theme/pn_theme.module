@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Pet Nation Theme feature.
+ */
+
+include_once 'pn_theme.features.inc';

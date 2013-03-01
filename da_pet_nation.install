@@ -56,6 +56,7 @@ function da_pet_nation_install() {
     'variable',
     'field_ui',
     'entityreference',
+    'entityreference_prepopulate',
     'og',
     'views',
     'view_bulk_operations',
@@ -67,13 +68,15 @@ function da_pet_nation_install() {
     'ds_ui',
     'devel_generate',
     'admin_devel',
+    'eva',
 
     // Custom modules.
     'custom_config',
 
     // Features modules.
-    'event_feature',
-    'dog_profile',
+    'dog_profile'
+    'pn_theme',
+    'pn_event_feature',
     )
   );
 }
