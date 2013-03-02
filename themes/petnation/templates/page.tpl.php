@@ -70,7 +70,6 @@
  */
 ?>
 
-
 <header id="header" role="banner">
   <div class="container">
 
