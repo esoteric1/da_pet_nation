@@ -1,6 +1,36 @@
+![](petnation-banner.jpg)
 Drupal Academy / Fellowship Install Profile
 ==========================================
 
+- - -
+Table of Contents
+=================
+ [Profile Installation Instructions](#profile-installation-instructions)
+
+- [Running MySQL from the command line on a Mac](#running-mysql)
+
+- [Steps to Install Drupal using an Install Profile](#install-profile)
+
+- [Troubleshooting](#troubleshooting1)
+
+- [Troubleshooting](#troubleshooting2)
+
+- [Extra Information](#extra-information)
+
+ [Git Workflow](#git-workflow)
+
+- [Features](#features)
+
+- [Adding a Module to your install profile](#adding-module)
+
+[Theme Development](#theme)
+
+- link to [readme_theme.md](themes/petnation/readme_theme.md)
+
+
+- - -
+
+<a id="profile-installation-instructions"></a>
 Profile Installation Instructions:
 ==================================
 
@@ -62,7 +92,8 @@ source ./bash_profile
 
 This changes your bash profile source to the specified. You must be within your home directory to do that.
 
-
+- - -
+<a id="running-mysql"></a>
 Running MySQL from the command line on a Mac
 --------------------------------------------
 
@@ -74,7 +105,8 @@ alias mysql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
 
 the "-u" and "-p" are followed by root and root, these correspond to the username and password for the root user of your mysql database.  If you changed those during the install process, then change this accordingly.
 
-
+- - -
+<a id="install-profile"></a>
 Steps to Install Drupal using an Install Profile:
 ----------------
 
@@ -104,6 +136,8 @@ mysqladmin -u USER -pPASSWORD create DBNAME;
 </pre>
 
 
+- - -
+<a id="troubleshooting1"></a>
 Troubleshooting:
 ---------------
 
@@ -121,6 +155,8 @@ Step 4: At this point you should have the repository cloned and the files in you
 </pre>
 
 
+- - -
+<a id="troubleshooting2"></a>
 Troubleshooting:
 ---------------
 
@@ -141,6 +177,8 @@ chmod g+w ../default
 </pre>
 
 
+- - -
+<a id="extra-information"></a>
 Extra Information
 -----------------
 
@@ -170,6 +208,8 @@ You are now ready to install your profile.  You should doublecheck you've done t
 
 Step 6: You navigate to the url of your drupal install and run install.php.  One of the options should be your install profile.  select that one and give drupal all the info it wants during the process.
 
+- - -
+<a id="git-workflow"></a>
 Git Workflow
 =============
 
@@ -217,6 +257,8 @@ git push
 </pre>
 
 
+- - -
+<a id="features"></a>
 Features
 ========
 
@@ -295,6 +337,8 @@ git push -u origin 02-added-event-feature
 
 Your new feature should now be in a branch on the remote repository, ready to be merged.
 
+- - -
+<a id="adding-module"></a>
 Adding a Module to your install profile
 ======================================
 
@@ -394,7 +438,9 @@ git push
 rm 01-add-og-to-profile.patch
 </pre>
 
+- - -
+<a id="theme"></a>
 ## Theme Development
 
-Please read the [README for theme development](https://github.com/esoteric1/da_pet_nation/blob/tina_theme/themes/petnation/readme_theme.md) found in the theme directory.
+Please read the ["readme_theme.md"](themes/petnation/readme_theme.md) found in the theme directory.
 
