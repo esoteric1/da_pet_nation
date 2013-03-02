@@ -26,7 +26,7 @@ javascripts_dir = "js"
 
 # Require any additional compass plugins installed on your system.
 #require 'ninesixty'
-#require 'zen-grids'
+require 'zen-grids'
 
 # Assuming this theme is in sites/*/themes/THEMENAME, you can add the partials
 # included with a module by uncommenting and modifying one of the lines below:

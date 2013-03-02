@@ -21,11 +21,13 @@ You should get `/usr/bin/ruby`. If you don't see anything then you don't have Ru
 Next, run the command to update Ruby to make sure it's up to date. Then install Compass.
 
 ```bash
-$ gem update --system
-$ gem install compass
+$ sudo gem update --system
+$ sudo gem install compass
+$ sudo gem install zen-grids
 ```
 
 Note: `$` is a placeholder for your Terminal's prompt. You don't type it.
+If you are installing Zen Grids while Compass is running you will need to restart Compass for the changes to come into effect.
 
 ## Using Compass to compile SCSS files into CSS files
 
