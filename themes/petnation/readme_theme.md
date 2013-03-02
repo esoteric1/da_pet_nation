@@ -53,6 +53,7 @@ Please read the following articles to learn about SASS (mandatory reading).
 - Wikipedia entry on SASS: http://en.wikipedia.org/wiki/Sass_(stylesheet_language)
 - [SASS vs SCSS file extensions](http://thesassway.com/articles/sass-vs-scss-which-syntax-is-better) *We will be using SCSS!*
 - [Screencast: Intro to Compass/SASS - CSS Tricks](http://css-tricks.com/video-screencasts/88-intro-to-compass-sass/)
+- [Zen Grids documentation](http://zengrids.com/)
 
 ### Example SASS (SCSS) code
 
