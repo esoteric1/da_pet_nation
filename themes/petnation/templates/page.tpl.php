@@ -110,18 +110,12 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-<<<<<<< HEAD
 
-  </header>
-
-  <div id="main">
-=======
     </div>
   </header>
 
   <div id="main">
     <div class="container">
->>>>>>> master
 
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
@@ -181,18 +175,10 @@
         <?php print $sidebar_second; ?>
       </aside><!-- /.sidebars -->
     <?php endif; ?>
-<<<<<<< HEAD
 
-=======
     </div> <!--/.container -->
->>>>>>> master
   </div><!-- /#main -->
 
   <?php print render($page['footer']); ?>
 
-<<<<<<< HEAD
-</div><!-- /#page -->
-
-=======
->>>>>>> master
 <?php print render($page['bottom']); ?>
