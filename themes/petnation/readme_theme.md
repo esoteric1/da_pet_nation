@@ -2,6 +2,8 @@
 
 By Tina Holly
 
+![Screenshot of Pet Nation theme under development](screenshot.png)
+
 This is the theme-specific readme file. It contains information on how to work with the theme.
 
 1. Install the Ruby command line tool Compass

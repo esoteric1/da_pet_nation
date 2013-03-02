@@ -70,9 +70,10 @@
  */
 ?>
 
-<div id="page">
 
-  <header id="header" role="banner">
+<header id="header" role="banner">
+  <div class="container">
+
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -109,10 +110,18 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
+<<<<<<< HEAD
 
   </header>
 
   <div id="main">
+=======
+    </div>
+  </header>
+
+  <div id="main">
+    <div class="container">
+>>>>>>> master
 
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
@@ -172,11 +181,18 @@
         <?php print $sidebar_second; ?>
       </aside><!-- /.sidebars -->
     <?php endif; ?>
+<<<<<<< HEAD
 
+=======
+    </div> <!--/.container -->
+>>>>>>> master
   </div><!-- /#main -->
 
   <?php print render($page['footer']); ?>
 
+<<<<<<< HEAD
 </div><!-- /#page -->
 
+=======
+>>>>>>> master
 <?php print render($page['bottom']); ?>

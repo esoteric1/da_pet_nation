@@ -92,6 +92,8 @@ projects[eva][version] = 1.2
 
 ; THEMES
 
+projects[zen][version] = 5.1
+
 ; LIBRARIES
 
 libraries[ckeditor][download][type] = "get"

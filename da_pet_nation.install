@@ -69,6 +69,7 @@ function da_pet_nation_install() {
     'devel_generate',
     'admin_devel',
     'eva',
+    'taxonomy',
 
     // Custom modules.
     'custom_config',
@@ -79,5 +80,6 @@ function da_pet_nation_install() {
     'pn_event_feature',
     )
   );
+  theme_enable(array('petnation'));
 }
 
