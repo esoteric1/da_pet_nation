@@ -76,7 +76,7 @@ function da_pet_nation_install() {
 
     // Features modules.
     'dog_profile',
-    'pn_theme',
+    // 'pn_theme',
     'pn_event_feature',
     )
   );
