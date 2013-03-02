@@ -9,19 +9,45 @@
 
 @import "base";
 
+// petnation colour scheme
+$orange: #be5900;
+$blue: #008baa;
+$lightblue: #e5f3f6;
+$dark: #333;
+
+// variables available from base
+// $helvetica
+
+// use the $indent-amount variable to indent bullets, quotes, etc.
+$indent-amount: 30px;
+
+// mixins
+// @include clearfix;
+// @include element-invisible;
+
+// font (i use this instead of vertical rhythm because it's easier)
+// @include font($fam,$weight,$size,$lh);
 
 /*
  * Body
  */
 
+ .container {
+  margin: 0 auto;
+  *width: 960px;
+  max-width: 960px;
+ }
+
 body {
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  color: $dark;
 }
 
-#page {
+h1, h2, h3 {
+  letter-spacing: -1px;
 }
-
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
@@ -29,7 +55,6 @@ body {
 
 #skip-link {
   margin: 0;
-
   a,
   a:visited {
     display: block;
@@ -44,15 +69,15 @@ body {
 /*
  * Header
  */
-
 #header {
+  background: $orange;
+  padding: 20px 0;
 }
 
 #logo { /* Wrapping link for logo */
   float: left; /* LTR */
   margin: 0;
   padding: 0;
-
   img {
     vertical-align: bottom;
   }
@@ -67,16 +92,17 @@ body {
   font-size: 2em;
   line-height: 1.5em;
 
-  a:link,
-  a:visited {
-    color: #000;
-    text-decoration: none;
-  }
+  background: $orange;
 
-  a:hover,
-  a:focus {
-    text-decoration: underline;
+  a:link,
+  a:visited,
+  a:hover {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -2px;
   }
+  // hide accessibly
+  @include element-invisible;
 }
 
 #site-slogan { /* The slogan (or tagline) of a website */
