@@ -79,5 +79,6 @@ function da_pet_nation_install() {
     'pn_event_feature',
     )
   );
+  theme_enable(array('petnation'));
 }
 
