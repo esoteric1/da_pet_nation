@@ -89,7 +89,7 @@ h1, h2, h3 {
  */
 
 #main {
-	background: lightgrey; // dev only - noproduction
+	// background: lightgrey; // dev only - noproduction
 	@include zen-grid-item(9,1);
 	@include breakpoint($mobile) {
 		@include zen-grid-item(12,1);

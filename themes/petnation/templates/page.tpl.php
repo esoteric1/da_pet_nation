@@ -75,7 +75,7 @@
 	<div class="container">
 		<div class="header-content">
 			<a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home">
-				<img src="<?php print path_to_theme();?>/images/petnation-logo.png"/>
+				<img src="/<?php print path_to_theme();?>/images/petnation-logo.png"/>
 
 				<?php // Invisible -- Accessibility Only ?>
 				<?php if ($site_name): ?>
