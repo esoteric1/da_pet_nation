@@ -7,8 +7,9 @@ By Tina Holly
 This is the theme-specific readme file. It contains information on how to work with the theme.
 
 1. Install the Ruby command line tool Compass
-2. Using Compass
-3. Understanding SASS
+2. Installing required gems (Zen Grids, Breakpoint for Responsive Design)
+3. Using Compass
+4. Understanding SASS
 
 ## Installing Compass
 
@@ -26,6 +27,7 @@ Next, run the command to update Ruby to make sure it's up to date. Then install 
 $ sudo gem update --system
 $ sudo gem install compass
 $ sudo gem install zen-grids
+$ sudo gem install breakpoint
 ```
 
 Note: `$` is a placeholder for your Terminal's prompt. You don't type it.
@@ -55,6 +57,7 @@ Please read the following articles to learn about SASS (mandatory reading).
 - Wikipedia entry on SASS: http://en.wikipedia.org/wiki/Sass_(stylesheet_language)
 - [SASS vs SCSS file extensions](http://thesassway.com/articles/sass-vs-scss-which-syntax-is-better) *We will be using SCSS!*
 - [Screencast: Intro to Compass/SASS - CSS Tricks](http://css-tricks.com/video-screencasts/88-intro-to-compass-sass/)
+- [Zen Grids documentation](http://zengrids.com/)
 
 ### Example SASS (SCSS) code
 
@@ -139,6 +142,32 @@ nav {
 }
 ```
 Using the `&` is optional but keeps the code cleaner.
+
+## Using Zen Grids and Breakpoints
+
+This is by far not a replacement for visiting the [Zen Grids documentation](http://zengrids.com/) but can serve as a quick reference for using the grid system.
+
+We are on a 12-column grid for this project. Our content area is 960 pixels wide in desktop.
+
+```scss
+#main {
+    background: lightgrey; // dev only - noproduction
+    @include zen-grid-item(9,1); // 9 columns wide (out of 12), in spot 1 out of 12
+    @include breakpoint($mobile) {
+        @include zen-grid-item(12,1); // 12 columns (full width), in spot 1
+    }
+}
+
+#secondary-menu {
+  @include zen-grid-item(4,9); // 4 columns wide, starting in spot 9 (pushed 8 columns)
+  text-align: right;
+  @include breakpoint($mobile) { // in-context media queries
+    @include zen-grid-item(12,1); // full-width in mobile
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+```
 
 ## Further Reading (Optional)
 

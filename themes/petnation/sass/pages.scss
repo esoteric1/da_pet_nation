@@ -9,44 +9,26 @@
 
 @import "base";
 
-// petnation colour scheme
-$orange: #be5900;
-$blue: #008baa;
-$lightblue: #e5f3f6;
-$dark: #333;
-
-// variables available from base
-// $helvetica
-
-// use the $indent-amount variable to indent bullets, quotes, etc.
-$indent-amount: 30px;
-
-// mixins
-// @include clearfix;
-// @include element-invisible;
-
-// font (i use this instead of vertical rhythm because it's easier)
-// @include font($fam,$weight,$size,$lh);
-
 /*
  * Body
  */
 
  .container {
-  margin: 0 auto;
-  *width: 960px;
-  max-width: 960px;
+	margin: 0 auto;
+	*width: 960px;
+	max-width: 960px;
+	@include zen-grid-container;
  }
 
 body {
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  color: $dark;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	color: $dark;
 }
 
 h1, h2, h3 {
-  letter-spacing: -1px;
+	letter-spacing: -1px;
 }
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
@@ -54,64 +36,52 @@ h1, h2, h3 {
  */
 
 #skip-link {
-  margin: 0;
-  a,
-  a:visited {
-    display: block;
-    width: 100%;
-    padding: 2px 0 3px 0;
-    text-align: center;
-    background-color: #666;
-    color: #fff;
-  }
+	margin: 0;
+	a,
+	a:visited {
+		display: block;
+		width: 100%;
+		padding: 2px 0 3px 0;
+		text-align: center;
+		background-color: #666;
+		color: #fff;
+	}
 }
 
 /*
  * Header
  */
 #header {
-  background: $orange;
-  padding: 20px 0;
+	background: $orange;
+	padding: 20px 0;
+	@include breakpoint($mobile) {
+		background: $blue; //remove for production - noproduction
+		img {
+			display: block;
+		}
+	}
+	a {
+		text-decoration: none;
+		font-weight: 700;
+		color: #fff;
+		color: rgba(#fff,0.8);
+		&:hover {
+			color: #fff;
+		}
+	}
 }
 
-#logo { /* Wrapping link for logo */
-  float: left; /* LTR */
-  margin: 0;
-  padding: 0;
-  img {
-    vertical-align: bottom;
-  }
+.header-content {
+	@include zen-grid-item(12,1);
 }
 
-#name-and-slogan { /* Wrapper for website name and slogan */
-  float: left;
-}
-
-#site-name { /* The name of the website */
-  margin: 0;
-  font-size: 2em;
-  line-height: 1.5em;
-
-  background: $orange;
-
-  a:link,
-  a:visited,
-  a:hover {
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: -2px;
-  }
-  // hide accessibly
-  @include element-invisible;
-}
-
-#site-slogan { /* The slogan (or tagline) of a website */
-  margin: 0;
-  font-size: 1em;
+#site-name {
+	// hide accessibly
+	@include element-invisible;
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
-  clear: both; /* Clear the logo */
+	clear: both; /* Clear the logo */
 }
 
 /*
@@ -119,6 +89,11 @@ h1, h2, h3 {
  */
 
 #main {
+	// background: lightgrey; // dev only - noproduction
+	@include zen-grid-item(9,1);
+	@include breakpoint($mobile) {
+		@include zen-grid-item(12,1);
+	}
 }
 
 /*
@@ -132,16 +107,16 @@ h1, h2, h3 {
 }
 
 .breadcrumb { /* The path to the current page in the form of a list of links */
-  ol {
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+	ol {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 h1.title, /* The title of the page */
@@ -150,24 +125,24 @@ h2.block-title, /* Block title */
 h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
-  margin: 0;
+	margin: 0;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+	/* background-color: #eee; */ /* Drupal core uses a #eee background */
 }
 
 tr.odd {
-  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+	/* background-color: #eee; */ /* Drupal core uses a #eee background */
 }
 
 div.messages { /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
-  margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
+	margin: 1.5em 0; /* Drupal core uses "6px 0" margin */
 
-  ul {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+	ul {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 div.status { /* Normal priority messages */
@@ -175,7 +150,7 @@ div.status { /* Normal priority messages */
 
 div.warning,
 tr.warning { /* Medium priority messages */
-  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+	/* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
 }
 
 div.error,
@@ -183,11 +158,11 @@ tr.error { /* High priority messages. See also the .error declaration below. */
 }
 
 .error { /* Errors that are separate from div.messages status messages. */
-  /* color: #e55; */ /* Drupal core uses a #e55 background */
+	/* color: #e55; */ /* Drupal core uses a #e55 background */
 }
 
 .warning { /* Warnings that are separate from div.messages status messages. */
-  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+	/* color: #e09010; */ /* Drupal core uses a #e09010 background */
 }
 
 .tabs { /* See also the tabs.css file. */
@@ -203,25 +178,25 @@ tr.error { /* High priority messages. See also the .error declaration below. */
 }
 
 ul.inline { /* List of links generated by theme_links() */
-  display: inline;
-  padding: 0;
+	display: inline;
+	padding: 0;
 
-  li {
-    display: inline;
-    list-style-type: none;
-    padding: 0 1em 0 0; /* LTR */
-  }
+	li {
+		display: inline;
+		list-style-type: none;
+		padding: 0 1em 0 0; /* LTR */
+	}
 }
 span.field-label { /* The inline field label used by the Fences module */
-  padding: 0 1em 0 0; /* LTR */
+	padding: 0 1em 0 0; /* LTR */
 }
 
 .item-list .pager { /* A list of page numbers when more than 1 page of content is available */
-  padding: 0;
+	padding: 0;
 
-  li { /* Each page number in the pager list */
-    padding: 0 0.5em;
-  }
+	li { /* Each page number in the pager list */
+		padding: 0 0.5em;
+	}
 }
 
 .feed-icon { /* The link to the RSS or Atom feed for the current list of content */
