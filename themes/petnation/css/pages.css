@@ -61,6 +61,18 @@ h1, h2, h3 {
   #header {
     background: #008baa;
   }
+  #header img {
+    display: block;
+  }
+}
+#header a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+}
+#header a:hover {
+  color: #fff;
 }
 
 .header-content {

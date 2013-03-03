@@ -119,7 +119,7 @@
 			<?php endif; ?>
 			<?php print render($page['content']); ?>
 			<?php print $feed_icons; ?>
-		</div><!-- /#content -->
+		</div><?php //.content ?>
 
 		<div id="navigation">
 
@@ -156,6 +156,7 @@
 
 		<?php if ($sidebar_first || $sidebar_second): ?>
 			<aside class="sidebars">
+				<h2>Sidebar</h2>
 				<?php print $sidebar_first; ?>
 				<?php print $sidebar_second; ?>
 			</aside><!-- /.sidebars -->
