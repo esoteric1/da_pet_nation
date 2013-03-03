@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pn dog profile photos feature feature.
+ */
+
+include_once 'pn_dog_profile_photos_feature.features.inc';
