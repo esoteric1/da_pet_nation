@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Dog Profile feature.
+ */
+
+include_once 'dog_profile.features.inc';
