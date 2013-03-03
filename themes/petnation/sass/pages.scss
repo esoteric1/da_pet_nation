@@ -54,9 +54,8 @@ h1, h2, h3 {
 #header {
 	background: $orange;
 	padding: 20px 0;
-	// responsive design example (dev only -- remove for prod)
 	@include breakpoint($mobile) {
-		background: $blue;
+		background: $blue; //remove for production - noproduction
 		img {
 			display: block;
 		}
@@ -76,40 +75,9 @@ h1, h2, h3 {
 	@include zen-grid-item(12,1);
 }
 
-#logo { /* Wrapping link for logo */
-	float: left; /* LTR */
-	margin: 0;
-	padding: 0;
-	img {
-		vertical-align: bottom;
-	}
-}
-
-#name-and-slogan { /* Wrapper for website name and slogan */
-	float: left;
-}
-
-#site-name { /* The name of the website */
-	margin: 0;
-	font-size: 2em;
-	line-height: 1.5em;
-
-	background: $orange;
-
-	a:link,
-	a:visited,
-	a:hover {
-		color: #fff;
-		text-decoration: none;
-		letter-spacing: -2px;
-	}
+#site-name {
 	// hide accessibly
 	@include element-invisible;
-}
-
-#site-slogan { /* The slogan (or tagline) of a website */
-	margin: 0;
-	font-size: 1em;
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
@@ -121,6 +89,11 @@ h1, h2, h3 {
  */
 
 #main {
+	background: lightgrey; // dev only - noproduction
+	@include zen-grid-item(9,1);
+	@include breakpoint($mobile) {
+		@include zen-grid-item(12,1);
+	}
 }
 
 /*

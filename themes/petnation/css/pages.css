@@ -89,46 +89,12 @@ h1, h2, h3 {
   word-wrap: break-word;
 }
 
-#logo {
-  /* Wrapping link for logo */
-  float: left;
-  /* LTR */
-  margin: 0;
-  padding: 0;
-}
-#logo img {
-  vertical-align: bottom;
-}
-
-#name-and-slogan {
-  /* Wrapper for website name and slogan */
-  float: left;
-}
-
 #site-name {
-  /* The name of the website */
-  margin: 0;
-  font-size: 2em;
-  line-height: 1.5em;
-  background: #be5900;
   position: absolute !important;
   height: 1px;
   width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
-}
-#site-name a:link,
-#site-name a:visited,
-#site-name a:hover {
-  color: #fff;
-  text-decoration: none;
-  letter-spacing: -2px;
-}
-
-#site-slogan {
-  /* The slogan (or tagline) of a website */
-  margin: 0;
-  font-size: 1em;
 }
 
 .region-header {
@@ -140,6 +106,36 @@ h1, h2, h3 {
 /*
  * Main (container for everything else)
  */
+#main {
+  background: lightgrey;
+  float: left;
+  width: 75%;
+  margin-left: 0%;
+  margin-right: -75%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media (max-width: 767px) {
+  #main {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+
 /*
  * Content
  */

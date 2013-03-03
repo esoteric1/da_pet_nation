@@ -76,6 +76,14 @@
 		<div class="header-content">
 			<a href="<?php print $front_page;?>" title="<?php print t('Home');?>" rel="home">
 				<img src="<?php print path_to_theme();?>/images/petnation-logo.png"/>
+
+				<?php // Invisible -- Accessibility Only ?>
+				<?php if ($site_name): ?>
+					<h1 id="site-name">
+						<a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+					</h1>
+				<?php endif; ?>
+
 			</a>
 
 			<?php if ($secondary_menu): ?>
@@ -94,13 +102,15 @@
 				</nav>
 			<?php endif; ?>
 
-		</div>
+		</div><?php //.header-content ?>
 	</div><?php //.container ?>
 
 </header>
 
+	
+<div class="container">
+
 	<div id="main">
-		<div class="container">
 
 		<div id="content" class="column" role="main">
 			<?php print render($page['highlighted']); ?>
@@ -146,7 +156,7 @@
 
 			<?php print render($page['navigation']); ?>
 
-		</div><!-- /#navigation -->
+		</div> <?php //#navigation ?>
 
 		<?php
 			// Render the sidebars to see if there's anything in them.
@@ -159,11 +169,11 @@
 				<h2>Sidebar</h2>
 				<?php print $sidebar_first; ?>
 				<?php print $sidebar_second; ?>
-			</aside><!-- /.sidebars -->
+			</aside><?php //aside.sidebars ?>
 		<?php endif; ?>
 
-		</div> <!--/.container -->
-	</div><!-- /#main -->
+		</div><?php //#main ?>
+	</div><?php //.container ?>
 
 	<?php print render($page['footer']); ?>
 
