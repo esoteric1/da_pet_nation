@@ -82,13 +82,11 @@ li a.active {
 }
 
 #secondary-menu {
-  // float: right; /* LTR */
   @include zen-grid-item(4,9);
   text-align: right;
   @include breakpoint($mobile) {
   	@include zen-grid-item(12,1);
   	text-align: center;
-  	clear: both;
   	margin-top: 20px;
   }
 }

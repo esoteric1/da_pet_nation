@@ -96,7 +96,6 @@ li a.active {
     box-sizing: border-box;
     word-wrap: break-word;
     text-align: center;
-    clear: both;
     margin-top: 20px;
   }
 }
