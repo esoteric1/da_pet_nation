@@ -7,8 +7,9 @@ By Tina Holly
 This is the theme-specific readme file. It contains information on how to work with the theme.
 
 1. Install the Ruby command line tool Compass
-2. Using Compass
-3. Understanding SASS
+2. Installing required gems (Zen Grids, Breakpoint for Responsive Design)
+3. Using Compass
+4. Understanding SASS
 
 ## Installing Compass
 
@@ -26,6 +27,7 @@ Next, run the command to update Ruby to make sure it's up to date. Then install 
 $ sudo gem update --system
 $ sudo gem install compass
 $ sudo gem install zen-grids
+$ sudo gem install breakpoint
 ```
 
 Note: `$` is a placeholder for your Terminal's prompt. You don't type it.
