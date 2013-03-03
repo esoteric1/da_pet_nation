@@ -9,6 +9,15 @@
 
 @import "base";
 
+// grid
+$zen-column-count: 12; // total number of columns in the grid.
+$zen-gutter-width: 20px; 
+
+// media queries
+$mobile: max-width 767px;
+// usage
+// @include breakpoint($mobile) { ... }
+
 // petnation colour scheme
 $orange: #be5900;
 $blue: #008baa;
@@ -36,6 +45,7 @@ $indent-amount: 30px;
   margin: 0 auto;
   *width: 960px;
   max-width: 960px;
+  @include zen-grid-container;
  }
 
 body {
@@ -72,6 +82,14 @@ h1, h2, h3 {
 #header {
   background: $orange;
   padding: 20px 0;
+  // responsive design example (dev only -- remove for prod)
+  @include breakpoint($mobile) {
+    background: $blue;
+  }
+}
+
+.header-content {
+  @include zen-grid-item(12,1);
 }
 
 #logo { /* Wrapping link for logo */
