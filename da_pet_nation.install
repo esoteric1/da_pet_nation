@@ -69,6 +69,11 @@ function da_pet_nation_install() {
     'devel_generate',
     'admin_devel',
     'eva',
+    'og_access',
+    'og_context',
+    'og_field_access',
+    'og_register',
+    'og_ui',
     'taxonomy',
 
     // Custom modules.
