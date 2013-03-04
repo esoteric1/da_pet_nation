@@ -73,6 +73,8 @@ $indent-amount: 30px;
 // Partials to be shared with all .scss files.
 //
 
+@import "compass";
+
 @import "compass/support";  // Add Compass' IE and vendor prefix support variables.
 @import "compass/utilities/general/clearfix"; // Better than Drupal's clearfix.
 @import "compass/utilities/sprites"; // See http://compass-style.org/help/tutorials/spriting/
@@ -80,4 +82,36 @@ $indent-amount: 30px;
 @import "compass/typography/vertical_rhythm"; // Helps set up a vertical rhythm.
 @import "zen";              // Add the Zen Grids responsive layout mixins.
 
+@import "breakpoint";		// Support for in-context Responsive Design
 @import "custom";           // Import our custom mixins last.
+
+
+// Pet Nation
+
+// grid
+$zen-column-count: 12; // total number of columns in the grid.
+$zen-gutter-width: 20px; 
+
+// media queries
+$mobile: max-width 767px;
+// usage
+// @include breakpoint($mobile) { ... }
+
+// petnation colour scheme
+$orange: #be5900;
+$blue: #008baa;
+$lightblue: #e5f3f6;
+$dark: #333;
+
+// variables available from base
+// $helvetica
+
+// use the $indent-amount variable to indent bullets, quotes, etc.
+$indent-amount: 30px;
+
+// mixins
+// @include clearfix;
+// @include element-invisible;
+
+// font (i use this instead of vertical rhythm because it's easier)
+// @include font($fam,$weight,$size,$lh);

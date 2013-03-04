@@ -12,5 +12,6 @@ for d in $DIRS; do
 done
 drush make --yes --working-copy --no-core --contrib-destination=. drupal-org.make
 drush cc-ri
+drush vset theme_default petnation
 
 # TODO: Copy default.settings.php and append snippets again.
