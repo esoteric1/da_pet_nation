@@ -28,6 +28,8 @@ javascripts_dir = "js"
 #require 'ninesixty'
 require 'zen-grids'
 
+require 'breakpoint'
+
 # Assuming this theme is in sites/*/themes/THEMENAME, you can add the partials
 # included with a module by uncommenting and modifying one of the lines below:
 #add_import_path "../../../default/modules/FOO"
@@ -49,7 +51,7 @@ output_style = (environment == :development) ? :expanded : :compressed
 relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 
 # Pass options to sass. For development, we turn on the FireSass-compatible
 # debug_info if the firesass config variable above is true.
