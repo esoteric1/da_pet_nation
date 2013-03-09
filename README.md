@@ -7,27 +7,27 @@ Table of Contents
 =================
  [Profile Installation Instructions](#profile-installation-instructions)
 
-- [Running MySQL from the command line on a Mac](#running-mysql)
+ [Running MySQL from the command line on a Mac](#running-mysql)
 
-- [Steps to Install Drupal using an Install Profile](#install-profile)
+ [Steps to Install Drupal using an Install Profile](#install-profile)
 
-- [Troubleshooting](#troubleshooting1)
+ [Troubleshooting](#troubleshooting1)
 
-- [Troubleshooting](#troubleshooting2)
+ [Troubleshooting](#troubleshooting2)
 
-- [Extra Information](#extra-information)
+ [Extra Information](#extra-information)
 
  [Git Workflow](#git-workflow)
 
-- [Features](#features)
+ [Features](#features)
 
-- [Adding a Module to your install profile](#adding-module)
+ [Adding a Module to your install profile](#adding-module)
 
-- [Modifying an existing Feature](#modify-feature)
+ [Modifying an existing Feature](#modify-feature)
 
 [Theme Development](#theme)
 
-- link to [readme_theme.md](themes/petnation/readme_theme.md)
+ link to [readme_theme.md](themes/petnation/readme_theme.md)
 
 
 - - -
