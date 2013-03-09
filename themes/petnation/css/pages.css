@@ -285,6 +285,17 @@ span.field-label {
 /*
  * Footer
  */
+#footer {
+  background: #be5900;
+  margin-top: 2em;
+  color: #fff;
+  padding: 0.5em 0;
+  text-align: center;
+}
+#footer a {
+  color: #fff;
+}
+
 /*
  * Page bottom
  */

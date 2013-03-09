@@ -28,7 +28,6 @@
 ?>
 <?php if ($content): ?>
   <footer id="footer" class="<?php print $classes; ?>">
-  	footer
     <?php print $content; ?>
   </footer><!-- region__footer -->
 <?php endif; ?>

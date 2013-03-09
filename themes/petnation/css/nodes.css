@@ -149,7 +149,31 @@
 .node-pn-event .field-type-image img {
   width: 90%;
 }
-.node-pn-event .field-name-field-date {
+@media (max-width: 767px) {
+  .node-pn-event .field-type-image {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-bottom: 0.75em;
+  }
+}
+.node-pn-event .field-name-body {
+  margin-top: 3.5em;
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-name-body {
+    margin-top: 0.5em;
+  }
+}
+.node-pn-event .field-name-field-date, .node-pn-event .field-name-body {
   float: left;
   width: 50%;
   margin-left: 50%;
@@ -162,17 +186,19 @@
   box-sizing: border-box;
   word-wrap: break-word;
 }
-.node-pn-event .field-name-body {
-  float: left;
-  width: 50%;
-  margin-left: 50%;
-  margin-right: -100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  margin-top: 3.5em;
+@media (max-width: 767px) {
+  .node-pn-event .field-name-field-date, .node-pn-event .field-name-body {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: both;
+  }
 }

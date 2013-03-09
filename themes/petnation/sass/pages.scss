@@ -238,6 +238,14 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #footer {
+	background: $orange;
+	margin-top: 2em;
+	color: #fff;
+	padding: 0.5em 0;
+	text-align: center;
+	a {
+		color: #fff;
+	}
 }
 
 /*
