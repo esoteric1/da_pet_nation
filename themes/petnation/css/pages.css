@@ -112,9 +112,9 @@ a:hover {
 }
 
 /*
- * Main (container for everything else)
+ * Content
  */
-#main {
+#content {
   float: left;
   width: 75%;
   margin-left: 0%;
@@ -128,7 +128,7 @@ a:hover {
   word-wrap: break-word;
 }
 @media (max-width: 767px) {
-  #main {
+  #content {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -144,8 +144,40 @@ a:hover {
 }
 
 /*
- * Content
+ * Sidebars
  */
+aside.sidebars {
+  margin-top: 70px;
+  background: #e5f3f6;
+  float: left;
+  width: 25%;
+  margin-left: 75%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media (max-width: 767px) {
+  aside.sidebars {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: both;
+  }
+}
+
 .breadcrumb {
   margin-top: 1em;
 }
@@ -270,18 +302,6 @@ span.field-label {
   /* Aggregator, blog, and forum more link */
 }
 
-/*
- * First sidebar (on left in LTR languages, on right in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-first
- * (see the layout.css file.)
- */
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
 /*
  * Footer
  */

@@ -92,22 +92,32 @@ a {
 }
 
 /*
- * Main (container for everything else)
- */
-
-#main {
-	// background: lightgrey; // dev only - noproduction
-	@include zen-grid-item(9,1);
-	@include breakpoint($mobile) {
-		@include zen-grid-item(12,1);
-	}
-}
-
-/*
  * Content
  */
 
 #content {
+	@include zen-grid-item(9,1);
+	@include breakpoint($mobile) {
+		@include zen-grid-item(12,1);
+	}	
+}
+
+/*
+ * Sidebars
+ */
+aside.sidebars {
+	margin-top: 70px;
+	background: $lightblue;
+	@include zen-grid-item(3,10);
+	@include breakpoint($mobile) {
+		@include zen-grid-item(12,1);
+		clear: both;
+	}
+}
+.region-sidebar-first {
+}
+
+.region-sidebar-second {
 }
 
 .region-highlighted {
@@ -213,25 +223,6 @@ span.field-label { /* The inline field label used by the Fences module */
 .more-link { /* Aggregator, blog, and forum more link */
 }
 
-/*
- * First sidebar (on left in LTR languages, on right in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-first
- * (see the layout.css file.)
- */
-
-.region-sidebar-first {
-}
-
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
-
-.region-sidebar-second {
-}
 
 /*
  * Footer

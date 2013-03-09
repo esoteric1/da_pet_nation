@@ -150,6 +150,11 @@
   width: 90%;
 }
 @media (max-width: 767px) {
+  .node-pn-event .field-type-image img {
+    width: 94%;
+  }
+}
+@media (max-width: 767px) {
   .node-pn-event .field-type-image {
     float: left;
     width: 100%;
