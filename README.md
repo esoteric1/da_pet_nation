@@ -23,6 +23,8 @@ Table of Contents
 
 - [Adding a Module to your install profile](#adding-module)
 
+- [Modifying an existing Feature](#modify-feature)
+
 [Theme Development](#theme)
 
 - link to [readme_theme.md](themes/petnation/readme_theme.md)
@@ -437,6 +439,20 @@ git commit -m"added og and entityreference to profile"
 git push
 rm 01-add-og-to-profile.patch
 </pre>
+
+<a id="modify-feature"></a>
+
+Modifying an existing feature
+-----------------------------
+
+You can modify an existing feature by using the drush command.  The changes you make that are stored in the database get exported to the feature module code.  The command is:
+
+<pre>
+drush features-update [feature-name]
+</pre>
+
+You can then push your changes with git.
+
 
 - - -
 <a id="theme"></a>

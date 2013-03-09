@@ -1,0 +1,9 @@
+name = pn_user_dog_profiles
+description = EVA field for user accounts showing their dog profiles
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[views_view][] = dog_profiles_by_user

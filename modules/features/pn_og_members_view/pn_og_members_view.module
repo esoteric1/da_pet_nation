@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pn_og_members_view feature.
+ */
+
+include_once 'pn_og_members_view.features.inc';

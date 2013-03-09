@@ -1,0 +1,9 @@
+name = pn_og_members_view
+description = Modifies contextual filter in OG Members view 
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = og
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1

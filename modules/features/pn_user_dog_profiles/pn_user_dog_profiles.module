@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pn_user_dog_profiles feature.
+ */
+
+include_once 'pn_user_dog_profiles.features.inc';

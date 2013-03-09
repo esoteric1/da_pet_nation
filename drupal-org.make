@@ -37,6 +37,9 @@ projects[entity][version] = 1.0-rc3
 projects[features][subdir] = contrib
 projects[features][version] = 1.0
 
+projects[features_extra][subdir] = contrib
+projects[features_extra][version] = 1.0-alpha2
+
 projects[globalredirect][subdir] = contrib
 projects[globalredirect][version] = 1.5
 
@@ -89,6 +92,10 @@ projects[entityreference_prepopulate][version] = 1.2
 
 projects[eva][subdir] = contrib
 projects[eva][version] = 1.2
+
+;mapping module
+projects[ip_geoloc][subdir] = contrib
+projects[ip_geoloc][version] = 1.19
 
 ; THEMES
 

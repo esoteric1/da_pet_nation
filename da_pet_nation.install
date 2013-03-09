@@ -75,6 +75,8 @@ function da_pet_nation_install() {
     'og_register',
     'og_ui',
     'taxonomy',
+    'ip_geoloc',
+    'features_extra',
 
     // Custom modules.
     'custom_config',
@@ -82,8 +84,11 @@ function da_pet_nation_install() {
     // Features modules.
     'dog_profile',
     'pn_dog_profile_photos_feature',
+    'pn_og_members_view',
     'pn_theme',
     'pn_event_feature',
+    'pn_dog_map',
+    'pn_user_dog_profiles',
     )
   );
   theme_enable(array('petnation'));
