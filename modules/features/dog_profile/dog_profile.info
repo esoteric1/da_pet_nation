@@ -29,7 +29,6 @@ features[field][] = node-dog_profile-field_dog_picture
 features[field][] = node-dog_profile-field_fave_dog_park
 features[field][] = node-dog_profile-field_favourite_activity
 features[field][] = node-dog_profile-field_favourite_dog_park
-features[field][] = node-dog_profile-field_gender
 features[field][] = node-dog_profile-field_location
 features[field][] = node-dog_profile-field_owner_gender
 features[field][] = node-dog_profile-field_owner_name
