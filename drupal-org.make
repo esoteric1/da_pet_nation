@@ -90,6 +90,10 @@ projects[entityreference_prepopulate][version] = 1.2
 projects[eva][subdir] = contrib
 projects[eva][version] = 1.2
 
+;mapping module
+projects[ip_geoloc][subdir] = contrib
+projects[ip_geoloc][version] = 1.19
+
 ; THEMES
 
 projects[zen][version] = 5.1
