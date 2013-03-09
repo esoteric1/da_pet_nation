@@ -31,6 +31,12 @@ function dog_profile_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'search_index' => array(
+        'custom_settings' => FALSE,
+      ),
+      'search_result' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -57,16 +63,14 @@ function dog_profile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_dog_profile';
-  $strongarm->value = array(
-    0 => 'main-menu',
-  );
+  $strongarm->value = array();
   $export['menu_options_dog_profile'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_dog_profile';
-  $strongarm->value = 'main-menu:0';
+  $strongarm->value = 'features:0';
   $export['menu_parent_dog_profile'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -89,7 +93,7 @@ function dog_profile_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_dog_profile';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_dog_profile'] = $strongarm;
 
   return $export;
