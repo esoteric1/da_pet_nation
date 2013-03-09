@@ -121,7 +121,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   -ms-text-size-adjust: 100%; /* 2 */
   /* Establishes a vertical rhythm unit using $base-line-height. */
-  @include adjust-leading-to(1);
+  @include adjust-leading-to(0.9);
 }
 
 /*
@@ -296,7 +296,7 @@ mark {
 p,
 pre {
   /* Sets 1 unit of vertical rhythm on the top and bottom margin. */
-  margin: rhythm(1) 0;
+  margin: rhythm(0.4) 0;
 }
 
 /*

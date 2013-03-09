@@ -27,6 +27,7 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   color: #333333;
+  font-size: 0.9em;
 }
 
 h1, h2, h3 {
