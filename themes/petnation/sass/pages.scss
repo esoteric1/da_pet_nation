@@ -31,6 +31,12 @@ body {
 h1, h2, h3 {
 	letter-spacing: -1px;
 }
+a {
+	color: $blue;
+	&:hover {
+		color: lighten($blue,8%);
+	}
+}
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
@@ -107,7 +113,8 @@ h1, h2, h3 {
 .region-highlighted {
 }
 
-.breadcrumb { /* The path to the current page in the form of a list of links */
+.breadcrumb {
+	margin-top: 1em;
 	ol {
 		margin: 0;
 		padding: 0;

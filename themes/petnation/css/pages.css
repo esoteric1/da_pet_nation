@@ -34,6 +34,13 @@ h1, h2, h3 {
   letter-spacing: -1px;
 }
 
+a {
+  color: #008baa;
+}
+a:hover {
+  color: #00acd3;
+}
+
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
@@ -140,7 +147,7 @@ h1, h2, h3 {
  * Content
  */
 .breadcrumb {
-  /* The path to the current page in the form of a list of links */
+  margin-top: 1em;
 }
 .breadcrumb ol {
   margin: 0;
