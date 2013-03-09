@@ -76,6 +76,7 @@ function da_pet_nation_install() {
     'og_ui',
     'taxonomy',
     'ip_geoloc',
+    'features_extra',
 
     // Custom modules.
     'custom_config',
