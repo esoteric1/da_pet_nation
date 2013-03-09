@@ -62,3 +62,30 @@
     @include unpublished-div;
   }
 }
+
+/*
+ * Dog Profile node
+ */
+.node-dog-profile {
+  .field-items {
+    @include zen-grid-item(4,3);
+    
+  }
+  .field-type-image {
+    .field-items {
+      @include zen-grid-item(7,6);   
+    }
+    
+    img {
+      border: 10px solid #fff;
+      width: 100%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .field-label {
+    background: grey;
+    @include zen-grid-item(2,1);
+    font-size: 0.85em;
+  }
+
+}
