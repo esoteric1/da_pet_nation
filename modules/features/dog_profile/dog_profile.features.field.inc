@@ -757,69 +757,6 @@ function dog_profile_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-dog_profile-field_gender'.
-  $fields['node-dog_profile-field_gender'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_gender',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => 'Male',
-          1 => 'Female',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_integer',
-    ),
-    'field_instance' => array(
-      'bundle' => 'dog_profile',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => 'Enter your dog\'s gender',
-      'display' => array(
-        'default' => array(
-          'label' => 'inline',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '4',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_gender',
-      'label' => 'Gender',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => '5',
-      ),
-    ),
-  );
-
   // Exported field: 'node-dog_profile-field_location'.
   $fields['node-dog_profile-field_location'] = array(
     'field_config' => array(
@@ -1418,7 +1355,6 @@ function dog_profile_field_default_fields() {
   t('Dog Breed');
   t('Dog Picture');
   t('Enter your dog\'s breed here. Any existing or combination is fine.');
-  t('Enter your dog\'s gender');
   t('Favourite Activity');
   t('Favourite Dog Park');
   t('Gender');

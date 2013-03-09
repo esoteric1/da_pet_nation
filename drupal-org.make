@@ -51,6 +51,9 @@ projects[i18n][patch][] = "http://drupal.org/files/static_reset.patch"
 projects[link][subdir] = contrib
 projects[link][version] = 1.0
 
+projects[location][subdir] = contrib
+projects[location][version] = 3.0-alpha1
+
 projects[panels][subdir] = contrib
 projects[panels][version] = 3.3
 
