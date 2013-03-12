@@ -62,7 +62,16 @@
     @include unpublished-div;
   }
 }
-
+/*
+ * General Pet Nation styles
+ */
+.field-type-image {
+  img {
+    border: 10px solid #fff;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+}
 /*
  * Dog Profile node
  */
@@ -74,18 +83,42 @@
   .field-type-image {
     .field-items {
       @include zen-grid-item(7,6);   
-    }
-    
-    img {
-      border: 10px solid #fff;
-      width: 100%;
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    }
+    }    
   }
   .field-label {
     background: grey;
     @include zen-grid-item(2,1);
     font-size: 0.85em;
   }
-
 }
+/*
+ * Event 
+ */
+ .node-pn-event {
+  .field-type-image {
+    @include zen-grid-item(6,1);
+    img {
+      width: 90%;
+      @include breakpoint($mobile) {
+        width: 94%;
+      }
+    }
+    @include breakpoint($mobile) {
+      @include zen-grid-item(12,1);
+      margin-bottom: 0.75em;
+    }
+  }
+  .field-name-body { 
+    margin-top: 3.5em;
+    @include breakpoint($mobile) {
+      margin-top: 0.5em;
+    }
+  }
+  .field-name-field-date, .field-name-body {
+    @include zen-grid-item(6,7);
+    @include breakpoint($mobile) {
+      @include zen-grid-item(12,1);
+      clear: both;
+    }
+  }
+ }

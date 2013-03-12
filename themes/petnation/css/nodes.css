@@ -77,6 +77,15 @@
 }
 
 /*
+ * General Pet Nation styles
+ */
+.field-type-image img {
+  border: 10px solid #fff;
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*
  * Dog Profile node
  */
 .node-dog-profile .field-items {
@@ -105,11 +114,6 @@
   box-sizing: border-box;
   word-wrap: break-word;
 }
-.node-dog-profile .field-type-image img {
-  border: 10px solid #fff;
-  width: 100%;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-}
 .node-dog-profile .field-label {
   background: grey;
   float: left;
@@ -124,4 +128,82 @@
   box-sizing: border-box;
   word-wrap: break-word;
   font-size: 0.85em;
+}
+
+/*
+ * Event 
+ */
+.node-pn-event .field-type-image {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.node-pn-event .field-type-image img {
+  width: 90%;
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-type-image img {
+    width: 94%;
+  }
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-type-image {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-bottom: 0.75em;
+  }
+}
+.node-pn-event .field-name-body {
+  margin-top: 3.5em;
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-name-body {
+    margin-top: 0.5em;
+  }
+}
+.node-pn-event .field-name-field-date, .node-pn-event .field-name-body {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-name-field-date, .node-pn-event .field-name-body {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: both;
+  }
 }

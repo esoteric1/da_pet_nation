@@ -1,0 +1,11 @@
+name = pn_view_upcoming_events
+description = Upcoming events view (page and block for front page)
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = fe_block
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[fe_block_settings][] = views-upcoming_events-block_1
+features[features_api][] = api:1
+features[views_view][] = upcoming_events
