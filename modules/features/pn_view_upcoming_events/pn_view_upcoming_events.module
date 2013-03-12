@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pn_view_upcoming_events feature.
+ */
+
+include_once 'pn_view_upcoming_events.features.inc';

@@ -35,6 +35,7 @@ function da_pet_nation_install() {
     'date',
     'date_api',
     'date_popup',
+    'date_views',
     'dblog',
     'email',
     'entity',
@@ -90,6 +91,7 @@ function da_pet_nation_install() {
 //    'pn_dog_map',
     'pn_user_dog_profiles',
     'pn_public_can_view',
+    'pn_view_upcoming_events',
     )
   );
   module_disable(array('pn_dog_map','ip_geoloc'));
