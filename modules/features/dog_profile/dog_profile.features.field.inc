@@ -162,7 +162,7 @@ function dog_profile_field_default_fields() {
           'year_range' => '-30:+30',
         ),
         'type' => 'date_popup',
-        'weight' => '5',
+        'weight' => '4',
       ),
     ),
   );
@@ -221,7 +221,7 @@ function dog_profile_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'field_dog_picture',
-      'label' => 'Dog Picture',
+      'label' => 'Profile Picture',
       'required' => 0,
       'settings' => array(
         'alt_field' => 0,
@@ -334,7 +334,7 @@ function dog_profile_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '18',
+        'weight' => '7',
       ),
     ),
   );
@@ -401,7 +401,7 @@ function dog_profile_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '17',
+        'weight' => '6',
       ),
     ),
   );
@@ -464,7 +464,7 @@ function dog_profile_field_default_fields() {
           'scrollwheel' => 0,
         ),
         'type' => 'geolocation_googlemap',
-        'weight' => '16',
+        'weight' => '8',
       ),
     ),
   );
@@ -586,7 +586,7 @@ function dog_profile_field_default_fields() {
         'module' => 'location_cck',
         'settings' => array(),
         'type' => 'location',
-        'weight' => '7',
+        'weight' => '9',
       ),
     ),
   );
@@ -653,7 +653,7 @@ function dog_profile_field_default_fields() {
           'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );
@@ -662,11 +662,11 @@ function dog_profile_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Breed');
   t('Date of Birth');
-  t('Dog Picture');
   t('Friends');
   t('Gender');
   t('GeoLocation');
   t('Location');
+  t('Profile Picture');
   t('Special Talent');
   t('Upload your favourite of your dog');
   t('What\'s special thing does your dog do');
