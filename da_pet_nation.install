@@ -41,6 +41,11 @@ function da_pet_nation_install() {
     'entity',
     'features',
     'file',
+
+    // mapping
+    'geolocation',
+    'geolocation_googlemaps',
+    
     'i18n',
     'image',
     'list',
