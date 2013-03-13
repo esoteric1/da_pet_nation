@@ -100,6 +100,9 @@ projects[eva][version] = 1.2
 projects[ip_geoloc][subdir] = contrib
 projects[ip_geoloc][version] = 1.19
 
+projects[geolocation][subdir] = contrib
+projects[geolocation][version] = 1.1
+
 ; THEMES
 
 projects[zen][version] = 5.1
