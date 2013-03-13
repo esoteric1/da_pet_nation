@@ -27,10 +27,18 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   color: #333333;
+  font-size: 0.9em;
 }
 
 h1, h2, h3 {
   letter-spacing: -1px;
+}
+
+a {
+  color: #008baa;
+}
+a:hover {
+  color: #00acd3;
 }
 
 /*
@@ -104,9 +112,9 @@ h1, h2, h3 {
 }
 
 /*
- * Main (container for everything else)
+ * Content
  */
-#main {
+#content {
   float: left;
   width: 75%;
   margin-left: 0%;
@@ -120,7 +128,7 @@ h1, h2, h3 {
   word-wrap: break-word;
 }
 @media (max-width: 767px) {
-  #main {
+  #content {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -136,10 +144,42 @@ h1, h2, h3 {
 }
 
 /*
- * Content
+ * Sidebars
  */
+aside.sidebars {
+  margin-top: 70px;
+  background: #e5f3f6;
+  float: left;
+  width: 25%;
+  margin-left: 75%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media (max-width: 767px) {
+  aside.sidebars {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: both;
+  }
+}
+
 .breadcrumb {
-  /* The path to the current page in the form of a list of links */
+  margin-top: 1em;
 }
 .breadcrumb ol {
   margin: 0;
@@ -263,20 +303,19 @@ span.field-label {
 }
 
 /*
- * First sidebar (on left in LTR languages, on right in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-first
- * (see the layout.css file.)
- */
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
-/*
  * Footer
  */
+#footer {
+  background: #be5900;
+  margin-top: 2em;
+  color: #fff;
+  padding: 0.5em 0;
+  text-align: center;
+}
+#footer a {
+  color: #fff;
+}
+
 /*
  * Page bottom
  */

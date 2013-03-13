@@ -7,31 +7,28 @@ Table of Contents
 =================
  [Profile Installation Instructions](#profile-installation-instructions)
 
-- [Running MySQL from the command line on a Mac](#running-mysql)
+ [Running MySQL from the command line on a Mac](#running-mysql-from-the-command-line-on-a-mac)
 
-- [Steps to Install Drupal using an Install Profile](#install-profile)
+ [Steps to Install Drupal using an Install Profile](#steps-to-install-drupal-using-an-install-profile)
 
-- [Troubleshooting](#troubleshooting1)
+ [Troubleshooting](#troubleshooting)
 
-- [Troubleshooting](#troubleshooting2)
-
-- [Extra Information](#extra-information)
+ [Extra Information](#extra-information)
 
  [Git Workflow](#git-workflow)
 
-- [Features](#features)
+ [Features](#features)
 
-- [Adding a Module to your install profile](#adding-module)
+ [Adding a Module to your install profile](#adding-the-feature-to-a-local-branch-in-your-git-repo)
 
-- [Modifying an existing Feature](#modify-feature)
+ [Modifying an existing Feature](#modifying-an-existing-feature)
 
-[Theme Development](#theme)
+[Theme Development](#theme-development)
 
-- link to [readme_theme.md](themes/petnation/readme_theme.md)
+ Link to [readme_theme.md](themes/petnation/readme_theme.md)
 
 
 - - -
-
 <a id="profile-installation-instructions"></a>
 Profile Installation Instructions:
 ==================================
@@ -95,7 +92,7 @@ source ./bash_profile
 This changes your bash profile source to the specified. You must be within your home directory to do that.
 
 - - -
-<a id="running-mysql"></a>
+<a id="running-mysql-from-the-command-line-on-a-mac"></a>
 Running MySQL from the command line on a Mac
 --------------------------------------------
 
@@ -108,7 +105,7 @@ alias mysql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
 the "-u" and "-p" are followed by root and root, these correspond to the username and password for the root user of your mysql database.  If you changed those during the install process, then change this accordingly.
 
 - - -
-<a id="install-profile"></a>
+<a id="steps-to-install-drupal-using-an-install-profile"></a>
 Steps to Install Drupal using an Install Profile:
 ----------------
 
@@ -139,7 +136,7 @@ mysqladmin -u USER -pPASSWORD create DBNAME;
 
 
 - - -
-<a id="troubleshooting1"></a>
+<a id="troubleshooting"></a>
 Troubleshooting:
 ---------------
 
@@ -277,7 +274,6 @@ Creating a Feature
 
 Once that is done, go to Structure>Features and add a new Feature.  You will be able to select the new Event content type you just created.  You can then download the event_feature tar ball. this will include a module that will tell drupal to add your content type when it is enabled on a site.
 
-
 Adding the Feature to a local branch in your git repo.
 ------------------------------------------------------
 
@@ -340,7 +336,7 @@ git push -u origin 02-added-event-feature
 Your new feature should now be in a branch on the remote repository, ready to be merged.
 
 - - -
-<a id="adding-module"></a>
+<a id="adding-the-feature-to-a-local-branch-in-your-git-repo"></a>
 Adding a Module to your install profile
 ======================================
 
@@ -440,7 +436,7 @@ git push
 rm 01-add-og-to-profile.patch
 </pre>
 
-<a id="modify-feature"></a>
+<a id="modifying-an-existing-feature"></a>
 
 Modifying an existing feature
 -----------------------------
@@ -455,7 +451,7 @@ You can then push your changes with git.
 
 
 - - -
-<a id="theme"></a>
+<a id="theme-development"></a>
 ## Theme Development
 
 Please read the ["readme_theme.md"](themes/petnation/readme_theme.md) found in the theme directory.

@@ -46,7 +46,8 @@ li a.active {
 
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
-
+  @include zen-grid-item(12,1);
+  background: darkturquoise;
   .block {
     margin-bottom: 0;
   }

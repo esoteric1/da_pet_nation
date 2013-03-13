@@ -18,7 +18,6 @@ features[features_api][] = api:1
 features[field][] = node-pn_event-body
 features[field][] = node-pn_event-field_date
 features[field][] = node-pn_event-field_image
-features[field][] = node-pn_event-group_group
 features[node][] = pn_event
 features[variable][] = field_bundle_settings_node__pn_event
 features[variable][] = language_content_type_pn_event
