@@ -18,7 +18,7 @@ function pn_dog_profile_photos_feature_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'add_a_photo' => array(
-      'weight' => '14',
+      'weight' => '9',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -86,18 +86,28 @@ function pn_dog_profile_photos_feature_ds_layout_settings_info() {
     'regions' => array(
       'left' => array(
         0 => 'field_dog_picture',
-        1 => 'field_special_talent',
-        2 => 'dog_profile_photos_entity_view_1',
-        3 => 'add_a_photo',
-        4 => 'field_gender',
+        1 => 'field_date_of_birth',
+        2 => 'field_breed',
+        3 => 'field_gender',
+        4 => 'field_special_talent',
+        5 => 'field_friends',
+        6 => 'field_location',
+        7 => 'field_geolocation',
+        8 => 'dog_profile_photos_entity_view_1',
+        9 => 'add_a_photo',
       ),
     ),
     'fields' => array(
       'field_dog_picture' => 'left',
+      'field_date_of_birth' => 'left',
+      'field_breed' => 'left',
+      'field_gender' => 'left',
       'field_special_talent' => 'left',
+      'field_friends' => 'left',
+      'field_location' => 'left',
+      'field_geolocation' => 'left',
       'dog_profile_photos_entity_view_1' => 'left',
       'add_a_photo' => 'left',
-      'field_gender' => 'left',
     ),
     'classes' => array(),
     'wrappers' => array(

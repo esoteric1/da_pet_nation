@@ -27,6 +27,7 @@ Table of Contents
 
  Link to [readme_theme.md](themes/petnation/readme_theme.md)
 
+[GeoLocation in Dog Profile](#geolocation-in-dog-profile)
 
 - - -
 <a id="profile-installation-instructions"></a>
@@ -456,3 +457,17 @@ You can then push your changes with git.
 
 Please read the ["readme_theme.md"](themes/petnation/readme_theme.md) found in the theme directory.
 
+---
+<a id="geolocation-in-dog-profile"></a>
+
+GeoLocation in Dog Profile
+-----------------------------
+This feature allows the user to:
+
+1. Manually enter their address so their geolocation can be calculated from it, or
+2. Click "My Location" to use the GPS on their device to calculate their geolocation through HTML5, or
+3. Place a pin on the map to show their geolocation.
+
+They can also remove remove their indicated geolocation.
+
+These geolocations are used in the Dog Map feature.
