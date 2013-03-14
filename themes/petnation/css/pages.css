@@ -71,6 +71,7 @@ a:hover {
   }
   #header img {
     display: block;
+    height: 30px;
   }
 }
 #header a {
