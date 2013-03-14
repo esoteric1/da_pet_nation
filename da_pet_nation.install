@@ -94,7 +94,7 @@ function da_pet_nation_install() {
     'pn_og_members_view',
     'pn_theme',
     'pn_event_feature',
-    'pn_dog_map_fix',
+    'pd_dog_map_fix',
 
     'pn_user_dog_profiles',
     'pn_public_can_view',
