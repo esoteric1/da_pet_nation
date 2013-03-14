@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * pn_friend_map_block.strongarm.inc
+ * pd_dog_map_fix.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function pn_friend_map_block_strongarm() {
+function pd_dog_map_fix_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

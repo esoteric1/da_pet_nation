@@ -103,9 +103,6 @@ projects[ip_geoloc][version] = 1.19
 projects[geolocation][subdir] = contrib
 projects[geolocation][version] = 1.1
 
-projects[geolocation_googlemaps][subdir] = contrib
-projects[geolocation_googlemaps][version] = 1.1
-
 projects[gmap][subdir] = contrib
 projects[gmap][version] = 2.4
 

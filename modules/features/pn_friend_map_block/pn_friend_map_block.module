@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the PN Friend Map Block feature.
- */
-
-include_once 'pn_friend_map_block.features.inc';
