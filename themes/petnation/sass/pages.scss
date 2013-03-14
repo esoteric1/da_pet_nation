@@ -103,6 +103,68 @@ a {
 }
 
 /*
+ * Dog Photos Slider
+ */
+.view-dog-profile-photos {
+	@include zen-grid-item(11,1);
+	clear: both;
+	margin-top: 100px;
+	background: $lightblue;
+	padding-left: 19px;
+	@include breakpoint($mobile) {
+		@include zen-grid-item(12,1);
+	}
+}
+ul.photo-album {
+	padding: 0;
+	img {
+		border: 5px solid #fff;
+		margin-bottom: 10px;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	li {
+		padding-bottom: 20px;
+	}
+}
+// bxSlider overrides
+.bx-wrapper {
+	margin-bottom: 50px;
+}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+	@include breakpoint($mobile) {
+		display: none;
+	}
+}
+.bx-wrapper .bx-prev {
+	left: -60px;
+}
+.bx-wrapper .bx-next {
+	right: -50px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: darken($lightblue,20%);
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: lighten($blue,10%);
+	background: $blue;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	bottom: -40px;
+}
+
+/*
  * Sidebars
  */
 aside.sidebars {
