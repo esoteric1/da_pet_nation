@@ -96,9 +96,18 @@ projects[entityreference_prepopulate][version] = 1.2
 projects[eva][subdir] = contrib
 projects[eva][version] = 1.2
 
-;mapping module
+;mapping modules
 projects[ip_geoloc][subdir] = contrib
 projects[ip_geoloc][version] = 1.19
+
+projects[geolocation][subdir] = contrib
+projects[geolocation][version] = 1.1
+
+projects[geolocation_googlemaps][subdir] = contrib
+projects[geolocation_googlemaps][version] = 1.1
+
+projects[gmap][subdir] = contrib
+projects[gmap][version] = 2.4
 
 ; THEMES
 
