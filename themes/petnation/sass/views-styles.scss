@@ -42,4 +42,8 @@
       @include border-radius(0 0 7px 7px);
     }
   }
+  /* fix close icon IP GeoLoc map rendering Google Map - Jan */
+  DIV#ip-geoloc-map-of-view-friend_map-block img{
+    max-width: none;
+  }
 }
