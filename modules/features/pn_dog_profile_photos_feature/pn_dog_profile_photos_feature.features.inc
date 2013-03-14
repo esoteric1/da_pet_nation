@@ -31,7 +31,7 @@ function pn_dog_profile_photos_feature_views_api() {
 function pn_dog_profile_photos_feature_node_info() {
   $items = array(
     'pn_dog_photo' => array(
-      'name' => t('Dog Photo'),
+      'name' => t('Add a photo'),
       'base' => 'node_content',
       'description' => t('Use this content type to add photos to dog profiles'),
       'has_title' => '1',

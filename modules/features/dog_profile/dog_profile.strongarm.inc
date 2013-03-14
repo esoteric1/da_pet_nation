@@ -47,7 +47,14 @@ function dog_profile_strongarm() {
           'weight' => '2',
         ),
       ),
-      'display' => array(),
+      'display' => array(
+        'dog_profile_photos_entity_view_1' => array(
+          'default' => array(
+            'weight' => '7',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__dog_profile'] = $strongarm;
