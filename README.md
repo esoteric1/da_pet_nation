@@ -29,6 +29,8 @@ Table of Contents
 
 [Dog Map](#dog-map)
 
+=======
+[GeoLocation in Dog Profile](#geolocation-in-dog-profile)
 
 - - -
 <a id="profile-installation-instructions"></a>
@@ -507,3 +509,18 @@ I set the map as a block on the home page for any users logged in.
 
 2. Preferably the names between Views Features and Blocks would be more consistent, but to get it done without having to redo everything it was done this way.
 
+=======
+---
+<a id="geolocation-in-dog-profile"></a>
+
+GeoLocation in Dog Profile
+-----------------------------
+This feature allows the user to:
+
+1. Manually enter their address so their geolocation can be calculated from it, or
+2. Click "My Location" to use the GPS on their device to calculate their geolocation through HTML5, or
+3. Place a pin on the map to show their geolocation.
+
+They can also remove remove their indicated geolocation.
+
+These geolocations are used in the Dog Map feature.

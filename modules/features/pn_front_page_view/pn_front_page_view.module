@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pn front page view feature.
+ */
+
+include_once 'pn_front_page_view.features.inc';

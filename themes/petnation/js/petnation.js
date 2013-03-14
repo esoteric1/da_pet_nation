@@ -12,8 +12,20 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
 
-
-// Place your code here.
+$(document).ready(function(){
+	/**
+	 *  bxSlider for Dog Photos at the bottom of Dog Profile page
+	 */
+	$('ul.photo-album').bxSlider({
+		minSlides: 5,
+		maxSlides: 20,
+		moveSlides: 1,
+		slideMargin: 20,
+		slideWidth: 200,
+		auto: true,
+		pause: 5000
+	});	
+});
 
 
 })(jQuery, Drupal, this, this.document);
