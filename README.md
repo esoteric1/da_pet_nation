@@ -524,3 +524,5 @@ This feature allows the user to:
 They can also remove remove their indicated geolocation.
 
 These geolocations are used in the Dog Map feature.
+
+Tested and ready to go. No changes except typo that was fixed in the da_pet_nation.install file which (Marc) fixed. Verified Compass compiles views-style.scss to fix Google Map bug. 
