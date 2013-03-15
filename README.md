@@ -29,6 +29,11 @@ Table of Contents
 
 [GeoLocation in Dog Profile](#geolocation-in-dog-profile)
 
+[Facebook Login](#facebook-login)
+
+[User Permissions](#user-permissions)
+
+
 - - -
 <a id="profile-installation-instructions"></a>
 Profile Installation Instructions:
@@ -481,4 +486,11 @@ This module allows a user to automatically create an account and login to Petnat
 Petnation can also pull information from the users facebook account such as their bio.
 
 The connection to Facebook is acheived through a drupal module called fboauth. OAuth is an **open standard for authorization**. An app was created on Facebook specifically to communitcate with this website. 
+
+---
+<a id="user-permissions"></a>
+
+User Permissions
+----------------
+Added feature to handle permissions so authenticated users can view content.
 
