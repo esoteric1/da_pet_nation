@@ -81,6 +81,7 @@ function da_pet_nation_install() {
     'og_register',
     'og_ui',
     'taxonomy',
+    'fboauth', // facebook
 //    'ip_geoloc',
     'features_extra',
 
@@ -97,6 +98,7 @@ function da_pet_nation_install() {
     'pn_user_dog_profiles',
     'pn_public_can_view',
     'pn_view_upcoming_events',
+    'pn_facebook',
     )
   );
   module_disable(array('pn_dog_map','ip_geoloc'));

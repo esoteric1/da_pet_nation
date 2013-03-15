@@ -103,6 +103,10 @@ projects[ip_geoloc][version] = 1.19
 projects[geolocation][subdir] = contrib
 projects[geolocation][version] = 1.1
 
+;facebook OAuth (FBOAuth) module
+projects[fboauth][subdir] = contrib
+projects[fboauth][version] = 1.6
+
 ; THEMES
 
 projects[zen][version] = 5.1

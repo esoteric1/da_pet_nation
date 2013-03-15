@@ -471,3 +471,13 @@ This feature allows the user to:
 They can also remove remove their indicated geolocation.
 
 These geolocations are used in the Dog Map feature.
+
+---
+<a id="facebook-login"></a>
+
+Facebook Login
+--------------
+This module allows a user to automatically create an account and login to Petnation with only their Facebook profile. They are taken to facebook to verify this the first time. After authentication they only have to click the facebook link.
+Petnation can also pull information from the users facebook account such as their bio.
+
+The connection to Facebook is acheived through a drupal module called fboauth. OAuth is an **open standard for authorization**. An app was created on Facebook specifically to communitcate with this website. 
