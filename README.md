@@ -481,3 +481,4 @@ This module allows a user to automatically create an account and login to Petnat
 Petnation can also pull information from the users facebook account such as their bio.
 
 The connection to Facebook is acheived through a drupal module called fboauth. OAuth is an **open standard for authorization**. An app was created on Facebook specifically to communitcate with this website. 
+
