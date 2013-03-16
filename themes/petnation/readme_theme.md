@@ -172,3 +172,27 @@ We are on a 12-column grid for this project. Our content area is 960 pixels wide
 ## Further Reading (Optional)
 
 - [Controlling colours in SASS](http://robots.thoughtbot.com/post/12974565313/controlling-color-with-sass-color-functions)
+
+# Configuring Views and Display Suite for Optimum Theming
+
+## Views
+Views has the ability to add classes to everything. It's best to add classes to areas that are definitely going to change from default styles, e.g. labels.
+
+In the event that a 2-column layout is required in a view, it would be beneficial to group columns in their own wrapper. One of the ways this is done is by creating a `Global: Custom Text` field and refer to your desired fields like this: `[field_date]` in there. If doing it this way, do not add your static markup in this box, instead add it to the individual fields by wrapping it in an element of your choice and adding a CSS class through the UI, as opposed to hard-coding it. 
+
+## Display Suite
+
+Larger parts of the layout can be customized using Display Suite like the whole layout or regions. You can add classes to columns. 
+
+For the Dog Profile page, I chose a simple layout (3 columns) and in CSS customized it by dropping one column to create a major full-width area below. That's one way to customize the layout.
+
+If you need to get as deep as adding classes to fields, this is not available out of the box. You would need the module `ds_extras` enabled. You would also need the setting "Add field templates" enabled.
+
+## Sharing your Changes
+
+After updating a View or Display, I did `drush fu pn_feature_name`
+to update the Feature in the module code then pushed changes to Git to make the same settings available to all.
+
+If you had to enable a setting like I did with `ds_extras` to get a display to function properly, it may not be Featurizable. If it isn't, the setting can quite possibly be exported using Features Strongarm. 
+
+The `ds_extras` setting can be exported using Features and Strongarm as there is a variable available for us to set. Anything with an entry in the `variables` table in the database can be Featurized as a Strongarm setting. You can inspect the element to find any ID's that match the machine name of the module and then search that value in the variables table in the database. If it exists, it is most likely Featurizable. 

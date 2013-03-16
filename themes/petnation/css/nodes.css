@@ -30,6 +30,16 @@
 /*
  * Dog Profile node
  */
+.field-name-add-a-photo {
+  clear: both;
+  padding-top: 0.5em;
+}
+.field-name-add-a-photo a {
+  width: 100px;
+  display: block;
+  margin: 1.5em auto;
+  text-align: center;
+}
 .field-name-add-a-photo ul {
   padding: 0;
 }

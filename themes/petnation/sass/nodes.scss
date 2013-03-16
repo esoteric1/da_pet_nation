@@ -28,6 +28,14 @@
  * Dog Profile node
  */
 .field-name-add-a-photo {
+  clear: both;
+  padding-top: 0.5em;
+  a {
+    width: 100px;
+    display: block;
+    margin: 1.5em auto;
+    text-align: center;
+  }
   ul {
     padding: 0;
   }

@@ -106,7 +106,7 @@
 		}
 	}
 	.profile_stats {
-		@include zen-grid-item(7,5);
+		@include zen-grid-item(7,5.25);
 		padding: 1.5em 0;
 		@include breakpoint($mobile) {
 			@include zen-grid-item(12,1);
