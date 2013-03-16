@@ -44,7 +44,7 @@ function dog_profile_field_default_fields() {
       'description' => 'Tell a story about your pet',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
@@ -62,7 +62,7 @@ function dog_profile_field_default_fields() {
       'label' => 'About',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -443,7 +443,7 @@ function dog_profile_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
@@ -503,11 +503,11 @@ function dog_profile_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'geolocation',
           'settings' => array(),
           'type' => 'geolocation_text',
-          'weight' => '8',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -632,7 +632,7 @@ function dog_profile_field_default_fields() {
           'module' => 'location_cck',
           'settings' => array(),
           'type' => 'location_default',
-          'weight' => '7',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -692,7 +692,7 @@ function dog_profile_field_default_fields() {
       'description' => 'Your favourite quote or a quote that defines your pet.',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
@@ -710,7 +710,7 @@ function dog_profile_field_default_fields() {
       'label' => 'Quote',
       'required' => 0,
       'settings' => array(
-        'text_processing' => '0',
+        'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
       'widget' => array(
