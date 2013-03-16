@@ -83,7 +83,6 @@ function da_pet_nation_install() {
     'taxonomy',
 //    'ip_geoloc',
     'features_extra',
-    'fbconnect',
 
     // Custom modules.
     'custom_config',
