@@ -109,6 +109,7 @@ function da_pet_nation_install() {
     'pn_text_format_p',
     'rules',
     'rules_admin',
+    'authenticated_user_permissions',
     )
   );
 //  module_disable(array('pn_dog_map','ip_geoloc'));
