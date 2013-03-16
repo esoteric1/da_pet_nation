@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pn event members feature.
+ */
+
+include_once 'pn_event_members.features.inc';
