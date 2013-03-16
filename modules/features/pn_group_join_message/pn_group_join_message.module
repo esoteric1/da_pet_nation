@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the PN Group Join Message feature.
+ */
+
+include_once 'pn_group_join_message.features.inc';
