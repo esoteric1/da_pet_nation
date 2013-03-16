@@ -104,3 +104,8 @@
 
 .field-name-field-FIELDNAME { /* Underscores in field name are replaced with dashes. */
 }
+
+/* hide geolocation for event until we have time to style it later */
+.field-name-field-geolocation-event {
+	display:none;
+} 

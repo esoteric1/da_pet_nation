@@ -170,6 +170,65 @@ function pn_event_feature_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-pn_event-field_geolocation_event'.
+  $fields['node-pn_event-field_geolocation_event'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_geolocation_event',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'lat' => array(
+          0 => 'lat',
+        ),
+        'lng' => array(
+          0 => 'lng',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'geolocation',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'geolocation_latlng',
+    ),
+    'field_instance' => array(
+      'bundle' => 'pn_event',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'geolocation',
+          'settings' => array(),
+          'type' => 'geolocation_text',
+          'weight' => 3,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_geolocation_event',
+      'label' => 'GeoLocationEvent',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'geolocation_googlemaps',
+        'settings' => array(),
+        'type' => 'geolocation_googlemap',
+        'weight' => '34',
+      ),
+    ),
+  );
+
   // Exported field: 'node-pn_event-field_image'.
   $fields['node-pn_event-field_image'] = array(
     'field_config' => array(
@@ -254,6 +313,7 @@ function pn_event_feature_field_default_fields() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Date');
+  t('GeoLocationEvent');
   t('Image');
 
   return $fields;

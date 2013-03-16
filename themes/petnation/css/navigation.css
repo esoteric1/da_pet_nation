@@ -121,3 +121,18 @@ li a.active {
  * Drupal core has limited ways in which it can display its menus. To get around
  * these limitations, see http://drupal.org/project/menu_block
  */
+/*
+ * Pet Nation buttons for calls-to-action
+ */
+a.pn_button {
+  background: #008baa;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+a.pn_button:hover {
+  background: #00acd3;
+}

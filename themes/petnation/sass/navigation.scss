@@ -108,3 +108,19 @@ li a.active {
 
 .block-menu-block {
 }
+
+/*
+ * Pet Nation buttons for calls-to-action
+ */
+ a.pn_button {
+  background: $blue;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  &:hover {
+    background: lighten($blue,8%);
+  }
+ }
