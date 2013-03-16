@@ -53,6 +53,10 @@ function dog_profile_strongarm() {
             'weight' => '11',
             'visible' => TRUE,
           ),
+          'full' => array(
+            'weight' => '11',
+            'visible' => TRUE,
+          ),
         ),
       ),
     ),

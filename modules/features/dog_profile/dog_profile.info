@@ -27,7 +27,6 @@ features[field][] = node-dog_profile-field_geolocation
 features[field][] = node-dog_profile-field_location
 features[field][] = node-dog_profile-field_quote
 features[field][] = node-dog_profile-field_special_talent
-features[filter][] = plain_detect_paragraphs
 features[node][] = dog_profile
 features[taxonomy][] = breed
 features[taxonomy][] = dog_park

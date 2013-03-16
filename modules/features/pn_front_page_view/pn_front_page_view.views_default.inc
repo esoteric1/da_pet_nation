@@ -80,7 +80,7 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_profile_reference']['field'] = 'field_profile_reference';
   $handler->display->display_options['fields']['field_profile_reference']['label'] = 'for';
   $handler->display->display_options['fields']['field_profile_reference']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_profile_reference']['alter']['path'] = '[field_profile_reference]';
+  $handler->display->display_options['fields']['field_profile_reference']['alter']['path'] = 'content/[field_profile_reference]';
   $handler->display->display_options['fields']['field_profile_reference']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_profile_reference']['element_class'] = 'referenced-dog-profile';
   $handler->display->display_options['fields']['field_profile_reference']['element_label_colon'] = FALSE;
@@ -105,7 +105,6 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_image']['label'] = '';
   $handler->display->display_options['fields']['field_image']['element_class'] = 'event-image';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_image']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
@@ -113,6 +112,7 @@ function pn_front_page_view_views_default_views() {
     'image_style' => 'medium',
     'image_link' => 'content',
   );
+  $handler->display->display_options['fields']['field_image']['field_api_classes'] = TRUE;
   /* Field: Content: Photo */
   $handler->display->display_options['fields']['field_dog_photo']['id'] = 'field_dog_photo';
   $handler->display->display_options['fields']['field_dog_photo']['table'] = 'field_data_field_dog_photo';
@@ -143,15 +143,6 @@ function pn_front_page_view_views_default_views() {
     'image_style' => 'medium',
     'image_link' => 'content',
   );
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
-  $handler->display->display_options['fields']['title_1']['table'] = 'node';
-  $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['label'] = '';
-  $handler->display->display_options['fields']['title_1']['element_type'] = 'h3';
-  $handler->display->display_options['fields']['title_1']['element_class'] = 'content-title';
-  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
   /* Field: Content: Date */
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
@@ -183,27 +174,67 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_breed']['id'] = 'field_breed';
   $handler->display->display_options['fields']['field_breed']['table'] = 'field_data_field_breed';
   $handler->display->display_options['fields']['field_breed']['field'] = 'field_breed';
+  $handler->display->display_options['fields']['field_breed']['label'] = '';
+  $handler->display->display_options['fields']['field_breed']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_breed']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_breed']['alter']['text'] = '<span class="label">Breed</span> <span>[field_breed]</span><br/>';
   $handler->display->display_options['fields']['field_breed']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_breed']['element_class'] = 'breed';
+  $handler->display->display_options['fields']['field_breed']['element_label_class'] = 'label';
+  $handler->display->display_options['fields']['field_breed']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_breed']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_breed']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_breed']['hide_alter_empty'] = FALSE;
   /* Field: Content: Gender */
   $handler->display->display_options['fields']['field_gender']['id'] = 'field_gender';
   $handler->display->display_options['fields']['field_gender']['table'] = 'field_data_field_gender';
   $handler->display->display_options['fields']['field_gender']['field'] = 'field_gender';
+  $handler->display->display_options['fields']['field_gender']['label'] = '';
+  $handler->display->display_options['fields']['field_gender']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_gender']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_gender']['alter']['text'] = '<span class="label">Gender</span> <span>[field_gender]</span><br/>';
   $handler->display->display_options['fields']['field_gender']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_gender']['element_class'] = 'gender';
+  $handler->display->display_options['fields']['field_gender']['element_label_class'] = 'label';
+  $handler->display->display_options['fields']['field_gender']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_gender']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_gender']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_gender']['hide_alter_empty'] = FALSE;
   /* Field: Content: Special Talent */
   $handler->display->display_options['fields']['field_special_talent']['id'] = 'field_special_talent';
   $handler->display->display_options['fields']['field_special_talent']['table'] = 'field_data_field_special_talent';
   $handler->display->display_options['fields']['field_special_talent']['field'] = 'field_special_talent';
+  $handler->display->display_options['fields']['field_special_talent']['label'] = '';
+  $handler->display->display_options['fields']['field_special_talent']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_special_talent']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_special_talent']['alter']['text'] = '<span class="label">Special Talent</span> <span>[field_special_talent]</span><br/>';
   $handler->display->display_options['fields']['field_special_talent']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_special_talent']['element_class'] = 'special-talent';
+  $handler->display->display_options['fields']['field_special_talent']['element_label_class'] = 'label';
+  $handler->display->display_options['fields']['field_special_talent']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_special_talent']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_special_talent']['hide_empty'] = TRUE;
+  /* Field: Breed Gender Talent block */
+  $handler->display->display_options['fields']['nothing_1']['id'] = 'nothing_1';
+  $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_1']['ui_name'] = 'Breed Gender Talent block';
+  $handler->display->display_options['fields']['nothing_1']['label'] = '';
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '[field_breed]
+[field_gender]
+[field_special_talent]';
+  $handler->display->display_options['fields']['nothing_1']['element_type'] = 'div';
+  $handler->display->display_options['fields']['nothing_1']['element_class'] = 'profile_stats';
+  $handler->display->display_options['fields']['nothing_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_1']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['nothing_1']['hide_alter_empty'] = TRUE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+  $handler->display->display_options['fields']['title_1']['table'] = 'node';
+  $handler->display->display_options['fields']['title_1']['field'] = 'title';
+  $handler->display->display_options['fields']['title_1']['label'] = '';
+  $handler->display->display_options['fields']['title_1']['element_type'] = 'h3';
+  $handler->display->display_options['fields']['title_1']['element_class'] = 'content-title';
+  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -240,9 +271,12 @@ function pn_front_page_view_views_default_views() {
     t('added a new '),
     t('for'),
     t('When'),
-    t('Breed'),
-    t('Gender'),
-    t('Special Talent'),
+    t('<span class="label">Breed</span> <span>[field_breed]</span><br/>'),
+    t('<span class="label">Gender</span> <span>[field_gender]</span><br/>'),
+    t('<span class="label">Special Talent</span> <span>[field_special_talent]</span><br/>'),
+    t('[field_breed]
+[field_gender]
+[field_special_talent]'),
     t('Page'),
   );
   $export['new_content_view'] = $view;
