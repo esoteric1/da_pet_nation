@@ -145,3 +145,20 @@ a.pn_button {
 a.pn_button:hover {
   background: #00acd3;
 }
+@media (max-width: 767px) {
+  a.pn_button {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    display: block;
+    float: none;
+  }
+}

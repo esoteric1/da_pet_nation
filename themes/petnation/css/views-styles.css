@@ -142,6 +142,21 @@
   box-sizing: border-box;
   word-wrap: break-word;
 }
+@media (max-width: 767px) {
+  .view-new-content-view .profile-picture {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
 .view-new-content-view .profile_stats {
   float: left;
   width: 58.33333%;
@@ -154,7 +169,24 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding-top: 1.5em;
+  padding: 1.5em 0;
+}
+@media (max-width: 767px) {
+  .view-new-content-view .profile_stats {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+    padding-top: 0;
+  }
 }
 .view-new-content-view .event-image {
   float: left;
@@ -170,9 +202,23 @@
   word-wrap: break-word;
   margin-top: 1.5em;
 }
+@media (max-width: 767px) {
+  .view-new-content-view .event-image {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
 .view-new-content-view .event_wrapper {
   background: #e5f3f6;
-  margin-top: 1.5em;
   float: left;
   width: 56.25%;
   margin-left: 43.75%;
@@ -186,5 +232,23 @@
   word-wrap: break-word;
   padding: 1.5em 1.5em 0.5em 1.5em;
   box-sizing: border-box;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+@media (max-width: 767px) {
+  .view-new-content-view .event_wrapper {
+    margin-top: 0;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+  }
 }

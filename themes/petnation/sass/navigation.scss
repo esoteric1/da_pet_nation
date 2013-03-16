@@ -143,4 +143,9 @@ li a.active {
   &:hover {
     background: lighten($blue,8%);
   }
+  @include breakpoint($mobile) {
+    @include zen-grid-item(12,1);
+    display: block;
+    float: none;
+  }
  }
