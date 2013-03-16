@@ -24,7 +24,9 @@ $(document).ready(function(){
 		slideWidth: 200,
 		auto: true,
 		pause: 5000
-	});	
+	});
+	// Add a photo link on Dog Profile
+	$('.field-name-add-a-photo a').prepend('Add a ');
 });
 
 
