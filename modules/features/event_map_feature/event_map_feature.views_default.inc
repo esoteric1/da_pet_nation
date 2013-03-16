@@ -1,29 +1,28 @@
 <?php
 /**
  * @file
- * pd_dog_map_fix.views_default.inc
+ * event_map_feature.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function pd_dog_map_fix_views_default_views() {
+function event_map_feature_views_default_views() {
   $export = array();
 
   $view = new view();
-  $view->name = 'friend_map';
+  $view->name = 'event_map';
   $view->description = '';
   $view->tag = 'default';
   $view->base_table = 'node';
-  $view->human_name = 'Friend Map';
+  $view->human_name = 'Event Map';
   $view->core = 7;
   $view->api_version = '3.0';
   $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Friend Map';
-  $handler->display->display_options['css_class'] = 'dog-map';
+  $handler->display->display_options['title'] = 'Event Map';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -32,7 +31,7 @@ function pd_dog_map_fix_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'ip_geoloc_map';
-  $handler->display->display_options['style_options']['ip_geoloc_views_plugin_latitude'] = 'field_geolocation';
+  $handler->display->display_options['style_options']['ip_geoloc_views_plugin_latitude'] = 'field_geolocation_event';
   $handler->display->display_options['style_options']['ip_geoloc_views_plugin_longitude'] = '';
   $handler->display->display_options['style_options']['center_option'] = '1';
   $handler->display->display_options['style_options']['gps_roles'] = array(
@@ -47,24 +46,22 @@ function pd_dog_map_fix_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Profile Picture */
-  $handler->display->display_options['fields']['field_dog_picture']['id'] = 'field_dog_picture';
-  $handler->display->display_options['fields']['field_dog_picture']['table'] = 'field_data_field_dog_picture';
-  $handler->display->display_options['fields']['field_dog_picture']['field'] = 'field_dog_picture';
-  $handler->display->display_options['fields']['field_dog_picture']['label'] = '';
-  $handler->display->display_options['fields']['field_dog_picture']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_dog_picture']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_dog_picture']['settings'] = array(
-    'image_style' => 'thumbnail',
-    'image_link' => '',
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'image_style' => 'medium',
+    'image_link' => 'content',
   );
-  /* Field: Content: GeoLocation */
-  $handler->display->display_options['fields']['field_geolocation']['id'] = 'field_geolocation';
-  $handler->display->display_options['fields']['field_geolocation']['table'] = 'field_data_field_geolocation';
-  $handler->display->display_options['fields']['field_geolocation']['field'] = 'field_geolocation';
-  $handler->display->display_options['fields']['field_geolocation']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_geolocation']['click_sort_column'] = 'lat';
+  /* Field: Content: GeoLocationEvent */
+  $handler->display->display_options['fields']['field_geolocation_event']['id'] = 'field_geolocation_event';
+  $handler->display->display_options['fields']['field_geolocation_event']['table'] = 'field_data_field_geolocation_event';
+  $handler->display->display_options['fields']['field_geolocation_event']['field'] = 'field_geolocation_event';
+  $handler->display->display_options['fields']['field_geolocation_event']['click_sort_column'] = 'lat';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -82,24 +79,21 @@ function pd_dog_map_fix_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'dog_profile' => 'dog_profile',
+    'pn_event' => 'pn_event',
   );
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['path'] = 'friend-map';
+  $handler->display->display_options['path'] = 'event-map';
 
   /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block');
+  $handler = $view->new_display('block', 'Block', 'block_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
-  $handler->display->display_options['block_description'] = 'Map (google) Dog Friends';
-  $translatables['friend_map'] = array(
+  $handler->display->display_options['block_description'] = 'Event Map Block';
+  $translatables['event_map'] = array(
     t('Master'),
-    t('Friend Map'),
+    t('Event Map'),
     t('more'),
     t('Apply'),
     t('Reset'),
@@ -113,12 +107,12 @@ function pd_dog_map_fix_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('GeoLocation'),
+    t('GeoLocationEvent'),
     t('Page'),
     t('Block'),
-    t('Map (google) Dog Friends'),
+    t('Event Map Block'),
   );
-  $export['friend_map'] = $view;
+  $export['event_map'] = $view;
 
   return $export;
 }
