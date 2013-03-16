@@ -32,6 +32,11 @@ Table of Contents
 =======
 [GeoLocation in Dog Profile](#geolocation-in-dog-profile)
 
+[Facebook Login](#facebook-login)
+
+[User Permissions](#user-permissions)
+
+
 - - -
 <a id="profile-installation-instructions"></a>
 Profile Installation Instructions:
@@ -525,4 +530,21 @@ They can also remove remove their indicated geolocation.
 
 These geolocations are used in the Dog Map feature.
 
-Tested and ready to go. No changes except typo that was fixed in the da_pet_nation.install file which (Marc) fixed. Verified Compass compiles views-style.scss to fix Google Map bug. 
+=======
+---
+<a id="facebook-login"></a>
+
+Facebook Login
+--------------
+This module allows a user to automatically create an account and login to Petnation with only their Facebook profile. They are taken to facebook to verify this the first time. After authentication they only have to click the facebook link.
+Petnation can also pull information from the users facebook account such as their bio.
+
+The connection to Facebook is acheived through a drupal module called fboauth. OAuth is an **open standard for authorization**. An app was created on Facebook specifically to communitcate with this website. 
+
+---
+<a id="user-permissions"></a>
+
+User Permissions
+----------------
+Added feature to handle permissions so authenticated users can view content.
+

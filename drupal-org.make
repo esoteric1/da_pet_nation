@@ -34,6 +34,9 @@ projects[email][version] = 1.2
 projects[entity][subdir] = contrib
 projects[entity][version] = 1.0-rc3
 
+projects[fbconnect][subdir] = contrib
+projects[fbconnect][version] = 2.0-beta4
+
 projects[features][subdir] = contrib
 projects[features][version] = 1.0
 
@@ -106,6 +109,9 @@ projects[geolocation][version] = 1.1
 projects[gmap][subdir] = contrib
 projects[gmap][version] = 2.4
 
+projects[fboauth][subdir] = contrib
+projects[fboauth][version] = 1.6
+
 ; THEMES
 
 projects[zen][version] = 5.1
@@ -115,3 +121,7 @@ projects[zen][version] = 5.1
 libraries[ckeditor][download][type] = "get"
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.3/ckeditor_3.6.3.zip"
 libraries[ckeditor][directory_name] = "ckeditor"
+
+libraries[facebook-php-sdk][download][type] = "get"
+libraries[facebook-php-sdk][download][url] = "http://github.com/facebook/php-sdk/tarball/v3.1.1"
+libraries[facebook-php-sdk][destination] = "libraries"
