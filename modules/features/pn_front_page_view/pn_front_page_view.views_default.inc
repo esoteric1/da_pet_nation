@@ -147,9 +147,15 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_date']['id'] = 'field_date';
   $handler->display->display_options['fields']['field_date']['table'] = 'field_data_field_date';
   $handler->display->display_options['fields']['field_date']['field'] = 'field_date';
-  $handler->display->display_options['fields']['field_date']['label'] = 'When';
+  $handler->display->display_options['fields']['field_date']['label'] = '';
+  $handler->display->display_options['fields']['field_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_date']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_date']['alter']['text'] = '<span class="label">When</span> <span>[field_date]</span>';
   $handler->display->display_options['fields']['field_date']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_date']['element_class'] = 'event-date';
+  $handler->display->display_options['fields']['field_date']['element_label_type'] = 'span';
+  $handler->display->display_options['fields']['field_date']['element_label_class'] = 'label';
+  $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_date']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_date']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_date']['hide_alter_empty'] = FALSE;
@@ -165,6 +171,7 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
   $handler->display->display_options['fields']['body']['element_class'] = 'event-description';
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
@@ -235,6 +242,17 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['title_1']['element_class'] = 'content-title';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['element_default_classes'] = FALSE;
+  /* Field: Event Wrapper */
+  $handler->display->display_options['fields']['nothing_3']['id'] = 'nothing_3';
+  $handler->display->display_options['fields']['nothing_3']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing_3']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing_3']['ui_name'] = 'Event Wrapper';
+  $handler->display->display_options['fields']['nothing_3']['label'] = '';
+  $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '[field_date]
+[body]';
+  $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing_3']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['nothing_3']['hide_alter_empty'] = TRUE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -270,13 +288,15 @@ function pn_front_page_view_views_default_views() {
     t('author'),
     t('added a new '),
     t('for'),
-    t('When'),
+    t('<span class="label">When</span> <span>[field_date]</span>'),
     t('<span class="label">Breed</span> <span>[field_breed]</span><br/>'),
     t('<span class="label">Gender</span> <span>[field_gender]</span><br/>'),
     t('<span class="label">Special Talent</span> <span>[field_special_talent]</span><br/>'),
     t('[field_breed]
 [field_gender]
 [field_special_talent]'),
+    t('[field_date]
+[body]'),
     t('Page'),
   );
   $export['new_content_view'] = $view;
