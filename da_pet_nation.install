@@ -43,6 +43,7 @@ function da_pet_nation_install() {
     'file',
     'i18n',
     'image',
+    'globalredirect',
     'list',
     'locale',
     'menu',

@@ -9,4 +9,5 @@ features[features_api][] = api:1
 features[variable][] = admin_theme
 features[variable][] = ds_extras_field_template
 features[variable][] = node_admin_theme
+features[variable][] = site_frontpage
 features[variable][] = theme_default
