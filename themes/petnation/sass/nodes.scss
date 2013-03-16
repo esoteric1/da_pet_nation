@@ -54,7 +54,7 @@
     }
   }
   .dog_profile_stats {
-    @include zen-grid-item(5,8);
+    @include zen-grid-item(5.5,7.5);
     @include breakpoint($mobile) {
       @include zen-grid-item(12,1);
       clear: both;

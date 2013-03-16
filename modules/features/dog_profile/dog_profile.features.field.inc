@@ -128,7 +128,7 @@ function dog_profile_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -203,7 +203,7 @@ function dog_profile_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -377,7 +377,7 @@ function dog_profile_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 17,
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -449,11 +449,11 @@ function dog_profile_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 16,
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -513,7 +513,7 @@ function dog_profile_field_default_fields() {
           'module' => 'geolocation',
           'settings' => array(),
           'type' => 'geolocation_text',
-          'weight' => 15,
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -638,7 +638,7 @@ function dog_profile_field_default_fields() {
           'module' => 'location_cck',
           'settings' => array(),
           'type' => 'location_default',
-          'weight' => '5',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -775,7 +775,7 @@ function dog_profile_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '4',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
