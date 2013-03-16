@@ -1,0 +1,10 @@
+name = Text Format to Detect Paragraphs
+description = This text format is to detect line breaks and paragraphs intelligently. For use in About and Quote.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = pn_text_format_p
+dependencies[] = features
+dependencies[] = filter
+features[features_api][] = api:1
+features[filter][] = plain_detect_paragraphs
