@@ -65,6 +65,7 @@ function da_pet_nation_install() {
     'views_ui',
     'ds',
     'ds_devel',
+    'ds_extras',
     'ds_forms',
     'ds_ui',
     'devel_generate',
