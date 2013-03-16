@@ -46,13 +46,7 @@ li a.active {
 
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
-  @include zen-grid-item(4,9);
-  text-align: right;
-  @include breakpoint($mobile) {
-    @include zen-grid-item(12,1);
-    text-align: center;
-    margin-top: 20px;
-  }
+  
   .block {
     margin-bottom: 0;
   }
@@ -85,6 +79,22 @@ li a.active {
  */
 
 #main-menu {
+  @include zen-grid-item(8,1,right);
+  margin-top: 25px;
+  ul {
+    float: right;
+  }
+  li {
+    display: inline;
+  }
+  @include breakpoint($mobile) {
+    @include zen-grid-item(12,1);
+    @include zen-clear;
+    padding-top: 15px;
+    text-align: center;
+    float: none;
+
+  }
 }
 
 #secondary-menu {

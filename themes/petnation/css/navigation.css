@@ -34,35 +34,6 @@ li a.active {
 #navigation {
   /* overflow: hidden; */
   /* Sometimes you want to prevent overlapping with main div. */
-  float: left;
-  width: 33.33333%;
-  margin-left: 66.66667%;
-  margin-right: -100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  text-align: right;
-}
-@media (max-width: 767px) {
-  #navigation {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    text-align: center;
-    margin-top: 20px;
-  }
 }
 #navigation .block {
   margin-bottom: 0;
@@ -97,6 +68,46 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
+#main-menu {
+  float: right;
+  width: 66.66667%;
+  margin-right: 0%;
+  margin-left: -66.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-top: 25px;
+}
+#main-menu ul {
+  float: right;
+}
+#main-menu li {
+  display: inline;
+}
+@media (max-width: 767px) {
+  #main-menu {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: left;
+    padding-top: 15px;
+    text-align: center;
+    float: none;
+  }
+}
+
 #secondary-menu li {
   width: 50%;
   display: block;
