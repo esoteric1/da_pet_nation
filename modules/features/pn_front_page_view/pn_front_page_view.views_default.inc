@@ -185,6 +185,8 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_breed']['field'] = 'field_breed';
   $handler->display->display_options['fields']['field_breed']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_breed']['element_class'] = 'breed';
+  $handler->display->display_options['fields']['field_breed']['element_label_class'] = 'label';
+  $handler->display->display_options['fields']['field_breed']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_breed']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_breed']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_breed']['hide_alter_empty'] = FALSE;
@@ -194,6 +196,8 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_gender']['field'] = 'field_gender';
   $handler->display->display_options['fields']['field_gender']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_gender']['element_class'] = 'gender';
+  $handler->display->display_options['fields']['field_gender']['element_label_class'] = 'label';
+  $handler->display->display_options['fields']['field_gender']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_gender']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_gender']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_gender']['hide_alter_empty'] = FALSE;
@@ -203,6 +207,8 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_special_talent']['field'] = 'field_special_talent';
   $handler->display->display_options['fields']['field_special_talent']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_special_talent']['element_class'] = 'special-talent';
+  $handler->display->display_options['fields']['field_special_talent']['element_label_class'] = 'label';
+  $handler->display->display_options['fields']['field_special_talent']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_special_talent']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_special_talent']['hide_empty'] = TRUE;
   /* Sort criterion: Content: Post date */
