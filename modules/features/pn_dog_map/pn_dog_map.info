@@ -1,9 +1,0 @@
-name = Dog Map
-description = Shows map of locations of dog owners
-core = 7.x
-package = Features
-version = 7.x-1.0
-project = pn_dog_map
-dependencies[] = ip_geoloc
-dependencies[] = statistics
-features[features_api][] = api:1

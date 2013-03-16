@@ -27,7 +27,15 @@ Table of Contents
 
  Link to [readme_theme.md](themes/petnation/readme_theme.md)
 
+[Dog Map](#dog-map)
+
+=======
 [GeoLocation in Dog Profile](#geolocation-in-dog-profile)
+
+[Facebook Login](#facebook-login)
+
+[User Permissions](#user-permissions)
+
 
 - - -
 <a id="profile-installation-instructions"></a>
@@ -457,6 +465,56 @@ You can then push your changes with git.
 
 Please read the ["readme_theme.md"](themes/petnation/readme_theme.md) found in the theme directory.
 
+- - -
+<a id="dog-map"></a>
+Dog Map
+-------
+**How it works:**
+
+1. When a user logs in they can see a map of dogs (on the home page)
+
+2. When a pin is clicked a mini dog profile pops up
+
+3. If they click the dogs name it takes them to its
+profile
+
+
+**Here are the components**
+<pre>
+Feature: PD Dog Map Fix
+Views: Friend Map
+Block: Map (google) Dog Friends
+</pre> 
+
+**These are the Modules required:**
+<pre>
+gmap, ip_geoloc, geolocation, geolocation_googlemaps
+</pre>
+
+To fix a bug in the block some code was added to 
+<pre>
+view-styles.scss and
+view-styles.css
+</pre>
+
+**Tina**, can you check to verify view-styles.scss is correct I'm having issues with compass so I can't verify it.
+
+The PD Dog Map Fix feature module is not being enabled from the .install script (which will be fixed later). 
+
+**PD Dog Map Fix feature has to be enabled:**
+<pre>
+Goto Structure --> Features - and check the box beside "PF Dog Map Fix" and save.
+</pre>
+
+I set the map as a block on the home page for any users logged in.
+
+**Notes**:
+
+1. there needs to be at lease one dog profile with a geolocation for it to work.
+
+2. Preferably the names between Views Features and Blocks would be more consistent, but to get it done without having to redo everything it was done this way.
+
+=======
 ---
 <a id="geolocation-in-dog-profile"></a>
 
@@ -471,3 +529,22 @@ This feature allows the user to:
 They can also remove remove their indicated geolocation.
 
 These geolocations are used in the Dog Map feature.
+
+=======
+---
+<a id="facebook-login"></a>
+
+Facebook Login
+--------------
+This module allows a user to automatically create an account and login to Petnation with only their Facebook profile. They are taken to facebook to verify this the first time. After authentication they only have to click the facebook link.
+Petnation can also pull information from the users facebook account such as their bio.
+
+The connection to Facebook is acheived through a drupal module called fboauth. OAuth is an **open standard for authorization**. An app was created on Facebook specifically to communitcate with this website. 
+
+---
+<a id="user-permissions"></a>
+
+User Permissions
+----------------
+Added feature to handle permissions so authenticated users can view content.
+

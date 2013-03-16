@@ -10,6 +10,73 @@
 function dog_profile_field_default_fields() {
   $fields = array();
 
+  // Exported field: 'node-dog_profile-field_about'.
+  $fields['node-dog_profile-field_about'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_about',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'dog_profile',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Tell a story about your pet',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '9',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_about',
+      'label' => 'About',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '1',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => '6',
+        ),
+        'type' => 'text_textarea',
+        'weight' => '8',
+      ),
+    ),
+  );
+
   // Exported field: 'node-dog_profile-field_breed'.
   $fields['node-dog_profile-field_breed'] = array(
     'field_config' => array(
@@ -55,7 +122,7 @@ function dog_profile_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -130,7 +197,7 @@ function dog_profile_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '2',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -162,7 +229,7 @@ function dog_profile_field_default_fields() {
           'year_range' => '-30:+30',
         ),
         'type' => 'date_popup',
-        'weight' => '4',
+        'weight' => '5',
       ),
     ),
   );
@@ -304,7 +371,7 @@ function dog_profile_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => 17,
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -334,7 +401,7 @@ function dog_profile_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '7',
+        'weight' => '9',
       ),
     ),
   );
@@ -376,11 +443,11 @@ function dog_profile_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 16,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -401,7 +468,7 @@ function dog_profile_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '6',
+        'weight' => '4',
       ),
     ),
   );
@@ -436,11 +503,11 @@ function dog_profile_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'geolocation',
           'settings' => array(),
           'type' => 'geolocation_text',
-          'weight' => 15,
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -464,7 +531,7 @@ function dog_profile_field_default_fields() {
           'scrollwheel' => 0,
         ),
         'type' => 'geolocation_googlemap',
-        'weight' => '8',
+        'weight' => '10',
       ),
     ),
   );
@@ -565,7 +632,7 @@ function dog_profile_field_default_fields() {
           'module' => 'location_cck',
           'settings' => array(),
           'type' => 'location_default',
-          'weight' => '5',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -586,7 +653,74 @@ function dog_profile_field_default_fields() {
         'module' => 'location_cck',
         'settings' => array(),
         'type' => 'location',
-        'weight' => '9',
+        'weight' => '11',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-dog_profile-field_quote'.
+  $fields['node-dog_profile-field_quote'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_quote',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'dog_profile',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => 'Your favourite quote or a quote that defines your pet.',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '10',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_quote',
+      'label' => 'Quote',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '1',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => '4',
+        ),
+        'type' => 'text_textarea',
+        'weight' => '7',
       ),
     ),
   );
@@ -629,7 +763,7 @@ function dog_profile_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '4',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -650,16 +784,17 @@ function dog_profile_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '5',
+          'rows' => '3',
         ),
         'type' => 'text_textarea',
-        'weight' => '5',
+        'weight' => '6',
       ),
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('About');
   t('Breed');
   t('Date of Birth');
   t('Friends');
@@ -667,9 +802,12 @@ function dog_profile_field_default_fields() {
   t('GeoLocation');
   t('Location');
   t('Profile Picture');
+  t('Quote');
   t('Special Talent');
+  t('Tell a story about your pet');
   t('Upload your favourite of your dog');
   t('What\'s special thing does your dog do');
+  t('Your favourite quote or a quote that defines your pet.');
 
   return $fields;
 }

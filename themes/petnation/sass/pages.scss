@@ -109,7 +109,7 @@ a {
 .view-dog-profile-photos {
 	@include zen-grid-item(11,1);
 	clear: both;
-	margin-top: 100px;
+	margin-top: 40px;
 	background: $lightblue;
 	padding-left: 19px;
 	@include breakpoint($mobile) {

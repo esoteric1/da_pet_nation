@@ -18,7 +18,7 @@ function pn_dog_profile_photos_feature_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'add_a_photo' => array(
-      'weight' => '9',
+      'weight' => '1',
       'label' => 'hidden',
       'format' => 'default',
       'formatter_settings' => array(
@@ -81,37 +81,59 @@ function pn_dog_profile_photos_feature_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'dog_profile';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'ds_2col_fluid';
+  $ds_layout->layout = 'ds_3col_equal_width';
   $ds_layout->settings = array(
     'regions' => array(
       'left' => array(
         0 => 'field_dog_picture',
-        1 => 'field_date_of_birth',
+        1 => 'add_a_photo',
+      ),
+      'middle' => array(
         2 => 'field_breed',
         3 => 'field_gender',
-        4 => 'field_special_talent',
+        4 => 'field_date_of_birth',
         5 => 'field_friends',
-        6 => 'field_location',
-        7 => 'field_geolocation',
-        8 => 'dog_profile_photos_entity_view_1',
-        9 => 'add_a_photo',
+        6 => 'field_special_talent',
+        7 => 'field_location',
+        8 => 'field_geolocation',
+      ),
+      'right' => array(
+        9 => 'field_about',
+        10 => 'field_quote',
+        11 => 'dog_profile_photos_entity_view_1',
       ),
     ),
     'fields' => array(
       'field_dog_picture' => 'left',
-      'field_date_of_birth' => 'left',
-      'field_breed' => 'left',
-      'field_gender' => 'left',
-      'field_special_talent' => 'left',
-      'field_friends' => 'left',
-      'field_location' => 'left',
-      'field_geolocation' => 'left',
-      'dog_profile_photos_entity_view_1' => 'left',
       'add_a_photo' => 'left',
+      'field_breed' => 'middle',
+      'field_gender' => 'middle',
+      'field_date_of_birth' => 'middle',
+      'field_friends' => 'middle',
+      'field_special_talent' => 'middle',
+      'field_location' => 'middle',
+      'field_geolocation' => 'middle',
+      'field_about' => 'right',
+      'field_quote' => 'right',
+      'dog_profile_photos_entity_view_1' => 'right',
     ),
-    'classes' => array(),
+    'classes' => array(
+      'layout_class' => array(
+        '' => '',
+      ),
+      'left' => array(
+        'dog_profile_img_section' => 'dog_profile_img_section',
+      ),
+      'middle' => array(
+        'dog_profile_stats' => 'dog_profile_stats',
+      ),
+      'right' => array(
+        'dog_profile_large' => 'dog_profile_large',
+      ),
+    ),
     'wrappers' => array(
       'left' => 'div',
+      'middle' => 'div',
       'right' => 'div',
     ),
     'layout_wrapper' => 'div',

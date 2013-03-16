@@ -17,14 +17,16 @@ $(document).ready(function(){
 	 *  bxSlider for Dog Photos at the bottom of Dog Profile page
 	 */
 	$('ul.photo-album').bxSlider({
-		minSlides: 5,
+		minSlides: 2,
 		maxSlides: 20,
 		moveSlides: 1,
 		slideMargin: 20,
 		slideWidth: 200,
 		auto: true,
 		pause: 5000
-	});	
+	});
+	// Add a photo link on Dog Profile
+	$('.field-name-add-a-photo a').prepend('Add a ');
 });
 
 
