@@ -112,6 +112,9 @@ projects[gmap][version] = 2.4
 projects[fboauth][subdir] = contrib
 projects[fboauth][version] = 1.6
 
+projects[rules][subdir] = contrib
+projects[rules][version] = 2.2
+
 ; THEMES
 
 projects[zen][version] = 5.1
