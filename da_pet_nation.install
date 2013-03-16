@@ -84,6 +84,7 @@ function da_pet_nation_install() {
     'gmap', // for pn_friend_map_block
 
     'features_extra',
+    'fbconnect',
 
     // Custom modules.
     'custom_config',
