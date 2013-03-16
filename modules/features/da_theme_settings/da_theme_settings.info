@@ -1,10 +1,13 @@
 name = Theme Settings
 core = 7.x
 package = Core
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = strongarm
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
 features[variable][] = admin_theme
+features[variable][] = ds_extras_field_template
 features[variable][] = node_admin_theme
+features[variable][] = site_frontpage
 features[variable][] = theme_default
