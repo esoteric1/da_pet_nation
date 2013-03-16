@@ -54,8 +54,7 @@
 }
 .view-new-content-view a.pn_button {
   clear: both;
-  width: 200px;
-  display: block;
+  float: right;
   margin: 0 auto 1em auto;
 }
 .view-new-content-view span.username, .view-new-content-view span.referenced-dog-profile, .view-new-content-view span.label {
@@ -93,7 +92,7 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  clear: both;
+  clear: left;
 }
 .view-new-content-view .dog-photo, .view-new-content-view .profile-picture {
   margin: 1.5em 0;
@@ -156,4 +155,36 @@
   box-sizing: border-box;
   word-wrap: break-word;
   padding-top: 1.5em;
+}
+.view-new-content-view .event-image {
+  float: left;
+  width: 41.66667%;
+  margin-left: 0%;
+  margin-right: -41.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-top: 1.5em;
+}
+.view-new-content-view .event_wrapper {
+  background: #e5f3f6;
+  margin-top: 1.5em;
+  float: left;
+  width: 56.25%;
+  margin-left: 43.75%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding: 1.5em 1.5em 0.5em 1.5em;
+  box-sizing: border-box;
+  margin-bottom: 1.5em;
 }

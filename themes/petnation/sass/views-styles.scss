@@ -51,13 +51,11 @@
 		text-align: center;
 		&.pn_button {
 			clear: both;
-			width: 200px;
-			display: block;
+			float: right;
 			margin: 0 auto 1em auto;
 		}
 	}
 	span {
-		
 		&.username, &.referenced-dog-profile, &.label {
 			font-weight: 700;
 		}
@@ -84,11 +82,12 @@
 	h3.content-title {
 		margin: 0;
 		@include zen-grid-item(12,1);
-		clear: both;
+		@include zen-clear;
 	}
 	.dog-photo, .profile-picture {
 		margin: 1.5em 0;
 	}
+	// Dog Photo
 	.dog-photo {
 		@include zen-grid-item(8,3);
 		@include breakpoint($mobile) {
@@ -98,12 +97,26 @@
 				display: block;
 			}
 		}
-	} 
+	}
+	// Dog Profile 
 	.profile-picture {
 		@include zen-grid-item(4,1);
 	}
 	.profile_stats {
 		@include zen-grid-item(7,5);
 		padding-top: 1.5em;
+	}
+	// Event
+	.event-image {
+		@include zen-grid-item(5,1);
+		margin-top: 1.5em;
+	}
+	.event_wrapper {
+		background: $lightblue;
+		margin-top: 1.5em;
+		@include zen-grid-item(6.75,6.25);
+		padding: 1.5em 1.5em 0.5em 1.5em;
+		box-sizing: border-box;
+		margin-bottom: 1.5em;
 	}
 }

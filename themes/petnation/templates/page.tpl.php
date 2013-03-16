@@ -86,21 +86,7 @@
 
 			</a>
 
-			<?php if ($secondary_menu): ?>
-				<nav id="secondary-menu" role="navigation">
-					<?php print theme('links__system_secondary_menu', array(
-						'links' => $secondary_menu,
-						'attributes' => array(
-							'class' => array('links', 'inline', 'clearfix'),
-						),
-						'heading' => array(
-							'text' => $secondary_menu_heading,
-							'level' => 'h2',
-							'class' => array('element-invisible'),
-						),
-					)); ?>
-				</nav>
-			<?php endif; ?>
+			
 
 		</div><?php //.header-content ?>
 	</div><?php //.container ?>
@@ -163,13 +149,30 @@
 			$sidebar_second = render($page['sidebar_second']);
 		?>
 
-		<?php if ($sidebar_first || $sidebar_second): ?>
-			<aside class="sidebars">
-				<h2>Sidebar</h2>
+		<aside class="sidebars">
+			<?php if ($secondary_menu): ?>
+				<nav id="secondary-menu" role="navigation">
+					<?php print theme('links__system_secondary_menu', array(
+						'links' => $secondary_menu,
+						'attributes' => array(
+							'class' => array('links', 'inline', 'clearfix'),
+						),
+						'heading' => array(
+							'text' => $secondary_menu_heading,
+							'level' => 'h2',
+							'class' => array('element-invisible'),
+						),
+					)); ?>
+				</nav>
+			<?php endif; ?>
+
+			<?php if ($sidebar_first || $sidebar_second): ?>
+				
 				<?php print $sidebar_first; ?>
 				<?php print $sidebar_second; ?>
-			</aside><?php //aside.sidebars ?>
-		<?php endif; ?>
+			
+			<?php endif; ?>
+		</aside><?php //aside.sidebars ?>
 
 		</div><?php //#main ?>
 	</div><?php //.container ?>

@@ -26,8 +26,12 @@
  * @see template_process()
  */
 ?>
-<?php if ($content): ?>
+
   <section class="<?php print $classes; ?>">
-    <?php print $content; ?>
-  </section><!-- region__sidebar -->
-<?php endif; ?>
+
+  	<?php if ($content): ?>
+	    <?php print $content; ?>
+    <?php endif; ?>
+
+  </section>
+

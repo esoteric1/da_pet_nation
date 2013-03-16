@@ -44,6 +44,7 @@ function pn_front_page_view_views_default_views() {
     'type' => 'type',
     'field_profile_reference' => 'field_profile_reference',
   );
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
@@ -158,7 +159,6 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_date']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_date']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_date']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_date']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_date']['settings'] = array(
     'format_type' => 'long',
     'fromto' => 'both',
@@ -176,7 +176,6 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['body']['hide_alter_empty'] = FALSE;
   /* Field: Content: Breed */
   $handler->display->display_options['fields']['field_breed']['id'] = 'field_breed';
   $handler->display->display_options['fields']['field_breed']['table'] = 'field_data_field_breed';
@@ -241,6 +240,7 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
   $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '[field_date]
 [body]';
+  $handler->display->display_options['fields']['nothing_3']['alter']['trim_whitespace'] = TRUE;
   $handler->display->display_options['fields']['nothing_3']['element_type'] = 'div';
   $handler->display->display_options['fields']['nothing_3']['element_class'] = 'event_wrapper';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;

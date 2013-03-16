@@ -169,8 +169,9 @@ ul.photo-album {
  * Sidebars
  */
 aside.sidebars {
-	margin-top: 70px;
+	padding: 1em 2em;
 	background: $lightblue;
+	min-height: 600px;
 	@include zen-grid-item(3,10);
 	@include breakpoint($mobile) {
 		@include zen-grid-item(12,1);
