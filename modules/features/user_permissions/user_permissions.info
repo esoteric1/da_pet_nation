@@ -2,6 +2,7 @@ name = User Permissions
 description = User Permissions
 core = 7.x
 package = Features
+php = 5.2.4
 version = 7.x-1.0
 project = user_permissions
 dependencies[] = features
