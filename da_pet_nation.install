@@ -76,7 +76,6 @@ function da_pet_nation_install() {
     'og_register',
     'og_ui',
     'taxonomy',
-<<<<<<< HEAD
 
     // mapping
     'geolocation',
