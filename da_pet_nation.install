@@ -100,7 +100,7 @@ function da_pet_nation_install() {
     'pn_event_feature',
     'event_map_feature',
     'pd_dog_map_fix',
-
+    'pn_group_join_message',
     'pn_user_dog_profiles',
     'pn_public_can_view',
     'pn_view_upcoming_events',
@@ -108,6 +108,8 @@ function da_pet_nation_install() {
     //'pn_facebook',
     'pn_text_format_p',
     'rules',
+    'rules_admin',
+    'authenticated_user_permissions',
     )
   );
 //  module_disable(array('pn_dog_map','ip_geoloc'));
