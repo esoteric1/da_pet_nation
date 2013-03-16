@@ -89,15 +89,6 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_profile_reference']['settings'] = array(
     'link' => 0,
   );
-  /* Field: Content: Breed */
-  $handler->display->display_options['fields']['field_breed']['id'] = 'field_breed';
-  $handler->display->display_options['fields']['field_breed']['table'] = 'field_data_field_breed';
-  $handler->display->display_options['fields']['field_breed']['field'] = 'field_breed';
-  $handler->display->display_options['fields']['field_breed']['element_type'] = 'span';
-  $handler->display->display_options['fields']['field_breed']['element_class'] = 'breed';
-  $handler->display->display_options['fields']['field_breed']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['field_breed']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_breed']['hide_alter_empty'] = FALSE;
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
   $handler->display->display_options['fields']['created']['table'] = 'node';
@@ -188,6 +179,15 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['body']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['body']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['body']['hide_alter_empty'] = FALSE;
+  /* Field: Content: Breed */
+  $handler->display->display_options['fields']['field_breed']['id'] = 'field_breed';
+  $handler->display->display_options['fields']['field_breed']['table'] = 'field_data_field_breed';
+  $handler->display->display_options['fields']['field_breed']['field'] = 'field_breed';
+  $handler->display->display_options['fields']['field_breed']['element_type'] = 'span';
+  $handler->display->display_options['fields']['field_breed']['element_class'] = 'breed';
+  $handler->display->display_options['fields']['field_breed']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_breed']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_breed']['hide_alter_empty'] = FALSE;
   /* Field: Content: Gender */
   $handler->display->display_options['fields']['field_gender']['id'] = 'field_gender';
   $handler->display->display_options['fields']['field_gender']['table'] = 'field_data_field_gender';
@@ -197,6 +197,13 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_gender']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_gender']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_gender']['hide_alter_empty'] = FALSE;
+  /* Field: Content: Special Talent */
+  $handler->display->display_options['fields']['field_special_talent']['id'] = 'field_special_talent';
+  $handler->display->display_options['fields']['field_special_talent']['table'] = 'field_data_field_special_talent';
+  $handler->display->display_options['fields']['field_special_talent']['field'] = 'field_special_talent';
+  $handler->display->display_options['fields']['field_special_talent']['element_type'] = 'span';
+  $handler->display->display_options['fields']['field_special_talent']['element_class'] = 'special-talent';
+  $handler->display->display_options['fields']['field_special_talent']['element_default_classes'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -232,9 +239,10 @@ function pn_front_page_view_views_default_views() {
     t('author'),
     t('added a new '),
     t('for'),
-    t('Breed'),
     t('When'),
+    t('Breed'),
     t('Gender'),
+    t('Special Talent'),
     t('Page'),
   );
   $export['new_content_view'] = $view;
