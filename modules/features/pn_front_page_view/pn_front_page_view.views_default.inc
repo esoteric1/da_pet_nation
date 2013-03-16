@@ -204,6 +204,7 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_special_talent']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_special_talent']['element_class'] = 'special-talent';
   $handler->display->display_options['fields']['field_special_talent']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_special_talent']['hide_empty'] = TRUE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
