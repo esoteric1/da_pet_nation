@@ -108,6 +108,7 @@ function da_pet_nation_install() {
     //'pn_facebook',
     'pn_text_format_p',
     'rules',
+    'pn_account_creation_link',
     )
   );
 //  module_disable(array('pn_dog_map','ip_geoloc'));
