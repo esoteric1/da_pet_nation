@@ -80,7 +80,7 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_profile_reference']['field'] = 'field_profile_reference';
   $handler->display->display_options['fields']['field_profile_reference']['label'] = 'for';
   $handler->display->display_options['fields']['field_profile_reference']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_profile_reference']['alter']['path'] = '[field_profile_reference]';
+  $handler->display->display_options['fields']['field_profile_reference']['alter']['path'] = 'content/[field_profile_reference]';
   $handler->display->display_options['fields']['field_profile_reference']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_profile_reference']['element_class'] = 'referenced-dog-profile';
   $handler->display->display_options['fields']['field_profile_reference']['element_label_colon'] = FALSE;
@@ -105,7 +105,6 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_image']['label'] = '';
   $handler->display->display_options['fields']['field_image']['element_class'] = 'event-image';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_image']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_image']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_image']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
@@ -113,6 +112,7 @@ function pn_front_page_view_views_default_views() {
     'image_style' => 'medium',
     'image_link' => 'content',
   );
+  $handler->display->display_options['fields']['field_image']['field_api_classes'] = TRUE;
   /* Field: Content: Photo */
   $handler->display->display_options['fields']['field_dog_photo']['id'] = 'field_dog_photo';
   $handler->display->display_options['fields']['field_dog_photo']['table'] = 'field_data_field_dog_photo';
