@@ -50,7 +50,7 @@ function dog_profile_strongarm() {
       'display' => array(
         'dog_profile_photos_entity_view_1' => array(
           'default' => array(
-            'weight' => '7',
+            'weight' => '11',
             'visible' => TRUE,
           ),
         ),
