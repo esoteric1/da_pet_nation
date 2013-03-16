@@ -109,6 +109,9 @@ projects[geolocation][version] = 1.1
 projects[gmap][subdir] = contrib
 projects[gmap][version] = 2.4
 
+projects[fboauth][subdir] = contrib
+projects[fboauth][version] = 1.6
+
 ; THEMES
 
 projects[zen][version] = 5.1

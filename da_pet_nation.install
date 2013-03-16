@@ -76,6 +76,7 @@ function da_pet_nation_install() {
     'og_register',
     'og_ui',
     'taxonomy',
+<<<<<<< HEAD
 
     // mapping
     'geolocation',
@@ -83,6 +84,8 @@ function da_pet_nation_install() {
     'ip_geoloc', // for pn_friend_map_block
     'gmap', // for pn_friend_map_block
 
+    'fboauth', // facebook
+//    'ip_geoloc',
     'features_extra',
     'fbconnect',
 
@@ -100,6 +103,7 @@ function da_pet_nation_install() {
     'pn_user_dog_profiles',
     'pn_public_can_view',
     'pn_view_upcoming_events',
+    'pn_facebook',
     )
   );
 //  module_disable(array('pn_dog_map','ip_geoloc'));
