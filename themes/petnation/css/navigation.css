@@ -34,6 +34,18 @@ li a.active {
 #navigation {
   /* overflow: hidden; */
   /* Sometimes you want to prevent overlapping with main div. */
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background: darkturquoise;
 }
 #navigation .block {
   margin-bottom: 0;
@@ -109,3 +121,18 @@ li a.active {
  * Drupal core has limited ways in which it can display its menus. To get around
  * these limitations, see http://drupal.org/project/menu_block
  */
+/*
+ * Pet Nation buttons for calls-to-action
+ */
+a.pn_button {
+  background: #008baa;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+a.pn_button:hover {
+  background: #00acd3;
+}

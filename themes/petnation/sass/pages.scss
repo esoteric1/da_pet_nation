@@ -25,10 +25,17 @@ body {
 	padding: 0;
 	-webkit-font-smoothing: antialiased;
 	color: $dark;
+	font-size: 0.9em;
 }
 
 h1, h2, h3 {
 	letter-spacing: -1px;
+}
+a {
+	color: $blue;
+	&:hover {
+		color: lighten($blue,8%);
+	}
 }
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
@@ -58,6 +65,7 @@ h1, h2, h3 {
 		background: $blue; //remove for production - noproduction
 		img {
 			display: block;
+			height: 30px;
 		}
 	}
 	a {
@@ -85,28 +93,101 @@ h1, h2, h3 {
 }
 
 /*
- * Main (container for everything else)
- */
-
-#main {
-	// background: lightgrey; // dev only - noproduction
-	@include zen-grid-item(9,1);
-	@include breakpoint($mobile) {
-		@include zen-grid-item(12,1);
-	}
-}
-
-/*
  * Content
  */
 
 #content {
+	@include zen-grid-item(9,1);
+	@include breakpoint($mobile) {
+		@include zen-grid-item(12,1);
+	}	
+}
+
+/*
+ * Dog Photos Slider
+ */
+.view-dog-profile-photos {
+	@include zen-grid-item(11,1);
+	clear: both;
+	margin-top: 40px;
+	background: $lightblue;
+	padding-left: 19px;
+	@include breakpoint($mobile) {
+		@include zen-grid-item(12,1);
+	}
+}
+ul.photo-album {
+	padding: 0;
+	img {
+		border: 5px solid #fff;
+		margin-bottom: 10px;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	li {
+		padding-bottom: 20px;
+	}
+}
+// bxSlider overrides
+.bx-wrapper {
+	margin-bottom: 50px;
+}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	outline: 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 9999;
+	@include breakpoint($mobile) {
+		display: none;
+	}
+}
+.bx-wrapper .bx-prev {
+	left: -60px;
+}
+.bx-wrapper .bx-next {
+	right: -50px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: darken($lightblue,20%);
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: lighten($blue,10%);
+	background: $blue;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	bottom: -40px;
+}
+
+/*
+ * Sidebars
+ */
+aside.sidebars {
+	margin-top: 70px;
+	background: $lightblue;
+	@include zen-grid-item(3,10);
+	@include breakpoint($mobile) {
+		@include zen-grid-item(12,1);
+		clear: both;
+	}
+}
+.region-sidebar-first {
+}
+
+.region-sidebar-second {
 }
 
 .region-highlighted {
 }
 
-.breadcrumb { /* The path to the current page in the form of a list of links */
+.breadcrumb {
+	margin-top: 1em;
 	ol {
 		margin: 0;
 		padding: 0;
@@ -205,31 +286,20 @@ span.field-label { /* The inline field label used by the Fences module */
 .more-link { /* Aggregator, blog, and forum more link */
 }
 
-/*
- * First sidebar (on left in LTR languages, on right in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-first
- * (see the layout.css file.)
- */
-
-.region-sidebar-first {
-}
-
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
- *
- * Remember to NOT add padding or margin to your .region-sidebar-second
- * (see the layout.css file.)
- */
-
-.region-sidebar-second {
-}
 
 /*
  * Footer
  */
 
 #footer {
+	background: $orange;
+	margin-top: 2em;
+	color: #fff;
+	padding: 0.5em 0;
+	text-align: center;
+	a {
+		color: #fff;
+	}
 }
 
 /*

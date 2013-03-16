@@ -50,7 +50,7 @@ function pn_event_feature_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -106,6 +106,7 @@ function pn_event_feature_field_default_fields() {
           'second' => 0,
           'year' => 'year',
         ),
+        'repeat' => 0,
         'timezone_db' => 'UTC',
         'todate' => 'optional',
         'tz_handling' => 'site',
@@ -127,9 +128,10 @@ function pn_event_feature_field_default_fields() {
             'multiple_from' => '',
             'multiple_number' => '',
             'multiple_to' => '',
+            'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
-          'weight' => 2,
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -153,15 +155,76 @@ function pn_event_feature_field_default_fields() {
         'active' => 1,
         'module' => 'date',
         'settings' => array(
+          'display_all_day' => 0,
           'increment' => '15',
           'input_format' => 'M j Y - g:i:sa',
           'input_format_custom' => '',
           'label_position' => 'above',
+          'repeat_collapsed' => 0,
           'text_parts' => array(),
           'year_range' => '-3:+3',
         ),
         'type' => 'date_popup',
         'weight' => '33',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-pn_event-field_geolocation_event'.
+  $fields['node-pn_event-field_geolocation_event'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_geolocation_event',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'lat' => array(
+          0 => 'lat',
+        ),
+        'lng' => array(
+          0 => 'lng',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'geolocation',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'geolocation_latlng',
+    ),
+    'field_instance' => array(
+      'bundle' => 'pn_event',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'geolocation',
+          'settings' => array(),
+          'type' => 'geolocation_text',
+          'weight' => 3,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_geolocation_event',
+      'label' => 'GeoLocationEvent',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'geolocation_googlemaps',
+        'settings' => array(),
+        'type' => 'geolocation_googlemap',
+        'weight' => '34',
       ),
     ),
   );
@@ -202,14 +265,14 @@ function pn_event_feature_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'image',
           'settings' => array(
             'image_link' => '',
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => 1,
+          'weight' => '0',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -246,96 +309,11 @@ function pn_event_feature_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-pn_event-group_group'.
-  $fields['node-pn_event-group_group'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'group_group',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => 'Not a group',
-          1 => 'Group',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_boolean',
-    ),
-    'field_instance' => array(
-      'bundle' => 'pn_event',
-      'default_value' => array(
-        0 => array(
-          'value' => 1,
-        ),
-      ),
-      'deleted' => '0',
-      'description' => 'Determine if this is an OG group.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'og_ui',
-          'settings' => array(
-            'field_name' => FALSE,
-          ),
-          'type' => 'og_group_subscribe',
-          'weight' => 3,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'display_label' => 1,
-      'entity_type' => 'node',
-      'field_name' => 'group_group',
-      'label' => 'Group',
-      'required' => FALSE,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'view modes' => array(
-        'full' => array(
-          'custom settings' => FALSE,
-          'label' => 'Full',
-          'type' => 'og_group_subscribe',
-        ),
-        'teaser' => array(
-          'custom settings' => FALSE,
-          'label' => 'Teaser',
-          'type' => 'og_group_subscribe',
-        ),
-      ),
-      'widget' => array(
-        'module' => 'options',
-        'settings' => array(
-          'display_label' => 0,
-          'og_hide' => TRUE,
-        ),
-        'type' => 'options_onoff',
-        'weight' => 0,
-      ),
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
   t('Date');
-  t('Determine if this is an OG group.');
-  t('Group');
+  t('GeoLocationEvent');
   t('Image');
 
   return $fields;

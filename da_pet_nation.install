@@ -65,6 +65,7 @@ function da_pet_nation_install() {
     'views_ui',
     'ds',
     'ds_devel',
+    'ds_extras',
     'ds_forms',
     'ds_ui',
     'devel_generate',
@@ -76,8 +77,17 @@ function da_pet_nation_install() {
     'og_register',
     'og_ui',
     'taxonomy',
+
+    // mapping
+    'geolocation',
+    'geolocation_googlemaps',
+    'ip_geoloc', // for pn_friend_map_block
+    'gmap', // for pn_friend_map_block
+
+    'fboauth', // facebook
 //    'ip_geoloc',
     'features_extra',
+    'fbconnect',
 
     // Custom modules.
     'custom_config',
@@ -88,12 +98,23 @@ function da_pet_nation_install() {
     'pn_og_members_view',
     'pn_theme',
     'pn_event_feature',
-//    'pn_dog_map',
+    'event_map_feature',
+    'pd_dog_map_fix',
+    'pn_group_join_message',
     'pn_user_dog_profiles',
+    'pn_public_can_view',
     'pn_view_upcoming_events',
+    'pn_front_page_view',
+    //'pn_facebook',
+    'pn_text_format_p',
+    'rules',
+    'rules_admin',
+    'pn_authenticated_user_permissions',
+    'user_permissions',
+    'pn_account_creation_link',
     )
   );
-  module_disable(array('pn_dog_map','ip_geoloc'));
+//  module_disable(array('pn_dog_map','ip_geoloc'));
   theme_enable(array('petnation'));
 }
 

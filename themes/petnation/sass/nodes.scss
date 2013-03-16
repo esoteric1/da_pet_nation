@@ -8,84 +8,104 @@
 @import "base";
 
 
-.node { /* Node wrapper */
-
-  .preview & { /* Preview of the content before submitting new or updated content */
-    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
-  }
-
-  .node-title { /* Node title */
-  }
-
-  .user-picture { /* The picture of the node author */
-  }
-
-  .submitted { /* The "posted by" information */
-  }
-
-  .content { /* Node's content wrapper */
-  }
-
-  ul.links { /* Node links. See also the ul.links declaration in the pages.css. */
-  }
-
-}
-
-.node-promoted { /* A node that has been promoted to the front page */
-}
-
-.node-sticky { /* A sticky node (displayed before others in a list) */
-}
-
-.node-by-viewer { /* A node created by the current user */
-}
-
-.node-teaser { /* A node displayed as teaser */
-}
-
-/*
- * All nodes are given a node-FOO class that describes the type of content that
- * it is. If you create a new content type called "my-custom-type", it will
- * receive a "node-my-custom-type" class.
- */
-
-.node-page { /* Page content node */
-}
-
-.node-article { /* Article content node */
-}
-
-.node-unpublished { /* Unpublished nodes */
-  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
-
-  p.unpublished { /* The word "Unpublished" displayed underneath the content. */
+.node { 
+  p.unpublished {
     @include unpublished-div;
   }
 }
-
+/*
+ * General Pet Nation styles
+ */
+.field-type-image {
+  img {
+    border: 10px solid #fff;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+}
 /*
  * Dog Profile node
  */
-.node-dog-profile {
-  .field-items {
-    @include zen-grid-item(4,3);
-    
+.field-name-add-a-photo {
+  ul {
+    padding: 0;
   }
-  .field-type-image {
-    .field-items {
-      @include zen-grid-item(7,6);   
-    }
-    
-    img {
-      border: 10px solid #fff;
-      width: 100%;
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    }
+  li {
+    list-style-type: none;
   }
-  .field-label {
-    background: grey;
-    @include zen-grid-item(2,1);
-    font-size: 0.85em;
-  }
-
 }
+.ds-3col-equal {
+  .dog_profile_img_section {
+    @include zen-grid-item(7,1);
+    img {
+      width: 90%;
+    }
+    @include breakpoint($mobile) {
+      @include zen-grid-item(12,1);
+      img {
+        width: 96%;
+        margin: 0 auto;
+      }
+      a {
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+  .dog_profile_stats {
+    @include zen-grid-item(5,8);
+    @include breakpoint($mobile) {
+      @include zen-grid-item(12,1);
+      clear: both;
+      font-size: 0.9em;
+    }
+  }
+  .dog_profile_large {
+    @include zen-grid-item(12,1);
+    clear: both;
+    .field-name-field-quote {
+      background: url(../images/quotes.jpg) no-repeat top left;
+      padding: 2em 2em 0 2em;
+      text-align: right;
+      font-style: italic;
+      @include breakpoint($mobile) {
+        padding-left: 4em;
+      }
+    }
+    @include breakpoint($mobile) {
+      @include zen-grid-item(12,1);
+      clear: both;
+    }
+  }
+}
+/*
+ * Event 
+ */
+ .node-pn-event {
+  .field-type-image {
+    @include zen-grid-item(6,1);
+    img {
+      width: 90%;
+      @include breakpoint($mobile) {
+        width: 94%;
+      }
+    }
+    @include breakpoint($mobile) {
+      @include zen-grid-item(12,1);
+      margin-bottom: 0.75em;
+    }
+  }
+  .field-name-body { 
+    margin-top: 3.5em;
+    @include breakpoint($mobile) {
+      margin-top: 0.5em;
+    }
+  }
+  .field-name-field-date, .field-name-body {
+    @include zen-grid-item(6,7);
+    @include breakpoint($mobile) {
+      @include zen-grid-item(12,1);
+      clear: both;
+    }
+  }
+ }

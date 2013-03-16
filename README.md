@@ -7,13 +7,11 @@ Table of Contents
 =================
  [Profile Installation Instructions](#profile-installation-instructions)
 
- [Running MySQL from the command line on a Mac](#running-mysql)
+ [Running MySQL from the command line on a Mac](#running-mysql-from-the-command-line-on-a-mac)
 
- [Steps to Install Drupal using an Install Profile](#install-profile)
+ [Steps to Install Drupal using an Install Profile](#steps-to-install-drupal-using-an-install-profile)
 
- [Troubleshooting](#troubleshooting1)
-
- [Troubleshooting](#troubleshooting2)
+ [Troubleshooting](#troubleshooting)
 
  [Extra Information](#extra-information)
 
@@ -21,17 +19,25 @@ Table of Contents
 
  [Features](#features)
 
- [Adding a Module to your install profile](#adding-module)
+ [Adding a Module to your install profile](#adding-the-feature-to-a-local-branch-in-your-git-repo)
 
- [Modifying an existing Feature](#modify-feature)
+ [Modifying an existing Feature](#modifying-an-existing-feature)
 
-[Theme Development](#theme)
+[Theme Development](#theme-development)
 
- link to [readme_theme.md](themes/petnation/readme_theme.md)
+ Link to [readme_theme.md](themes/petnation/readme_theme.md)
+
+[Dog Map](#dog-map)
+
+=======
+[GeoLocation in Dog Profile](#geolocation-in-dog-profile)
+
+[Facebook Login](#facebook-login)
+
+[User Permissions](#user-permissions)
 
 
 - - -
-
 <a id="profile-installation-instructions"></a>
 Profile Installation Instructions:
 ==================================
@@ -95,7 +101,7 @@ source ./bash_profile
 This changes your bash profile source to the specified. You must be within your home directory to do that.
 
 - - -
-<a id="running-mysql"></a>
+<a id="running-mysql-from-the-command-line-on-a-mac"></a>
 Running MySQL from the command line on a Mac
 --------------------------------------------
 
@@ -108,7 +114,7 @@ alias mysql="/Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
 the "-u" and "-p" are followed by root and root, these correspond to the username and password for the root user of your mysql database.  If you changed those during the install process, then change this accordingly.
 
 - - -
-<a id="install-profile"></a>
+<a id="steps-to-install-drupal-using-an-install-profile"></a>
 Steps to Install Drupal using an Install Profile:
 ----------------
 
@@ -139,7 +145,7 @@ mysqladmin -u USER -pPASSWORD create DBNAME;
 
 
 - - -
-<a id="troubleshooting1"></a>
+<a id="troubleshooting"></a>
 Troubleshooting:
 ---------------
 
@@ -277,7 +283,6 @@ Creating a Feature
 
 Once that is done, go to Structure>Features and add a new Feature.  You will be able to select the new Event content type you just created.  You can then download the event_feature tar ball. this will include a module that will tell drupal to add your content type when it is enabled on a site.
 
-
 Adding the Feature to a local branch in your git repo.
 ------------------------------------------------------
 
@@ -340,7 +345,7 @@ git push -u origin 02-added-event-feature
 Your new feature should now be in a branch on the remote repository, ready to be merged.
 
 - - -
-<a id="adding-module"></a>
+<a id="adding-the-feature-to-a-local-branch-in-your-git-repo"></a>
 Adding a Module to your install profile
 ======================================
 
@@ -440,7 +445,7 @@ git push
 rm 01-add-og-to-profile.patch
 </pre>
 
-<a id="modify-feature"></a>
+<a id="modifying-an-existing-feature"></a>
 
 Modifying an existing feature
 -----------------------------
@@ -455,8 +460,91 @@ You can then push your changes with git.
 
 
 - - -
-<a id="theme"></a>
+<a id="theme-development"></a>
 ## Theme Development
 
 Please read the ["readme_theme.md"](themes/petnation/readme_theme.md) found in the theme directory.
+
+- - -
+<a id="dog-map"></a>
+Dog Map
+-------
+**How it works:**
+
+1. When a user logs in they can see a map of dogs (on the home page)
+
+2. When a pin is clicked a mini dog profile pops up
+
+3. If they click the dogs name it takes them to its
+profile
+
+
+**Here are the components**
+<pre>
+Feature: PD Dog Map Fix
+Views: Friend Map
+Block: Map (google) Dog Friends
+</pre> 
+
+**These are the Modules required:**
+<pre>
+gmap, ip_geoloc, geolocation, geolocation_googlemaps
+</pre>
+
+To fix a bug in the block some code was added to 
+<pre>
+view-styles.scss and
+view-styles.css
+</pre>
+
+**Tina**, can you check to verify view-styles.scss is correct I'm having issues with compass so I can't verify it.
+
+The PD Dog Map Fix feature module is not being enabled from the .install script (which will be fixed later). 
+
+**PD Dog Map Fix feature has to be enabled:**
+<pre>
+Goto Structure --> Features - and check the box beside "PF Dog Map Fix" and save.
+</pre>
+
+I set the map as a block on the home page for any users logged in.
+
+**Notes**:
+
+1. there needs to be at lease one dog profile with a geolocation for it to work.
+
+2. Preferably the names between Views Features and Blocks would be more consistent, but to get it done without having to redo everything it was done this way.
+
+=======
+---
+<a id="geolocation-in-dog-profile"></a>
+
+GeoLocation in Dog Profile
+-----------------------------
+This feature allows the user to:
+
+1. Manually enter their address so their geolocation can be calculated from it, or
+2. Click "My Location" to use the GPS on their device to calculate their geolocation through HTML5, or
+3. Place a pin on the map to show their geolocation.
+
+They can also remove remove their indicated geolocation.
+
+These geolocations are used in the Dog Map feature.
+
+=======
+---
+<a id="facebook-login"></a>
+
+Facebook Login
+--------------
+This module allows a user to automatically create an account and login to Petnation with only their Facebook profile. They are taken to facebook to verify this the first time. After authentication they only have to click the facebook link.
+Petnation can also pull information from the users facebook account such as their bio.
+
+The connection to Facebook is acheived through a drupal module called fboauth. OAuth is an **open standard for authorization**. An app was created on Facebook specifically to communitcate with this website. 
+
+---
+<a id="user-permissions"></a>
+
+User Permissions
+----------------
+Added feature to handle permissions so authenticated users can view content.
 

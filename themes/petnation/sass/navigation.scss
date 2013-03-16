@@ -46,7 +46,8 @@ li a.active {
 
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
-
+  @include zen-grid-item(12,1);
+  background: darkturquoise;
   .block {
     margin-bottom: 0;
   }
@@ -107,3 +108,19 @@ li a.active {
 
 .block-menu-block {
 }
+
+/*
+ * Pet Nation buttons for calls-to-action
+ */
+ a.pn_button {
+  background: $blue;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9em;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  &:hover {
+    background: lighten($blue,8%);
+  }
+ }

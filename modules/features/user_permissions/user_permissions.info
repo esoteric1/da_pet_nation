@@ -1,0 +1,12 @@
+name = User Permissions
+description = User Permissions
+core = 7.x
+package = Features
+php = 5.2.4
+version = 7.x-1.0
+project = user_permissions
+dependencies[] = features
+dependencies[] = node
+features[features_api][] = api:1
+features[user_permission][] = view own unpublished content
+features[user_permission][] = view revisions

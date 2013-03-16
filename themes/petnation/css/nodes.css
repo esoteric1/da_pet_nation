@@ -4,66 +4,7 @@
  *
  * Style anything that isn't in the $content variable.
  */
-.node {
-  /* Node wrapper */
-}
-.preview .node {
-  /* Preview of the content before submitting new or updated content */
-  /* background-color: #ffffea; */
-  /* Drupal core uses a #ffffea background */
-}
-.node .node-title {
-  /* Node title */
-}
-.node .user-picture {
-  /* The picture of the node author */
-}
-.node .submitted {
-  /* The "posted by" information */
-}
-.node .content {
-  /* Node's content wrapper */
-}
-.node ul.links {
-  /* Node links. See also the ul.links declaration in the pages.css. */
-}
-
-.node-promoted {
-  /* A node that has been promoted to the front page */
-}
-
-.node-sticky {
-  /* A sticky node (displayed before others in a list) */
-}
-
-.node-by-viewer {
-  /* A node created by the current user */
-}
-
-.node-teaser {
-  /* A node displayed as teaser */
-}
-
-/*
- * All nodes are given a node-FOO class that describes the type of content that
- * it is. If you create a new content type called "my-custom-type", it will
- * receive a "node-my-custom-type" class.
- */
-.node-page {
-  /* Page content node */
-}
-
-.node-article {
-  /* Article content node */
-}
-
-.node-unpublished {
-  /* Unpublished nodes */
-  /* background-color: #fff4f4; */
-  /* Drupal core uses a #fff4f4 background */
-}
-.node-unpublished p.unpublished {
-  /* The word "Unpublished" displayed underneath the content. */
+.node p.unpublished {
   height: 0;
   overflow: visible;
   color: #d8d8d8;
@@ -77,13 +18,29 @@
 }
 
 /*
+ * General Pet Nation styles
+ */
+.field-type-image img {
+  border: 10px solid #fff;
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*
  * Dog Profile node
  */
-.node-dog-profile .field-items {
+.field-name-add-a-photo ul {
+  padding: 0;
+}
+.field-name-add-a-photo li {
+  list-style-type: none;
+}
+
+.ds-3col-equal .dog_profile_img_section {
   float: left;
-  width: 33.33333%;
-  margin-left: 16.66667%;
-  margin-right: -50%;
+  width: 58.33333%;
+  margin-left: 0%;
+  margin-right: -58.33333%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -92,10 +49,36 @@
   box-sizing: border-box;
   word-wrap: break-word;
 }
-.node-dog-profile .field-type-image .field-items {
+.ds-3col-equal .dog_profile_img_section img {
+  width: 90%;
+}
+@media (max-width: 767px) {
+  .ds-3col-equal .dog_profile_img_section {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  .ds-3col-equal .dog_profile_img_section img {
+    width: 96%;
+    margin: 0 auto;
+  }
+  .ds-3col-equal .dog_profile_img_section a {
+    text-align: center;
+    display: block;
+  }
+}
+.ds-3col-equal .dog_profile_stats {
   float: left;
-  width: 58.33333%;
-  margin-left: 41.66667%;
+  width: 41.66667%;
+  margin-left: 58.33333%;
   margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -105,17 +88,28 @@
   box-sizing: border-box;
   word-wrap: break-word;
 }
-.node-dog-profile .field-type-image img {
-  border: 10px solid #fff;
-  width: 100%;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+@media (max-width: 767px) {
+  .ds-3col-equal .dog_profile_stats {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: both;
+    font-size: 0.9em;
+  }
 }
-.node-dog-profile .field-label {
-  background: grey;
+.ds-3col-equal .dog_profile_large {
   float: left;
-  width: 16.66667%;
+  width: 100%;
   margin-left: 0%;
-  margin-right: -16.66667%;
+  margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -123,5 +117,110 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  font-size: 0.85em;
+  clear: both;
+}
+.ds-3col-equal .dog_profile_large .field-name-field-quote {
+  background: url(../images/quotes.jpg) no-repeat top left;
+  padding: 2em 2em 0 2em;
+  text-align: right;
+  font-style: italic;
+}
+@media (max-width: 767px) {
+  .ds-3col-equal .dog_profile_large .field-name-field-quote {
+    padding-left: 4em;
+  }
+}
+@media (max-width: 767px) {
+  .ds-3col-equal .dog_profile_large {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: both;
+  }
+}
+
+/*
+ * Event 
+ */
+.node-pn-event .field-type-image {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.node-pn-event .field-type-image img {
+  width: 90%;
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-type-image img {
+    width: 94%;
+  }
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-type-image {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-bottom: 0.75em;
+  }
+}
+.node-pn-event .field-name-body {
+  margin-top: 3.5em;
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-name-body {
+    margin-top: 0.5em;
+  }
+}
+.node-pn-event .field-name-field-date, .node-pn-event .field-name-body {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-name-field-date, .node-pn-event .field-name-body {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: both;
+  }
 }

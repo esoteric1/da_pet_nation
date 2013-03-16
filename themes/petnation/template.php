@@ -249,3 +249,10 @@ function petnation_field($variables) {
 
   return $output;
 }
+
+/**
+ * Add bxSlider to Dog Profile page
+ * to-do: conditionally load only where required
+ */
+drupal_add_js( path_to_theme() .'/js/jquery.bxslider.min.js');
+drupal_add_js( path_to_theme() .'/js/petnation.js');
