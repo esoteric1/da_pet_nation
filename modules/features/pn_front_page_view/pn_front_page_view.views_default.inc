@@ -250,6 +250,8 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['nothing_3']['label'] = '';
   $handler->display->display_options['fields']['nothing_3']['alter']['text'] = '[field_date]
 [body]';
+  $handler->display->display_options['fields']['nothing_3']['element_type'] = 'div';
+  $handler->display->display_options['fields']['nothing_3']['element_class'] = 'event_wrapper';
   $handler->display->display_options['fields']['nothing_3']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nothing_3']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['nothing_3']['hide_alter_empty'] = TRUE;
