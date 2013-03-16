@@ -7,11 +7,6 @@
 
 /*
  * Views' admin tabs
- *
- * The views admin tabs use the same classes as the secondary tabs. We prevent
- * some of our tab styling from bleeding into (and breaking) the Views admin
- * pages. If your sub-theme isn't used for admin pages, you can remove this
- * entire section.
  */
 .views-displays .secondary {
 	li {
@@ -44,5 +39,71 @@
 	// close icon fix for IP GeoLoc map rendering Google Map
 	div#ip-geoloc-map-of-view-friend_map-block img{
 		max-width: none;
+	}
+}
+
+/* 
+ * New Content View - Front-page News Feed 
+ */
+.view-new-content-view {
+	a {
+		text-decoration: none;
+		text-align: center;
+		&.pn_button {
+			clear: both;
+			width: 200px;
+			display: block;
+			margin: 0 auto 1em auto;
+		}
+	}
+	span {
+		
+		&.username, &.referenced-dog-profile, &.label {
+			font-weight: 700;
+		}
+		&.label {
+			clear: both;
+		}
+		&.front-page-news-date {
+			color: lighten($dark,30%);
+		}
+	}
+	ul.front-page {
+		padding: 0;
+		li.front-page-news-item {
+			list-style-type: none;
+			border-bottom: 1px solid $lightblue;
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			@include clearfix;
+			&:last-child {
+				border: 0;
+			}
+		}
+	}
+	h3.content-title {
+		margin: 0;
+		@include zen-grid-item(12,1);
+		clear: both;
+	}
+	.dog-photo, .profile-picture {
+		margin: 1.5em 0;
+	}
+	.dog-photo {
+		@include zen-grid-item(8,3);
+		@include breakpoint($mobile) {
+			@include zen-grid-item(12,1);
+			img {
+				margin: 0 auto;
+				display: block;
+			}
+		}
+	} 
+	.profile-picture {
+		@include zen-grid-item(4,1);
+	}
+	.profile_stats {
+		@include zen-grid-item(7,5);
+		padding-top: 1.5em;
 	}
 }

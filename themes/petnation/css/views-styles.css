@@ -4,11 +4,6 @@
  */
 /*
  * Views' admin tabs
- *
- * The views admin tabs use the same classes as the secondary tabs. We prevent
- * some of our tab styling from bleeding into (and breaking) the Views admin
- * pages. If your sub-theme isn't used for admin pages, you can remove this
- * entire section.
  */
 .views-displays .secondary li {
   float: none;
@@ -46,6 +41,119 @@
   -o-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
 }
-div#ip-geoloc-map-of-view-friend_map-block img {
+.views-displays .secondary div#ip-geoloc-map-of-view-friend_map-block img {
   max-width: none;
+}
+
+/* 
+ * New Content View - Front-page News Feed 
+ */
+.view-new-content-view a {
+  text-decoration: none;
+  text-align: center;
+}
+.view-new-content-view a.pn_button {
+  clear: both;
+  width: 200px;
+  display: block;
+  margin: 0 auto 1em auto;
+}
+.view-new-content-view span.username, .view-new-content-view span.referenced-dog-profile, .view-new-content-view span.label {
+  font-weight: 700;
+}
+.view-new-content-view span.label {
+  clear: both;
+}
+.view-new-content-view span.front-page-news-date {
+  color: gray;
+}
+.view-new-content-view ul.front-page {
+  padding: 0;
+}
+.view-new-content-view ul.front-page li.front-page-news-item {
+  list-style-type: none;
+  border-bottom: 1px solid #e5f3f6;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  overflow: hidden;
+}
+.view-new-content-view ul.front-page li.front-page-news-item:last-child {
+  border: 0;
+}
+.view-new-content-view h3.content-title {
+  margin: 0;
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  clear: both;
+}
+.view-new-content-view .dog-photo, .view-new-content-view .profile-picture {
+  margin: 1.5em 0;
+}
+.view-new-content-view .dog-photo {
+  float: left;
+  width: 66.66667%;
+  margin-left: 16.66667%;
+  margin-right: -83.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+@media (max-width: 767px) {
+  .view-new-content-view .dog-photo {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+  .view-new-content-view .dog-photo img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+.view-new-content-view .profile-picture {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.view-new-content-view .profile_stats {
+  float: left;
+  width: 58.33333%;
+  margin-left: 33.33333%;
+  margin-right: -91.66667%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-top: 1.5em;
 }

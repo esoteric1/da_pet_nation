@@ -16,11 +16,12 @@
 /*
  * General Pet Nation styles
  */
-.field-type-image {
+.dog-photo, .profile-picture, .field-type-image {
   img {
     border: 10px solid #fff;
     width: 100%;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
   }
 }
 /*

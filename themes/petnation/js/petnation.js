@@ -27,6 +27,9 @@ $(document).ready(function(){
 	});
 	// Add a photo link on Dog Profile
 	$('.field-name-add-a-photo a').prepend('Add a ').addClass('pn_button');
+
+	// News Feed Styles
+	$('ul.front-page h3.content-title a').prepend('View ').addClass('pn_button');
 });
 
 
