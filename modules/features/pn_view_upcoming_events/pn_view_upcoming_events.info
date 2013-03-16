@@ -2,6 +2,7 @@ name = pn_view_upcoming_events
 description = Upcoming events view (page and block for front page)
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = fe_block
 dependencies[] = views
