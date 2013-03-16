@@ -39,7 +39,12 @@ function dog_profile_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'dog_profile',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => ' ',
+          'format' => 'plain_detect_paragraphs',
+        ),
+      ),
       'deleted' => '0',
       'description' => 'Tell a story about your pet',
       'display' => array(
@@ -57,6 +62,7 @@ function dog_profile_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_about',
       'label' => 'About',
@@ -122,7 +128,7 @@ function dog_profile_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '2',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -197,7 +203,7 @@ function dog_profile_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '4',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -229,7 +235,7 @@ function dog_profile_field_default_fields() {
           'year_range' => '-30:+30',
         ),
         'type' => 'date_popup',
-        'weight' => '5',
+        'weight' => '4',
       ),
     ),
   );
@@ -371,7 +377,7 @@ function dog_profile_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => '5',
+          'weight' => 17,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -401,7 +407,7 @@ function dog_profile_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '9',
+        'weight' => '7',
       ),
     ),
   );
@@ -443,11 +449,11 @@ function dog_profile_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'inline',
+          'label' => 'above',
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '3',
+          'weight' => 16,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -468,7 +474,7 @@ function dog_profile_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_buttons',
-        'weight' => '4',
+        'weight' => '6',
       ),
     ),
   );
@@ -503,11 +509,11 @@ function dog_profile_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'geolocation',
           'settings' => array(),
           'type' => 'geolocation_text',
-          'weight' => '7',
+          'weight' => 15,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -531,7 +537,7 @@ function dog_profile_field_default_fields() {
           'scrollwheel' => 0,
         ),
         'type' => 'geolocation_googlemap',
-        'weight' => '10',
+        'weight' => '8',
       ),
     ),
   );
@@ -632,7 +638,7 @@ function dog_profile_field_default_fields() {
           'module' => 'location_cck',
           'settings' => array(),
           'type' => 'location_default',
-          'weight' => '8',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -653,7 +659,7 @@ function dog_profile_field_default_fields() {
         'module' => 'location_cck',
         'settings' => array(),
         'type' => 'location',
-        'weight' => '11',
+        'weight' => '9',
       ),
     ),
   );
@@ -687,7 +693,12 @@ function dog_profile_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'dog_profile',
-      'default_value' => NULL,
+      'default_value' => array(
+        0 => array(
+          'value' => ' ',
+          'format' => 'plain_detect_paragraphs',
+        ),
+      ),
       'deleted' => '0',
       'description' => 'Your favourite quote or a quote that defines your pet.',
       'display' => array(
@@ -705,6 +716,7 @@ function dog_profile_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_quote',
       'label' => 'Quote',
@@ -763,7 +775,7 @@ function dog_profile_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '6',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -784,10 +796,10 @@ function dog_profile_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '3',
+          'rows' => '5',
         ),
         'type' => 'text_textarea',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );
