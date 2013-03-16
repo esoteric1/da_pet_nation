@@ -26,7 +26,7 @@ $(document).ready(function(){
 		pause: 5000
 	});
 	// Add a photo link on Dog Profile
-	$('.field-name-add-a-photo a').prepend('Add a ');
+	$('.field-name-add-a-photo a').prepend('Add a ').addClass('pn_button');
 });
 
 
