@@ -32,6 +32,10 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '← previous';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'next →';
+  $handler->display->display_options['pager']['options']['tags']['last'] = '';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['style_options']['row_class'] = 'front-page-news-item';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -283,10 +287,8 @@ function pn_front_page_view_views_default_views() {
     t('Items per page'),
     t('- All -'),
     t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
+    t('← previous'),
+    t('next →'),
     t('author'),
     t('added a new '),
     t('for'),
