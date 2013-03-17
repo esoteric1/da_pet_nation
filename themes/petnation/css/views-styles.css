@@ -218,10 +218,9 @@
   }
 }
 .view-new-content-view .event_wrapper {
-  background: #e5f3f6;
   float: left;
-  width: 56.25%;
-  margin-left: 43.75%;
+  width: 56.66667%;
+  margin-left: 43.33333%;
   margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -230,7 +229,6 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  padding: 1.5em 1.5em 0.5em 1.5em;
   box-sizing: border-box;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
