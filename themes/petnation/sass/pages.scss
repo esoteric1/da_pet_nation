@@ -170,7 +170,7 @@ ul.photo-album {
  */
 aside.sidebars {
 	padding: 1em 2em;
-	background: $lightblue;
+	background: url(../images/sidebar-bg.png) left bottom repeat-x $lightblue;
 	min-height: 600px;
 	@include zen-grid-item(3,10);
 	@include breakpoint($mobile) {

@@ -94,9 +94,9 @@
   .field-type-image {
     @include zen-grid-item(6,1);
     img {
-      width: 90%;
+      width: 96%;
       @include breakpoint($mobile) {
-        width: 94%;
+        width: 100%;
       }
     }
     @include breakpoint($mobile) {

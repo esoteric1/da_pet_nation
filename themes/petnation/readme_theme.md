@@ -193,6 +193,6 @@ If you need to get as deep as adding classes to fields, this is not available ou
 After updating a View or Display, I did `drush fu pn_feature_name`
 to update the Feature in the module code then pushed changes to Git to make the same settings available to all.
 
-If you had to enable a setting like I did with `ds_extras` to get a display to function properly, it may not be Featurizable. If it isn't, the setting can quite possibly be exported using Features Strongarm. 
+If you had to enable a setting like I did with `ds_extras` to get a display to function properly, it may not be Featurizable the traditional way by featurizing a Display Suite or Views layout. If it isn't, the setting can quite possibly be exported using variable set through Features Strongarm.
 
 The `ds_extras` setting can be exported using Features and Strongarm as there is a variable available for us to set. Anything with an entry in the `variables` table in the database can be Featurized as a Strongarm setting. You can inspect the element to find any ID's that match the machine name of the module and then search that value in the variables table in the database. If it exists, it is most likely Featurizable. 

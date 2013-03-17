@@ -175,11 +175,11 @@
   word-wrap: break-word;
 }
 .node-pn-event .field-type-image img {
-  width: 90%;
+  width: 96%;
 }
 @media (max-width: 767px) {
   .node-pn-event .field-type-image img {
-    width: 94%;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {
