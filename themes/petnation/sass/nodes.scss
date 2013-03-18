@@ -28,6 +28,14 @@
  * Dog Profile node
  */
 .field-name-add-a-photo {
+  clear: both;
+  padding-top: 0.5em;
+  a {
+    width: 100px;
+    display: block;
+    margin: 1.5em auto;
+    text-align: center;
+  }
   ul {
     padding: 0;
   }
@@ -54,7 +62,7 @@
     }
   }
   .dog_profile_stats {
-    @include zen-grid-item(5,8);
+    @include zen-grid-item(5.5,7.5);
     @include breakpoint($mobile) {
       @include zen-grid-item(12,1);
       clear: both;
@@ -86,9 +94,9 @@
   .field-type-image {
     @include zen-grid-item(6,1);
     img {
-      width: 90%;
+      width: 96%;
       @include breakpoint($mobile) {
-        width: 94%;
+        width: 100%;
       }
     }
     @include breakpoint($mobile) {

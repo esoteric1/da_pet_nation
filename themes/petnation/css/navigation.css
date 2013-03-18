@@ -34,18 +34,6 @@ li a.active {
 #navigation {
   /* overflow: hidden; */
   /* Sometimes you want to prevent overlapping with main div. */
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  background: darkturquoise;
 }
 #navigation .block {
   margin-bottom: 0;
@@ -80,11 +68,11 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-#secondary-menu {
-  float: left;
-  width: 33.33333%;
-  margin-left: 66.66667%;
-  margin-right: -100%;
+#main-menu {
+  float: right;
+  width: 66.66667%;
+  margin-right: 0%;
+  margin-left: -66.66667%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -92,10 +80,16 @@ li a.active {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
-  text-align: right;
+  margin-top: 25px;
+}
+#main-menu ul {
+  float: right;
+}
+#main-menu li {
+  display: inline;
 }
 @media (max-width: 767px) {
-  #secondary-menu {
+  #main-menu {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -107,9 +101,24 @@ li a.active {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
+    clear: left;
+    padding-top: 15px;
     text-align: center;
-    margin-top: 20px;
+    float: none;
   }
+}
+
+#secondary-menu li {
+  width: 50%;
+  display: block;
+  float: left;
+  box-sizing: border-box;
+}
+#secondary-menu a {
+  text-decoration: none;
+  font-weight: 700;
+  display: block;
+  text-align: center;
 }
 
 /*
@@ -135,4 +144,21 @@ a.pn_button {
 }
 a.pn_button:hover {
   background: #00acd3;
+}
+@media (max-width: 767px) {
+  a.pn_button {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    display: block;
+    float: none;
+  }
 }

@@ -30,6 +30,16 @@
 /*
  * Dog Profile node
  */
+.field-name-add-a-photo {
+  clear: both;
+  padding-top: 0.5em;
+}
+.field-name-add-a-photo a {
+  width: 100px;
+  display: block;
+  margin: 1.5em auto;
+  text-align: center;
+}
 .field-name-add-a-photo ul {
   padding: 0;
 }
@@ -78,8 +88,8 @@
 }
 .ds-3col-equal .dog_profile_stats {
   float: left;
-  width: 41.66667%;
-  margin-left: 58.33333%;
+  width: 45.83333%;
+  margin-left: 54.16667%;
   margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -165,11 +175,11 @@
   word-wrap: break-word;
 }
 .node-pn-event .field-type-image img {
-  width: 90%;
+  width: 96%;
 }
 @media (max-width: 767px) {
   .node-pn-event .field-type-image img {
-    width: 94%;
+    width: 100%;
   }
 }
 @media (max-width: 767px) {

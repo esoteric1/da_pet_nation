@@ -46,8 +46,7 @@ li a.active {
 
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
-  @include zen-grid-item(12,1);
-  background: darkturquoise;
+  
   .block {
     margin-bottom: 0;
   }
@@ -80,15 +79,36 @@ li a.active {
  */
 
 #main-menu {
+  @include zen-grid-item(8,1,right);
+  margin-top: 25px;
+  ul {
+    float: right;
+  }
+  li {
+    display: inline;
+  }
+  @include breakpoint($mobile) {
+    @include zen-grid-item(12,1);
+    @include zen-clear;
+    padding-top: 15px;
+    text-align: center;
+    float: none;
+
+  }
 }
 
 #secondary-menu {
-  @include zen-grid-item(4,9);
-  text-align: right;
-  @include breakpoint($mobile) {
-  	@include zen-grid-item(12,1);
-  	text-align: center;
-  	margin-top: 20px;
+  li {
+    width: 50%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -122,5 +142,10 @@ li a.active {
   border-radius: 5px;
   &:hover {
     background: lighten($blue,8%);
+  }
+  @include breakpoint($mobile) {
+    @include zen-grid-item(12,1);
+    display: block;
+    float: none;
   }
  }
