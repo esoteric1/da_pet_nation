@@ -128,7 +128,6 @@ function pn_event_feature_field_default_fields() {
             'multiple_from' => '',
             'multiple_number' => '',
             'multiple_to' => '',
-            'show_repeat_rule' => 'show',
           ),
           'type' => 'date_default',
           'weight' => '1',
@@ -204,7 +203,7 @@ function pn_event_feature_field_default_fields() {
           'module' => 'geolocation',
           'settings' => array(),
           'type' => 'geolocation_text',
-          'weight' => 3,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -347,12 +346,9 @@ function pn_event_feature_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'og_ui',
-          'settings' => array(
-            'field_name' => FALSE,
-          ),
-          'type' => 'og_group_subscribe',
-          'weight' => 4,
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
