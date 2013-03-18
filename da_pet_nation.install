@@ -113,6 +113,7 @@ function da_pet_nation_install() {
     'user_permissions',
     'pn_account_creation_link',
     'pn_dog_profiles_list',
+    'pn_event_members',
     )
   );
 }
