@@ -14,7 +14,7 @@ function pn_account_creation_link_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Create account link';
   $fe_block_boxes->format = 'full_html';
   $fe_block_boxes->machine_name = 'join_the_nation';
-  $fe_block_boxes->body = '<a class ="call-to-action" href="/user/register">Join the Nation</a>';
+  $fe_block_boxes->body = '<a class ="pn_button" href="/user/register">Join Pet Nation</a>';
 
   $export['join_the_nation'] = $fe_block_boxes;
 
