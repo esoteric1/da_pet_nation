@@ -61,6 +61,9 @@ function event_map_feature_views_default_views() {
   $handler->display->display_options['fields']['field_geolocation_event']['id'] = 'field_geolocation_event';
   $handler->display->display_options['fields']['field_geolocation_event']['table'] = 'field_data_field_geolocation_event';
   $handler->display->display_options['fields']['field_geolocation_event']['field'] = 'field_geolocation_event';
+  $handler->display->display_options['fields']['field_geolocation_event']['label'] = '';
+  $handler->display->display_options['fields']['field_geolocation_event']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_geolocation_event']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_geolocation_event']['click_sort_column'] = 'lat';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
@@ -107,7 +110,6 @@ function event_map_feature_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('GeoLocationEvent'),
     t('Page'),
     t('Block'),
     t('Event Map Block'),

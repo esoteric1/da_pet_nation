@@ -1,8 +1,16 @@
 name = Event Map Feature
+description = Add event map to upcoming events page
 core = 7.x
 package = Features
+php = 5.2.4
+version = 7.x-1.0
+project = event_map_feature
 dependencies[] = ctools
 dependencies[] = fe_block
+dependencies[] = geolocation
+dependencies[] = geolocation_googlemaps
+dependencies[] = ip_geoloc
+dependencies[] = pn_event_feature
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
 features[fe_block_settings][] = views-event_map-block_1
