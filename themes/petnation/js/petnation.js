@@ -30,6 +30,9 @@ $(document).ready(function(){
 
 	// News Feed Styles
 	$('ul.front-page h3.content-title a').prepend('View ').addClass('pn_button');
+
+	// Sidebar
+	$('ul.links li.node-readmore a').addClass('pn_button');
 });
 
 
