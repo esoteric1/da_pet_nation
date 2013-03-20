@@ -2,6 +2,7 @@ name = pn event members
 description = Modified clone of OG Members view that provides block on event pages
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = fe_block
 dependencies[] = views
