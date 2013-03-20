@@ -135,6 +135,7 @@ a.pn_button:hover {
     word-wrap: break-word;
     display: block;
     float: none;
+    text-align: center;
   }
 }
 

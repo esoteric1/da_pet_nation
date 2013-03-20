@@ -120,6 +120,7 @@ a.pn_button {
     @include zen-grid-item(12,1);
     display: block;
     float: none;
+    text-align: center;
   }
 }
 

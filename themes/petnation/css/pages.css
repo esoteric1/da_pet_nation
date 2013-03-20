@@ -234,7 +234,7 @@ ul.photo-album li {
  * Sidebars
  */
 aside.sidebars {
-  padding: 1em 2em 5em 2em;
+  padding: 1em 2em 5.5em 2em;
   background: url(../images/sidebar-bg.png) left bottom repeat-x #e5f3f6;
   min-height: 400px;
   float: left;
@@ -265,6 +265,14 @@ aside.sidebars {
     clear: both;
   }
 }
+aside.sidebars h2 {
+  margin-top: 0.75em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  line-height: 1.3em;
+  font-size: 1.4em;
+}
 aside.sidebars h2.block-title {
   float: left;
   width: 100%;
@@ -280,6 +288,11 @@ aside.sidebars h2.block-title {
 }
 aside.sidebars ul.upcoming-events {
   padding: 0;
+}
+aside.sidebars ul.upcoming-events p.submitted {
+  font-size: 0.8em;
+  color: gray;
+  margin-bottom: 0;
 }
 aside.sidebars ul.upcoming-events li {
   list-style-type: none;
@@ -297,13 +310,16 @@ aside.sidebars ul.upcoming-events li {
   clear: both;
 }
 aside.sidebars ul.upcoming-events li.node-readmore {
-  padding: 1em 0;
+  padding: 0 0 1em 0;
 }
 aside.sidebars ul.upcoming-events li .field-name-body {
   width: 100%;
   margin: 0;
   padding: 0;
   font-size: 0.8em;
+}
+aside.sidebars ul.upcoming-events .field-items {
+  height: 7em;
 }
 
 /*

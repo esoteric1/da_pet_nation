@@ -162,7 +162,7 @@ ul.photo-album {
  * Sidebars
  */
 aside.sidebars {
-	padding: 1em 2em 5em 2em;
+	padding: 1em 2em 5.5em 2em;
 	background: url(../images/sidebar-bg.png) left bottom repeat-x $lightblue;
 	min-height: 400px;
 	@include zen-grid-item(3,10);
@@ -171,18 +171,27 @@ aside.sidebars {
 		clear: both;
 	}
 	// Events in the Home sidebar
+	h2 {
+		@include rhythm(0.5);
+		line-height: 1.3em;
+		font-size: 1.4em;
+	}
 	h2.block-title {
 		@include zen-grid-item(12,1);
 	}
 	ul.upcoming-events {
-		
+		p.submitted {
+			font-size: 0.8em;
+			color: lighten($dark,30%);
+			margin-bottom: 0;
+		}
 		padding: 0;
 		li {
 			list-style-type: none;
 			@include zen-grid-item(12,1);
 			clear: both;
 			&.node-readmore {
-				padding: 1em 0;
+				padding: 0 0 1em 0;
 			}
 			.field-name-body {
 				width: 100%;
@@ -193,6 +202,9 @@ aside.sidebars {
 		}
 		header {
 			//
+		}
+		.field-items {
+			height: 7em;
 		}
 	}
 }
