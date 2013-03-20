@@ -14,17 +14,20 @@ function pn_event_members_default_fe_block_settings() {
 
   $export['views-event_members-block_1'] = array(
     'cache' => -1,
+    'custom' => '0',
     'delta' => 'event_members-block_1',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => '2',
+    ),
     'themes' => array(
       'bartik' => array(
         'region' => '',
         'status' => 0,
         'theme' => 'bartik',
-        'weight' => 0,
+        'weight' => '0',
       ),
       'petnation' => array(
         'region' => 'sidebar_first',
@@ -33,6 +36,8 @@ function pn_event_members_default_fe_block_settings() {
         'weight' => '0',
       ),
     ),
+    'title' => '',
+    'visibility' => '0',
   );
 
   return $export;
