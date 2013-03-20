@@ -18,7 +18,7 @@ function pd_dog_map_fix_default_fe_block_settings() {
     'delta' => 'friend_map-block',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => 'dop-profiles',
+    'pages' => 'dog-profiles*',
     'roles' => array(
       'authenticated user' => '2',
     ),
