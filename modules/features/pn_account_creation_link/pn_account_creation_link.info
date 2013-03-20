@@ -1,6 +1,7 @@
 name = pn account creation link
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = fe_block
 features[fe_block_boxes][] = join_the_nation
 features[fe_block_settings][] = block-join_the_nation
