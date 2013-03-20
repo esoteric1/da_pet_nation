@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the PN Facebook Like feature.
+ */
+
+include_once 'pn_facebook_like.features.inc';
