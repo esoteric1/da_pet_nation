@@ -41,7 +41,8 @@
   -o-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
 }
-.views-displays .secondary div#ip-geoloc-map-of-view-friend_map-block img {
+
+.view-based-map img {
   max-width: none;
 }
 

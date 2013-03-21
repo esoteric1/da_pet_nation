@@ -36,10 +36,11 @@
 			@include border-radius(0 0 7px 7px);
 		}
 	}
-	// close icon fix for IP GeoLoc map rendering Google Map
-	div#ip-geoloc-map-of-view-friend_map-block img{
-		max-width: none;
-	}
+}
+
+// close icon fix for IP GeoLoc map rendering Google Map
+.view-based-map img{
+	max-width: none;
 }
 
 /* 

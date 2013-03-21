@@ -4,6 +4,7 @@ package = Features
 php = 5.2.4
 version = 7.x-1.0
 project = pd_dog_map_fix
+dependencies[] = block
 dependencies[] = fe_block
 dependencies[] = geolocation
 dependencies[] = ip_geoloc

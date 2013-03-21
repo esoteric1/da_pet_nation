@@ -18,7 +18,7 @@ function event_map_feature_default_fe_block_settings() {
     'delta' => 'event_map-block_1',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '<front>',
+    'pages' => 'upcoming-events*',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -26,12 +26,6 @@ function event_map_feature_default_fe_block_settings() {
         'status' => 0,
         'theme' => 'bartik',
         'weight' => '0',
-      ),
-      'petnation' => array(
-        'region' => 'content',
-        'status' => '1',
-        'theme' => 'petnation',
-        'weight' => '-10',
       ),
     ),
     'title' => 'Events',

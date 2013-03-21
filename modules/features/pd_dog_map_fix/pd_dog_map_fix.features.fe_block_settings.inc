@@ -18,7 +18,7 @@ function pd_dog_map_fix_default_fe_block_settings() {
     'delta' => 'friend_map-block',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '<front>',
+    'pages' => 'dog-profiles*',
     'roles' => array(
       'authenticated user' => '2',
     ),
@@ -28,12 +28,6 @@ function pd_dog_map_fix_default_fe_block_settings() {
         'status' => 0,
         'theme' => 'bartik',
         'weight' => '0',
-      ),
-      'petnation' => array(
-        'region' => 'content',
-        'status' => '1',
-        'theme' => 'petnation',
-        'weight' => '-12',
       ),
     ),
     'title' => '',
