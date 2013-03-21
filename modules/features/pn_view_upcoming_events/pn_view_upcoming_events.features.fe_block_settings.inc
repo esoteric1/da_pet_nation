@@ -31,7 +31,7 @@ function pn_view_upcoming_events_default_fe_block_settings() {
         'region' => 'sidebar_first',
         'status' => '1',
         'theme' => 'petnation',
-        'weight' => '-13',
+        'weight' => '0',
       ),
     ),
     'title' => '',
