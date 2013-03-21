@@ -112,6 +112,9 @@ projects[fboauth][version] = 1.6
 projects[rules][subdir] = contrib
 projects[rules][version] = 2.2
 
+projects[fb_likebox][subdir] = contrib
+projects[fb_likebox][version] = 1.6
+
 ; THEMES
 
 projects[zen][version] = 5.1
