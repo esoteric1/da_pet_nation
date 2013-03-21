@@ -7,12 +7,12 @@
 
 @import "base";
 
-
 .node { 
   p.unpublished {
     @include unpublished-div;
   }
 }
+
 /*
  * General Pet Nation styles
  */
@@ -24,6 +24,7 @@
     box-sizing: border-box;
   }
 }
+
 /*
  * Dog Profile node
  */
@@ -87,6 +88,7 @@
     }
   }
 }
+
 /*
  * Event 
  */

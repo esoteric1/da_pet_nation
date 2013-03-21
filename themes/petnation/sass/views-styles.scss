@@ -48,7 +48,6 @@
  */
 .view-new-content-view {
 	a {
-		text-decoration: none;
 		text-align: center;
 		&.pn_button {
 			clear: both;
@@ -124,14 +123,7 @@
 		}
 	}
 	.event_wrapper {
-		// coloured background
-		// background: $lightblue;
-		// @include zen-grid-item(6.75,6.25);
-		// padding: 1.5em 1.5em 0.5em 1.5em;
-
-		// plain background
 		@include zen-grid-item(6.8,6.2);
-
 		box-sizing: border-box;
 		margin-top: 1.5em;
 		margin-bottom: 1.5em;

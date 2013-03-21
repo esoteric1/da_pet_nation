@@ -50,7 +50,6 @@
  * New Content View - Front-page News Feed 
  */
 .view-new-content-view a {
-  text-decoration: none;
   text-align: center;
 }
 .view-new-content-view a.pn_button {

@@ -21,9 +21,6 @@ ul li.leaf {
   list-style-type: square;
 }
 
-/*
- * The active item in a Drupal menu
- */
 li a.active {
   color: #000;
 }
@@ -31,10 +28,6 @@ li a.active {
 /*
  * Navigation bar
  */
-#navigation {
-  /* overflow: hidden; */
-  /* Sometimes you want to prevent overlapping with main div. */
-}
 #navigation .block {
   margin-bottom: 0;
 }
@@ -46,21 +39,14 @@ li a.active {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-#navigation ul.links,
-#navigation ul.menu {
-  /* Menu block links */
+#navigation ul.links, #navigation ul.menu {
   margin: 0;
   padding: 0;
   text-align: left;
-  /* LTR */
 }
-#navigation ul.links li,
-#navigation ul.menu li {
-  /* A simple method to get navigation links to appear in one line. */
+#navigation ul.links li, #navigation ul.menu li {
   float: left;
-  /* LTR */
   padding: 0 10px 0 0;
-  /* LTR */
   list-style-type: none;
   list-style-image: none;
 }
@@ -115,21 +101,11 @@ li a.active {
   box-sizing: border-box;
 }
 #secondary-menu a {
-  text-decoration: none;
   font-weight: 700;
   display: block;
   text-align: center;
 }
 
-/*
- * Menu blocks
- */
-/*
- * "Menu block" blocks
- *
- * Drupal core has limited ways in which it can display its menus. To get around
- * these limitations, see http://drupal.org/project/menu_block
- */
 /*
  * Pet Nation buttons for calls-to-action
  */
@@ -138,7 +114,6 @@ a.pn_button {
   color: #fff;
   font-weight: 700;
   font-size: 0.9em;
-  text-decoration: none;
   padding: 0.5em 1em;
   border-radius: 5px;
 }
@@ -160,5 +135,19 @@ a.pn_button:hover {
     word-wrap: break-word;
     display: block;
     float: none;
+    text-align: center;
   }
+}
+
+/*
+* Pager
+*/
+ul.pager {
+  padding: 0;
+}
+ul.pager li {
+  padding: 0 0.5em;
+}
+ul.pager li.pager-last {
+  display: none;
 }
