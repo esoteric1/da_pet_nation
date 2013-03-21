@@ -29,10 +29,16 @@ Table of Contents
 
 [Dog Map](#dog-map)
 
+[Event Map](#event-map)
+
 =======
 [GeoLocation in Dog Profile](#geolocation-in-dog-profile)
 
+[GeoLocation in Event Profile](#geoLocation-in-event-profile)
+
 [Facebook Login](#facebook-login)
+
+[Facebook Like](#facebook-like)
 
 [User Permissions](#user-permissions)
 
@@ -471,13 +477,12 @@ Dog Map
 -------
 **How it works:**
 
-1. When a user logs in they can see a map of dogs (on the home page)
+1. When a user logs in and goes to the "Dog Profiles" page they will see a map of all the dogs.
 
 2. When a pin is clicked a mini dog profile pops up
 
 3. If they click the dogs name it takes them to its
 profile
-
 
 **Here are the components**
 <pre>
@@ -491,30 +496,41 @@ Block: Map (google) Dog Friends
 gmap, ip_geoloc, geolocation, geolocation_googlemaps
 </pre>
 
-To fix a bug in the block some code was added to 
+- - -
+<a id="event-map"></a>
+Event Map
+-------
+**How it works:**
+
+1. When a user goes to the "Upcoming Events" page they will see a map of all the events.
+
+2. When a pin is clicked a mini event pops up with the event name an a picture.
+
+3. If they click the event name or image it takes them to the event
+
+**Here are the components**
+<pre>
+Feature: Event Map Feature
+Views: Event Map
+Block: Event Map Block
+</pre> 
+
+**These are the Modules required:**
+<pre>
+gmap, ip_geoloc, geolocation, geolocation_googlemaps
+</pre>
+
+---
+**Note for Dog and Event Maps**:
+
+There needs to be at lease one geolocation for a dog and event for the maps to work.
+
+To fix a bug in Google Maps some code was added to 
 <pre>
 view-styles.scss and
 view-styles.css
 </pre>
 
-**Tina**, can you check to verify view-styles.scss is correct I'm having issues with compass so I can't verify it.
-
-The PD Dog Map Fix feature module is not being enabled from the .install script (which will be fixed later). 
-
-**PD Dog Map Fix feature has to be enabled:**
-<pre>
-Goto Structure --> Features - and check the box beside "PF Dog Map Fix" and save.
-</pre>
-
-I set the map as a block on the home page for any users logged in.
-
-**Notes**:
-
-1. there needs to be at lease one dog profile with a geolocation for it to work.
-
-2. Preferably the names between Views Features and Blocks would be more consistent, but to get it done without having to redo everything it was done this way.
-
-=======
 ---
 <a id="geolocation-in-dog-profile"></a>
 
@@ -526,20 +542,59 @@ This feature allows the user to:
 2. Click "My Location" to use the GPS on their device to calculate their geolocation through HTML5, or
 3. Place a pin on the map to show their geolocation.
 
-They can also remove remove their indicated geolocation.
+They can also remove their indicated geolocation.
 
-These geolocations are used in the Dog Map feature.
+These GeoLocations come from the Dog Profile CCK.
 
-=======
+**These are the Modules required:**
+<pre>
+gmap, ip_geoloc, geolocation, geolocation_googlemaps
+</pre>
+
+---
+<a id="geolocation-in-event-profile"></a>
+
+GeoLocation in Event Profile
+----------------------------
+This feature is similar to GeoLocation in Dog Profile. It allows the user to:
+
+1. Manually enter the address of the event so their geolocation can be calculated from it, or
+2. Click "My Location" to use the GPS on their device to calculate the geolocation through HTML5, or
+3. Place a pin on the map to show the geolocation.
+
+They can also remove the indicated geolocation.
+
+These GeoLocations come from the Event CCK.
+
+**These are the Modules required:**
+<pre>
+gmap, ip_geoloc, geolocation, geolocation_googlemaps
+</pre>
+
 ---
 <a id="facebook-login"></a>
 
 Facebook Login
 --------------
-This module allows a user to automatically create an account and login to Petnation with only their Facebook profile. They are taken to facebook to verify this the first time. After authentication they only have to click the facebook link.
+This module allows a user to automatically create an account and login to Petnation with only their Facebook profile. They are taken to Facebook to verify this the first time. After authentication they only have to click the facebook link.
 Petnation can also pull information from the users facebook account such as their bio.
 
 The connection to Facebook is acheived through a drupal module called fboauth. OAuth is an **open standard for authorization**. An app was created on Facebook specifically to communitcate with this website. 
+
+---
+<a id="facebook-Like"></a>
+
+Facebook Like
+--------------
+This feature enables users to:
+
+1. See how many users already like the Facebook Page, and which of their friends like it too,
+2. Like the Page with one click, without having to actually visit the page
+
+A block is generated for this feature and placed in the first column. There is a link to the Facebook Page along with a logo from the page.
+
+The Facebook page is here:
+[PetNation](https://www.facebook.com/pages/PetNation/496364857087254)
 
 ---
 <a id="user-permissions"></a>
