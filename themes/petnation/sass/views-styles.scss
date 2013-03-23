@@ -45,14 +45,15 @@
 
 /* 
  * New Content View - Front-page News Feed 
+ * Upcoming Events View - Events page
  */
-.view-new-content-view {
+.view-new-content-view, .view-upcoming-events {
 	a {
-		text-align: center;
 		&.pn_button {
 			clear: both;
 			float: right;
 			margin: 0 auto 1em auto;
+			text-align: center;
 		}
 	}
 	span {
@@ -81,8 +82,12 @@
 	}
 	h3.content-title {
 		margin: 0;
+		display: block;
 		@include zen-grid-item(12,1);
 		@include zen-clear;
+	}
+	h3.event-title {
+		margin: 0 0 0.6em 0;
 	}
 	.dog-photo, .profile-picture {
 		margin: 1.5em 0;

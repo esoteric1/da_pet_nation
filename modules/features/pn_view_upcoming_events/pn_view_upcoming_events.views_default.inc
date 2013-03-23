@@ -140,7 +140,7 @@ function pn_view_upcoming_events_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '<h3 class="event-title">[title]</h3></br>';
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<h3 class="event-title">[title]</h3>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
@@ -187,7 +187,7 @@ function pn_view_upcoming_events_views_default_views() {
 [field_date]
 [body]';
   $handler->display->display_options['fields']['nothing']['element_type'] = 'div';
-  $handler->display->display_options['fields']['nothing']['element_class'] = 'event-wrapper';
+  $handler->display->display_options['fields']['nothing']['element_class'] = 'event_wrapper';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'upcoming-events';
   $handler->display->display_options['menu']['type'] = 'normal';
@@ -225,7 +225,7 @@ function pn_view_upcoming_events_views_default_views() {
     t('Date'),
     t('Image'),
     t('Page'),
-    t('<h3 class="event-title">[title]</h3></br>'),
+    t('<h3 class="event-title">[title]</h3>'),
     t('<span class="label">When</span> <span>[field_date]</span>'),
     t('[title]
 [field_date]

@@ -33,6 +33,12 @@ function pn_view_upcoming_events_default_fe_block_settings() {
         'theme' => 'petnation',
         'weight' => '0',
       ),
+      'seven' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'seven',
+        'weight' => '0',
+      ),
     ),
     'title' => '',
     'visibility' => '1',
