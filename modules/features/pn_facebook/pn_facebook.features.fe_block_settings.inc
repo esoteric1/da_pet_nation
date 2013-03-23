@@ -27,12 +27,6 @@ function pn_facebook_default_fe_block_settings() {
         'theme' => 'bartik',
         'weight' => '0',
       ),
-      'petnation' => array(
-        'region' => 'content',
-        'status' => '1',
-        'theme' => 'petnation',
-        'weight' => '0',
-      ),
     ),
     'title' => '',
     'visibility' => '0',

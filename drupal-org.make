@@ -60,6 +60,9 @@ projects[panels][version] = 3.3
 projects[pathauto][subdir] = contrib
 projects[pathauto][version] = 1.2
 
+projects[profile2][subdir] = contrib
+projects[profile2][version] = 1.3
+
 projects[strongarm][subdir] = contrib
 projects[strongarm][version] = 2.0
 
