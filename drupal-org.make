@@ -103,6 +103,12 @@ projects[ip_geoloc][version] = 1.19
 projects[geolocation][subdir] = contrib
 projects[geolocation][version] = 1.1
 
+projects[geocoder][subdir] = contrib
+projects[geocoder][version] = 1.2
+
+projects[geophp][subdir] = contrib
+projects[geophp][version] = 1.7
+
 projects[gmap][subdir] = contrib
 projects[gmap][version] = 2.4
 
