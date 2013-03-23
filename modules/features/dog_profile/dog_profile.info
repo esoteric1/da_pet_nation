@@ -25,6 +25,7 @@ features[field][] = node-dog_profile-field_dog_picture
 features[field][] = node-dog_profile-field_friends
 features[field][] = node-dog_profile-field_gender
 features[field][] = node-dog_profile-field_geofield
+features[field][] = node-dog_profile-field_geolocation
 features[field][] = node-dog_profile-field_location
 features[field][] = node-dog_profile-field_quote
 features[field][] = node-dog_profile-field_special_talent

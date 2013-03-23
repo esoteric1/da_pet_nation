@@ -53,7 +53,7 @@ function dog_profile_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '9',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -128,7 +128,7 @@ function dog_profile_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '2',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -203,7 +203,7 @@ function dog_profile_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '3',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -370,7 +370,7 @@ function dog_profile_field_default_fields() {
             'link' => FALSE,
           ),
           'type' => 'entityreference_label',
-          'weight' => '8',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -446,7 +446,7 @@ function dog_profile_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => '4',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -502,17 +502,9 @@ function dog_profile_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'geolocation_googlemaps',
-          'settings' => array(
-            'map_dimensions' => '300x300',
-            'map_imageformat' => 'png8',
-            'map_maptype' => 'roadmap',
-            'map_scrollwheel' => FALSE,
-            'map_zoomlevel' => '7',
-            'marker_icon' => '',
-          ),
-          'type' => 'geolocation_googlemaps_dynamic',
-          'weight' => '11',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '18',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -551,6 +543,69 @@ function dog_profile_field_default_fields() {
         ),
         'type' => 'geocoder',
         'weight' => '10',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-dog_profile-field_geolocation'.
+  $fields['node-dog_profile-field_geolocation'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_geolocation',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'lat' => array(
+          0 => 'lat',
+        ),
+        'lng' => array(
+          0 => 'lng',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'geolocation',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'geolocation_latlng',
+    ),
+    'field_instance' => array(
+      'bundle' => 'dog_profile',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'geolocation',
+          'settings' => array(),
+          'type' => 'geolocation_text',
+          'weight' => '6',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_geolocation',
+      'label' => 'GeoLocation',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'geolocation_googlemaps',
+        'settings' => array(
+          'marker_draggable' => 1,
+          'scrollwheel' => 0,
+        ),
+        'type' => 'geolocation_googlemap',
+        'weight' => '8',
       ),
     ),
   );
@@ -651,7 +706,7 @@ function dog_profile_field_default_fields() {
           'module' => 'location_cck',
           'settings' => array(),
           'type' => 'location_default',
-          'weight' => '6',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -720,7 +775,7 @@ function dog_profile_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '10',
+          'weight' => '9',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -788,7 +843,7 @@ function dog_profile_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '5',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -824,6 +879,7 @@ function dog_profile_field_default_fields() {
   t('Date of Birth');
   t('Friends');
   t('Gender');
+  t('GeoLocation');
   t('Location');
   t('Profile Picture');
   t('Quote');
