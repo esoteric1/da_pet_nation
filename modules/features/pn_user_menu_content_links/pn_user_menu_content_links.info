@@ -1,0 +1,10 @@
+name = PN User menu content links
+description = adds content creation links to user menu
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:1
+features[menu_custom][] = user-menu
+features[menu_links][] = user-menu:node/add/dog-profile
+features[menu_links][] = user-menu:node/add/pn-event

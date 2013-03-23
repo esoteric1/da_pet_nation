@@ -36,7 +36,7 @@ function pn_account_creation_link_default_fe_block_settings() {
         'weight' => '-14',
       ),
     ),
-    'title' => '<none>',
+    'title' => '',
     'visibility' => '0',
   );
 
