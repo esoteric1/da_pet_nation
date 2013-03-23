@@ -286,6 +286,10 @@ aside.sidebars h2.block-title {
   box-sizing: border-box;
   word-wrap: break-word;
 }
+aside.sidebars .view-upcoming-events .more-link {
+  clear: both;
+  font-size: 1.1em;
+}
 aside.sidebars ul.upcoming-events {
   padding: 0;
 }
