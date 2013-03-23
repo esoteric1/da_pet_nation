@@ -198,10 +198,16 @@ function pn_event_feature_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'geolocation',
-          'settings' => array(),
-          'type' => 'geolocation_text',
+          'label' => 'hidden',
+          'module' => 'geolocation_googlemaps',
+          'settings' => array(
+            'map_dimensions' => '300x300',
+            'map_imageformat' => 'png8',
+            'map_maptype' => 'roadmap',
+            'map_zoomlevel' => '7',
+            'marker_icon' => '',
+          ),
+          'type' => 'geolocation_googlemaps_static',
           'weight' => '3',
         ),
         'teaser' => array(
@@ -488,7 +494,7 @@ function pn_event_feature_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '5',
+          'weight' => '12',
         ),
         'teaser' => array(
           'label' => 'above',
