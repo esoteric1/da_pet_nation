@@ -93,6 +93,11 @@
  * Event 
  */
  .node-pn-event {
+  p.submitted {
+    color: lighten($dark,30%);
+    padding: 0 0 10px 10px;
+    font-size: 0.9em;
+  }
   .field-type-image {
     @include zen-grid-item(6,1);
     img {

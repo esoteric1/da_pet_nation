@@ -161,6 +161,11 @@
 /*
  * Event 
  */
+.node-pn-event p.submitted {
+  color: gray;
+  padding: 0 0 10px 10px;
+  font-size: 0.9em;
+}
 .node-pn-event .field-type-image {
   float: left;
   width: 50%;
