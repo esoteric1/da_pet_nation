@@ -183,6 +183,9 @@ aside.sidebars {
 		.more-link {
 			clear: both;
 			font-size: 1.1em;
+			a {
+				@include zen-grid-item(12,1);
+			}
 		}
 	}
 	ul.upcoming-events {

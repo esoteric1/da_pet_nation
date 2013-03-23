@@ -290,6 +290,19 @@ aside.sidebars .view-upcoming-events .more-link {
   clear: both;
   font-size: 1.1em;
 }
+aside.sidebars .view-upcoming-events .more-link a {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
 aside.sidebars ul.upcoming-events {
   padding: 0;
 }
