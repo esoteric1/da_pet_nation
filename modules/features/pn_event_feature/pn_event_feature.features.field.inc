@@ -204,10 +204,11 @@ function pn_event_feature_field_default_fields() {
             'map_dimensions' => '300x300',
             'map_imageformat' => 'png8',
             'map_maptype' => 'roadmap',
-            'map_zoomlevel' => '7',
+            'map_scrollwheel' => 0,
+            'map_zoomlevel' => '14',
             'marker_icon' => '',
           ),
-          'type' => 'geolocation_googlemaps_static',
+          'type' => 'geolocation_googlemaps_dynamic',
           'weight' => '3',
         ),
         'teaser' => array(
