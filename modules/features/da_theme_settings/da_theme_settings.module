@@ -14,5 +14,6 @@ include_once 'da_theme_settings.features.inc';
 function da_theme_settings_install_postinstall() {
   // Theme settings should be captured by strongrm, but just in case
   // they're not... let's set the default theme.
+  theme_enable(array('petnation'));
   variable_set('theme_default', 'petnation');
 }
