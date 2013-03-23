@@ -99,7 +99,8 @@
     font-size: 0.9em;
   }
   .field-type-image {
-    @include zen-grid-item(6,1);
+    // @include zen-grid-item(6,1);
+    @include zen-grid-item(12,1);
     img {
       width: 96%;
       @include breakpoint($mobile) {
@@ -111,14 +112,17 @@
       margin-bottom: 0.75em;
     }
   }
-  .field-name-body { 
-    margin-top: 3.5em;
+  .field-name-body, .field-name-field-location, .field-name-field-geofield { 
+    margin-top: 1em;
+    display: block;
+    // clear: both;
     @include breakpoint($mobile) {
       margin-top: 0.5em;
     }
   }
-  .field-name-field-date, .field-name-body {
-    @include zen-grid-item(6,7);
+  .field-name-field-date, .field-name-body, .field-name-field-location, .field-name-field-geofield {
+    // @include zen-grid-item(6,7);
+
     @include breakpoint($mobile) {
       @include zen-grid-item(12,1);
       clear: both;
