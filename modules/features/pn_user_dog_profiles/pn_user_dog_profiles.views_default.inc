@@ -40,7 +40,7 @@ function pn_user_dog_profiles_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Dog Picture */
+  /* Field: Content: Profile Picture */
   $handler->display->display_options['fields']['field_dog_picture']['id'] = 'field_dog_picture';
   $handler->display->display_options['fields']['field_dog_picture']['table'] = 'field_data_field_dog_picture';
   $handler->display->display_options['fields']['field_dog_picture']['field'] = 'field_dog_picture';
@@ -55,6 +55,15 @@ function pn_user_dog_profiles_views_default_views() {
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
+  /* Contextual filter: Content: Author uid */
+  $handler->display->display_options['arguments']['uid']['id'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['table'] = 'node';
+  $handler->display->display_options['arguments']['uid']['field'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
+  $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -86,6 +95,7 @@ function pn_user_dog_profiles_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('All'),
     t('EVA Field'),
   );
   $export['dog_profiles_by_user'] = $view;

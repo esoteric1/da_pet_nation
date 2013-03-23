@@ -2,6 +2,7 @@ name = pn_user_dog_profiles
 description = EVA field for user accounts showing their dog profiles
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
