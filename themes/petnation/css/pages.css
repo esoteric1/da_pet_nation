@@ -341,9 +341,7 @@ aside.sidebars ul.upcoming-events li .field-name-body {
   margin: 0;
   padding: 0;
   font-size: 0.8em;
-}
-aside.sidebars ul.upcoming-events .field-items {
-  height: 7em;
+  height: 6em;
 }
 
 /*

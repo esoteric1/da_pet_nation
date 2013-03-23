@@ -24,7 +24,8 @@ $(document).ready(function(){
 
 	// Sidebar
 	$('ul.links li.node-readmore a').addClass('pn_button');
-	$('ul.upcoming-events .field-items').dotdotdot();
+	// $('ul.upcoming-events .field-items').dotdotdot();
+	$('aside.sidebars ul.upcoming-events li .field-name-body').dotdotdot();
 	$('.view-upcoming-events .more-link a').addClass('pn_button');
 });
 
