@@ -19,7 +19,9 @@ function pn_account_creation_link_default_fe_block_settings() {
     'module' => 'block',
     'node_types' => array(),
     'pages' => 'user*',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => '1',
+    ),
     'themes' => array(
       'bartik' => array(
         'region' => '',
