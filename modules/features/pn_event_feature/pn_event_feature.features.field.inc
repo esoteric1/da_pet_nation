@@ -169,14 +169,14 @@ function pn_event_feature_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-pn_event-field_geolocation_event'.
-  $fields['node-pn_event-field_geolocation_event'] = array(
+  // Exported field: 'node-pn_event-field_geofield'.
+  $fields['node-pn_event-field_geofield'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_geolocation_event',
+      'field_name' => 'field_geofield',
       'foreign keys' => array(),
       'indexes' => array(
         'lat' => array(
@@ -194,7 +194,6 @@ function pn_event_feature_field_default_fields() {
     ),
     'field_instance' => array(
       'bundle' => 'pn_event',
-      'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -203,7 +202,7 @@ function pn_event_feature_field_default_fields() {
           'module' => 'geolocation',
           'settings' => array(),
           'type' => 'geolocation_text',
-          'weight' => '3',
+          'weight' => 6,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -212,18 +211,36 @@ function pn_event_feature_field_default_fields() {
           'weight' => 0,
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
-      'field_name' => 'field_geolocation_event',
-      'label' => 'GeoLocationEvent',
-      'required' => FALSE,
+      'field_name' => 'field_geofield',
+      'label' => 'Location',
+      'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
       ),
       'widget' => array(
-        'module' => 'geolocation_googlemaps',
-        'settings' => array(),
-        'type' => 'geolocation_googlemap',
-        'weight' => '34',
+        'active' => 1,
+        'module' => 'geocoder',
+        'settings' => array(
+          'delta_handling' => 'default',
+          'geocoder_field' => 'field_location',
+          'geocoder_handler' => 'google',
+          'handler_settings' => array(
+            'google' => array(
+              'all_results' => 0,
+              'geometry_type' => 'point',
+              'reject_results' => array(
+                'APPROXIMATE' => 0,
+                'GEOMETRIC_CENTER' => 0,
+                'RANGE_INTERPOLATED' => 0,
+                'ROOFTOP' => 0,
+              ),
+            ),
+          ),
+        ),
+        'type' => 'geocoder',
+        'weight' => '37',
       ),
     ),
   );
@@ -308,6 +325,129 @@ function pn_event_feature_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-pn_event-field_location'.
+  $fields['node-pn_event-field_location'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_location',
+      'foreign keys' => array(),
+      'indexes' => array(
+        'lid' => array(
+          0 => 'lid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'location_cck',
+      'settings' => array(
+        'gmap_macro' => '[gmap ]',
+        'gmap_marker' => 'big blue',
+        'location_settings' => array(
+          'display' => array(
+            'hide' => array(
+              'additional' => 0,
+              'city' => 0,
+              'coords' => 'coords',
+              'country' => 0,
+              'country_name' => 0,
+              'locpick' => 0,
+              'map_link' => 'map_link',
+              'name' => 0,
+              'postal_code' => 0,
+              'province' => 0,
+              'province_name' => 0,
+              'street' => 0,
+            ),
+          ),
+          'form' => array(
+            'fields' => array(
+              'additional' => array(
+                'collect' => '0',
+                'default' => '',
+                'weight' => '6',
+              ),
+              'city' => array(
+                'collect' => '2',
+                'default' => 'Toronto',
+                'weight' => '8',
+              ),
+              'country' => array(
+                'collect' => '1',
+                'default' => 'ca',
+                'weight' => '14',
+              ),
+              'locpick' => array(
+                'collect' => '0',
+                'weight' => '20',
+              ),
+              'name' => array(
+                'collect' => '0',
+                'default' => '',
+                'weight' => '2',
+              ),
+              'postal_code' => array(
+                'collect' => '2',
+                'default' => '',
+                'weight' => '12',
+              ),
+              'province' => array(
+                'collect' => '2',
+                'default' => 'Ontario',
+                'weight' => '10',
+                'widget' => 'autocomplete',
+              ),
+              'street' => array(
+                'collect' => '2',
+                'default' => '',
+                'weight' => '4',
+              ),
+            ),
+          ),
+        ),
+      ),
+      'translatable' => '0',
+      'type' => 'location',
+    ),
+    'field_instance' => array(
+      'bundle' => 'pn_event',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'location_cck',
+          'settings' => array(),
+          'type' => 'location_default',
+          'weight' => 5,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_location',
+      'label' => 'Location',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'location_cck',
+        'settings' => array(),
+        'type' => 'location',
+        'weight' => '35',
+      ),
+    ),
+  );
+
   // Exported field: 'node-pn_event-group_group'.
   $fields['node-pn_event-group_group'] = array(
     'field_config' => array(
@@ -384,7 +524,7 @@ function pn_event_feature_field_default_fields() {
           'og_hide' => TRUE,
         ),
         'type' => 'options_onoff',
-        'weight' => 0,
+        'weight' => '0',
       ),
     ),
   );
@@ -394,9 +534,9 @@ function pn_event_feature_field_default_fields() {
   t('Body');
   t('Date');
   t('Determine if this is an OG group.');
-  t('GeoLocationEvent');
   t('Group');
   t('Image');
+  t('Location');
 
   return $fields;
 }
