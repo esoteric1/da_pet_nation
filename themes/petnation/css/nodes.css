@@ -168,9 +168,9 @@
 }
 .node-pn-event .field-type-image {
   float: left;
-  width: 50%;
+  width: 100%;
   margin-left: 0%;
-  margin-right: -50%;
+  margin-right: -100%;
   padding-left: 10px;
   padding-right: 10px;
   -moz-box-sizing: border-box;
@@ -203,29 +203,17 @@
     margin-bottom: 0.75em;
   }
 }
-.node-pn-event .field-name-body {
-  margin-top: 3.5em;
+.node-pn-event .field-name-body, .node-pn-event .field-name-field-location, .node-pn-event .field-name-field-geofield {
+  margin-top: 1em;
+  display: block;
 }
 @media (max-width: 767px) {
-  .node-pn-event .field-name-body {
+  .node-pn-event .field-name-body, .node-pn-event .field-name-field-location, .node-pn-event .field-name-field-geofield {
     margin-top: 0.5em;
   }
 }
-.node-pn-event .field-name-field-date, .node-pn-event .field-name-body {
-  float: left;
-  width: 50%;
-  margin-left: 50%;
-  margin-right: -100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
 @media (max-width: 767px) {
-  .node-pn-event .field-name-field-date, .node-pn-event .field-name-body {
+  .node-pn-event .field-name-field-date, .node-pn-event .field-name-body, .node-pn-event .field-name-field-location, .node-pn-event .field-name-field-geofield {
     float: left;
     width: 100%;
     margin-left: 0%;

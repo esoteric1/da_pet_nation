@@ -50,7 +50,7 @@ function pn_event_feature_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -198,11 +198,18 @@ function pn_event_feature_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
-          'module' => 'geolocation',
-          'settings' => array(),
-          'type' => 'geolocation_text',
-          'weight' => 6,
+          'label' => 'hidden',
+          'module' => 'geolocation_googlemaps',
+          'settings' => array(
+            'map_dimensions' => '300x300',
+            'map_imageformat' => 'png8',
+            'map_maptype' => 'roadmap',
+            'map_scrollwheel' => 0,
+            'map_zoomlevel' => '14',
+            'marker_icon' => '',
+          ),
+          'type' => 'geolocation_googlemaps_dynamic',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -421,7 +428,7 @@ function pn_event_feature_field_default_fields() {
           'module' => 'location_cck',
           'settings' => array(),
           'type' => 'location_default',
-          'weight' => 5,
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -488,7 +495,7 @@ function pn_event_feature_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '4',
+          'weight' => '12',
         ),
         'teaser' => array(
           'label' => 'above',
