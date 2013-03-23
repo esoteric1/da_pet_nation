@@ -48,39 +48,39 @@
 
 /* 
  * New Content View - Front-page News Feed 
+ * Upcoming Events View - Events page
  */
-.view-new-content-view a {
-  text-align: center;
-}
-.view-new-content-view a.pn_button {
+.view-new-content-view a.pn_button, .view-upcoming-events a.pn_button {
   clear: both;
   float: right;
   margin: 0 auto 1em auto;
+  text-align: center;
 }
-.view-new-content-view span.username, .view-new-content-view span.referenced-dog-profile, .view-new-content-view span.label {
+.view-new-content-view span.username, .view-new-content-view span.referenced-dog-profile, .view-new-content-view span.label, .view-upcoming-events span.username, .view-upcoming-events span.referenced-dog-profile, .view-upcoming-events span.label {
   font-weight: 700;
 }
-.view-new-content-view span.label {
+.view-new-content-view span.label, .view-upcoming-events span.label {
   clear: both;
 }
-.view-new-content-view span.front-page-news-date {
+.view-new-content-view span.front-page-news-date, .view-upcoming-events span.front-page-news-date {
   color: gray;
 }
-.view-new-content-view ul.front-page {
+.view-new-content-view ul.front-page, .view-upcoming-events ul.front-page {
   padding: 0;
 }
-.view-new-content-view ul.front-page li.front-page-news-item {
+.view-new-content-view ul.front-page li.front-page-news-item, .view-upcoming-events ul.front-page li.front-page-news-item {
   list-style-type: none;
   border-bottom: 1px solid #e5f3f6;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   overflow: hidden;
 }
-.view-new-content-view ul.front-page li.front-page-news-item:last-child {
+.view-new-content-view ul.front-page li.front-page-news-item:last-child, .view-upcoming-events ul.front-page li.front-page-news-item:last-child {
   border: 0;
 }
-.view-new-content-view h3.content-title {
+.view-new-content-view h3.content-title, .view-upcoming-events h3.content-title {
   margin: 0;
+  display: block;
   float: left;
   width: 100%;
   margin-left: 0%;
@@ -94,10 +94,13 @@
   word-wrap: break-word;
   clear: left;
 }
-.view-new-content-view .dog-photo, .view-new-content-view .profile-picture {
+.view-new-content-view h3.event-title, .view-upcoming-events h3.event-title {
+  margin: 0 0 0.6em 0;
+}
+.view-new-content-view .dog-photo, .view-new-content-view .profile-picture, .view-upcoming-events .dog-photo, .view-upcoming-events .profile-picture {
   margin: 1.5em 0;
 }
-.view-new-content-view .dog-photo {
+.view-new-content-view .dog-photo, .view-upcoming-events .dog-photo {
   float: left;
   width: 66.66667%;
   margin-left: 16.66667%;
@@ -111,7 +114,7 @@
   word-wrap: break-word;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .dog-photo {
+  .view-new-content-view .dog-photo, .view-upcoming-events .dog-photo {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -124,12 +127,12 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  .view-new-content-view .dog-photo img {
+  .view-new-content-view .dog-photo img, .view-upcoming-events .dog-photo img {
     margin: 0 auto;
     display: block;
   }
 }
-.view-new-content-view .profile-picture {
+.view-new-content-view .profile-picture, .view-upcoming-events .profile-picture {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
@@ -143,7 +146,7 @@
   word-wrap: break-word;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .profile-picture {
+  .view-new-content-view .profile-picture, .view-upcoming-events .profile-picture {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -157,7 +160,7 @@
     word-wrap: break-word;
   }
 }
-.view-new-content-view .profile_stats {
+.view-new-content-view .profile_stats, .view-upcoming-events .profile_stats {
   float: left;
   width: 58.33333%;
   margin-left: 35.41667%;
@@ -172,7 +175,7 @@
   padding: 1.5em 0;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .profile_stats {
+  .view-new-content-view .profile_stats, .view-upcoming-events .profile_stats {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -188,7 +191,7 @@
     padding-top: 0;
   }
 }
-.view-new-content-view .event-image {
+.view-new-content-view .event-image, .view-upcoming-events .event-image {
   float: left;
   width: 41.66667%;
   margin-left: 0%;
@@ -203,7 +206,7 @@
   margin-top: 1.5em;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .event-image {
+  .view-new-content-view .event-image, .view-upcoming-events .event-image {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -217,7 +220,7 @@
     word-wrap: break-word;
   }
 }
-.view-new-content-view .event_wrapper {
+.view-new-content-view .event_wrapper, .view-upcoming-events .event_wrapper {
   float: left;
   width: 56.66667%;
   margin-left: 43.33333%;
@@ -234,7 +237,7 @@
   margin-bottom: 1.5em;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .event_wrapper {
+  .view-new-content-view .event_wrapper, .view-upcoming-events .event_wrapper {
     margin-top: 0;
     float: left;
     width: 100%;

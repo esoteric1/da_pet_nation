@@ -179,6 +179,15 @@ aside.sidebars {
 	h2.block-title {
 		@include zen-grid-item(12,1);
 	}
+	.view-upcoming-events {
+		.more-link {
+			clear: both;
+			font-size: 1.1em;
+			a {
+				@include zen-grid-item(12,1);
+			}
+		}
+	}
 	ul.upcoming-events {
 		p.submitted {
 			font-size: 0.8em;
