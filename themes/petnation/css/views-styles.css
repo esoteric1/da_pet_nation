@@ -50,6 +50,9 @@
  * New Content View - Front-page News Feed 
  * Upcoming Events View - Events page
  */
+.view-new-content-view, .view-upcoming-events {
+  clear: both;
+}
 .view-new-content-view a.pn_button, .view-upcoming-events a.pn_button {
   clear: both;
   float: right;
