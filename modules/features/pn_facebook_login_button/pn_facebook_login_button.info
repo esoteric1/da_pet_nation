@@ -1,0 +1,8 @@
+name = PN Facebook login button
+description = puts facebook login button in left sidebar
+core = 7.x
+package = Features
+dependencies[] = fboauth
+dependencies[] = fe_block
+features[fe_block_settings][] = fboauth-login
+features[features_api][] = api:1
