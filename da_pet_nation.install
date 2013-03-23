@@ -119,6 +119,7 @@ function da_pet_nation_install() {
     'pn_event_members',
     'pn_facebook_like',
     'pn_facebook_login_button',
+    'pn_user_menu_content_links',
     )
   );
 }
