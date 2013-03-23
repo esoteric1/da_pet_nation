@@ -493,8 +493,9 @@ function pn_event_feature_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
+          'module' => 'list',
           'settings' => array(),
-          'type' => 'hidden',
+          'type' => 'list_default',
           'weight' => '12',
         ),
         'teaser' => array(
