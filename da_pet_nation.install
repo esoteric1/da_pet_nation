@@ -84,6 +84,9 @@ function da_pet_nation_install() {
     'geolocation_googlemaps',
     'ip_geoloc', // for pn_friend_map_block
     'gmap', // for pn_friend_map_block
+    // mapping modules
+    'geocoder',
+    'geophp',
 
     'fboauth', // facebook
 //    'ip_geoloc',
