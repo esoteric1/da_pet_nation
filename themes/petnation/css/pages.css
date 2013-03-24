@@ -59,10 +59,11 @@ a:hover {
  */
 #header {
   background: #be5900;
-  padding: 20px 0;
+  padding: 13px 0;
 }
 @media (max-width: 767px) {
   #header {
+    padding: 30px 0 10px 0;
     background: #008baa;
   }
   #header img {

@@ -88,8 +88,10 @@ li a.active {
     box-sizing: border-box;
     word-wrap: break-word;
     clear: left;
-    padding-top: 15px;
+    margin-top: 20px;
     text-align: center;
+  }
+  #main-menu ul {
     float: none;
   }
 }

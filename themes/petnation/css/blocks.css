@@ -2,6 +2,6 @@
  * @file
  * Block Styling
  */
-#block-fboauth-login {
+#block-fboauth-login, .view-event-members {
   padding: 15px 0 20px 9px;
 }

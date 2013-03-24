@@ -265,28 +265,11 @@
     padding: 15px 0;
   }
 }
-@media (max-width: 767px) {
-  .node-pn-event .field-name-field-date, .node-pn-event .field-name-body, .node-pn-event .field-name-field-location {
-    float: left;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: -100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
-    clear: both;
-  }
-}
-
-.geolocation-map {
+.node-pn-event .geolocation-map {
   width: 94% !important;
 }
 @media (max-width: 767px) {
-  .geolocation-map {
+  .node-pn-event .geolocation-map {
     margin: 0 auto 1em auto;
     width: 96% !important;
   }

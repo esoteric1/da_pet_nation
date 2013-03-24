@@ -82,10 +82,11 @@ li a.active {
   @include breakpoint($mobile) {
     @include zen-grid-item(12,1);
     @include zen-clear;
-    padding-top: 15px;
+    margin-top: 20px;
     text-align: center;
-    float: none;
-
+    ul {
+      float: none;
+    }
   }
 }
 

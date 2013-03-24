@@ -55,8 +55,9 @@ a {
  */
 #header {
 	background: $orange;
-	padding: 20px 0;
+	padding: 13px 0;
 	@include breakpoint($mobile) {
+		padding: 30px 0 10px 0;
 		background: $blue; //remove for production - noproduction
 		img {
 			display: block;

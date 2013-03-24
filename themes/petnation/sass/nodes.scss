@@ -142,17 +142,11 @@
       padding: 15px 0;
     }
   }
-  .field-name-field-date, .field-name-body, .field-name-field-location {
-    @include breakpoint($mobile) {
-      @include zen-grid-item(12,1);
-      clear: both;
-    }
-  }
- }
  .geolocation-map {
-  width: 94% !important;
-  @include breakpoint($mobile) {
+    width: 94% !important;
+    @include breakpoint($mobile) {
     margin: 0 auto 1em auto;
     width: 96% !important;
   }
  }
+}
