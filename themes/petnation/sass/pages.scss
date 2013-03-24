@@ -196,6 +196,10 @@ aside.sidebars {
 				@include zen-grid-item(12,1);
 			}
 		}
+		span.date-display-single {
+			color: lighten($dark,30%);
+			font-size: 0.8em;
+		}
 	}
 	ul.upcoming-events {
 		p.submitted {

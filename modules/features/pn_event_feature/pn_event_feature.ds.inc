@@ -21,19 +21,19 @@ function pn_event_feature_ds_layout_settings_info() {
     'regions' => array(
       'left' => array(
         0 => 'field_image',
+        1 => 'field_geofield',
       ),
       'right' => array(
-        1 => 'field_date',
-        2 => 'field_location',
-        3 => 'field_geofield',
+        2 => 'field_date',
+        3 => 'field_location',
         4 => 'body',
       ),
     ),
     'fields' => array(
       'field_image' => 'left',
+      'field_geofield' => 'left',
       'field_date' => 'right',
       'field_location' => 'right',
-      'field_geofield' => 'right',
       'body' => 'right',
     ),
     'classes' => array(),

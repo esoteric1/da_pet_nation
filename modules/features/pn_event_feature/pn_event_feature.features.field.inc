@@ -137,7 +137,7 @@ function pn_event_feature_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'full' => array(
           'label' => 'above',
@@ -150,7 +150,7 @@ function pn_event_feature_field_default_fields() {
             'multiple_to' => '',
           ),
           'type' => 'date_default',
-          'weight' => '1',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'inline',
@@ -236,7 +236,7 @@ function pn_event_feature_field_default_fields() {
             'marker_icon' => '',
           ),
           'type' => 'geolocation_googlemaps_dynamic',
-          'weight' => '3',
+          'weight' => '1',
         ),
         'full' => array(
           'label' => 'hidden',
@@ -250,7 +250,7 @@ function pn_event_feature_field_default_fields() {
             'marker_icon' => '',
           ),
           'type' => 'geolocation_googlemaps_dynamic',
-          'weight' => '3',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -479,14 +479,14 @@ function pn_event_feature_field_default_fields() {
           'module' => 'location_cck',
           'settings' => array(),
           'type' => 'location_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'full' => array(
           'label' => 'above',
           'module' => 'location_cck',
           'settings' => array(),
           'type' => 'location_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',

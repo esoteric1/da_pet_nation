@@ -311,6 +311,10 @@ aside.sidebars .view-upcoming-events .more-link a {
   box-sizing: border-box;
   word-wrap: break-word;
 }
+aside.sidebars .view-upcoming-events span.date-display-single {
+  color: gray;
+  font-size: 0.8em;
+}
 aside.sidebars ul.upcoming-events {
   padding: 0;
 }
