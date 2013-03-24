@@ -25,23 +25,19 @@
   }
 }
 
-/*
- * Dog Profile node
- */
-.field-name-add-a-photo {
-  clear: both;
-  padding-top: 0.5em;
-  a {
-    width: 100px;
-    display: block;
-    margin: 1.5em auto;
-    text-align: center;
+
+.ds-2col-fluid {
+  .group-left {
+    @include zen-grid-item(6,1);
   }
-  ul {
-    padding: 0;
+  .group-right {
+    @include zen-grid-item(6,7);
   }
-  li {
-    list-style-type: none;
+  .group-left, .group-right {
+    @include breakpoint($mobile) {
+      @include zen-grid-item(12,1);
+      clear: both;
+    }
   }
 }
 .ds-3col-equal {
@@ -62,6 +58,26 @@
       }
     }
   }
+
+/*
+ * Dog Profile node
+ */
+.field-name-add-a-photo {
+  clear: both;
+  padding-top: 0.5em;
+  a {
+    width: 100px;
+    display: block;
+    margin: 1.5em auto;
+    text-align: center;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+}
   .dog_profile_stats {
     @include zen-grid-item(5.5,7.5);
     @include breakpoint($mobile) {
@@ -115,17 +131,30 @@
   .field-name-body, .field-name-field-location, .field-name-field-geofield { 
     margin-top: 1em;
     display: block;
-    // clear: both;
+    clear: both;
     @include breakpoint($mobile) {
       margin-top: 0.5em;
     }
   }
-  .field-name-field-date, .field-name-body, .field-name-field-location, .field-name-field-geofield {
+  .field-name-field-geofield {
+    padding: 15px 0 0 10px;
+    @include breakpoint($mobile) {
+      padding: 15px 0;
+    }
+  }
+  .field-name-field-date, .field-name-body, .field-name-field-location {
     // @include zen-grid-item(6,7);
 
     @include breakpoint($mobile) {
       @include zen-grid-item(12,1);
       clear: both;
     }
+  }
+ }
+ .geolocation-map {
+  width: 94% !important;
+  @include breakpoint($mobile) {
+    margin: 0 auto 1em auto;
+    width: 96% !important;
   }
  }

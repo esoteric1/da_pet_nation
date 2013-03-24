@@ -27,26 +27,54 @@
   box-sizing: border-box;
 }
 
-/*
- * Dog Profile node
- */
-.field-name-add-a-photo {
-  clear: both;
-  padding-top: 0.5em;
+.ds-2col-fluid .group-left {
+  float: left;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: -50%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
-.field-name-add-a-photo a {
-  width: 100px;
-  display: block;
-  margin: 1.5em auto;
-  text-align: center;
+.ds-2col-fluid .group-right {
+  float: left;
+  width: 50%;
+  margin-left: 50%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
-.field-name-add-a-photo ul {
-  padding: 0;
-}
-.field-name-add-a-photo li {
-  list-style-type: none;
+@media (max-width: 767px) {
+  .ds-2col-fluid .group-left, .ds-2col-fluid .group-right {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    clear: both;
+  }
 }
 
+.ds-3col-equal {
+  /*
+   * Dog Profile node
+   */
+}
 .ds-3col-equal .dog_profile_img_section {
   float: left;
   width: 58.33333%;
@@ -85,6 +113,22 @@
     text-align: center;
     display: block;
   }
+}
+.ds-3col-equal .field-name-add-a-photo {
+  clear: both;
+  padding-top: 0.5em;
+}
+.ds-3col-equal .field-name-add-a-photo a {
+  width: 100px;
+  display: block;
+  margin: 1.5em auto;
+  text-align: center;
+}
+.ds-3col-equal .field-name-add-a-photo ul {
+  padding: 0;
+}
+.ds-3col-equal .field-name-add-a-photo li {
+  list-style-type: none;
 }
 .ds-3col-equal .dog_profile_stats {
   float: left;
@@ -206,14 +250,23 @@
 .node-pn-event .field-name-body, .node-pn-event .field-name-field-location, .node-pn-event .field-name-field-geofield {
   margin-top: 1em;
   display: block;
+  clear: both;
 }
 @media (max-width: 767px) {
   .node-pn-event .field-name-body, .node-pn-event .field-name-field-location, .node-pn-event .field-name-field-geofield {
     margin-top: 0.5em;
   }
 }
+.node-pn-event .field-name-field-geofield {
+  padding: 15px 0 0 10px;
+}
 @media (max-width: 767px) {
-  .node-pn-event .field-name-field-date, .node-pn-event .field-name-body, .node-pn-event .field-name-field-location, .node-pn-event .field-name-field-geofield {
+  .node-pn-event .field-name-field-geofield {
+    padding: 15px 0;
+  }
+}
+@media (max-width: 767px) {
+  .node-pn-event .field-name-field-date, .node-pn-event .field-name-body, .node-pn-event .field-name-field-location {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -226,5 +279,15 @@
     box-sizing: border-box;
     word-wrap: break-word;
     clear: both;
+  }
+}
+
+.geolocation-map {
+  width: 94% !important;
+}
+@media (max-width: 767px) {
+  .geolocation-map {
+    margin: 0 auto 1em auto;
+    width: 96% !important;
   }
 }
