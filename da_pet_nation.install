@@ -87,6 +87,8 @@ function da_pet_nation_install() {
     'gmap', // for pn_friend_map_block
 
     'fboauth', // facebook
+    'fboauth_profile2',
+
 //    'ip_geoloc',
     'features_extra',
 
