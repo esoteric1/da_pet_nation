@@ -516,7 +516,7 @@ function dog_profile_field_default_fields() {
       'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_geofield',
-      'label' => 'Location',
+      'label' => 'Map Location',
       'required' => 0,
       'settings' => array(
         'user_register_form' => FALSE,
@@ -543,69 +543,6 @@ function dog_profile_field_default_fields() {
         ),
         'type' => 'geocoder',
         'weight' => '10',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-dog_profile-field_geolocation'.
-  $fields['node-dog_profile-field_geolocation'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_geolocation',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'lat' => array(
-          0 => 'lat',
-        ),
-        'lng' => array(
-          0 => 'lng',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'geolocation',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'geolocation_latlng',
-    ),
-    'field_instance' => array(
-      'bundle' => 'dog_profile',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'geolocation',
-          'settings' => array(),
-          'type' => 'geolocation_text',
-          'weight' => '6',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_geolocation',
-      'label' => 'GeoLocation',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'geolocation_googlemaps',
-        'settings' => array(
-          'marker_draggable' => 1,
-          'scrollwheel' => 0,
-        ),
-        'type' => 'geolocation_googlemap',
-        'weight' => '8',
       ),
     ),
   );
@@ -879,8 +816,8 @@ function dog_profile_field_default_fields() {
   t('Date of Birth');
   t('Friends');
   t('Gender');
-  t('GeoLocation');
   t('Location');
+  t('Map Location');
   t('Profile Picture');
   t('Quote');
   t('Special Talent');
