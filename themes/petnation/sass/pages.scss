@@ -170,7 +170,7 @@ aside.sidebars {
 			float: right;
 		}
 	}
-	padding: 1em 2em 5.5em 2em;
+	padding: 0.5em 2em 5.5em 2em;
 	background: url(../images/sidebar-bg.png) left bottom repeat-x $lightblue;
 	@include zen-grid-item(3,10);
 	@include breakpoint($mobile) {

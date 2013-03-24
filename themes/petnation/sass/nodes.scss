@@ -143,8 +143,6 @@
     }
   }
   .field-name-field-date, .field-name-body, .field-name-field-location {
-    // @include zen-grid-item(6,7);
-
     @include breakpoint($mobile) {
       @include zen-grid-item(12,1);
       clear: both;
