@@ -125,4 +125,5 @@ function da_pet_nation_install() {
     'pn_facebook',
     'pn_site_manager',
     )
+  )
 }
