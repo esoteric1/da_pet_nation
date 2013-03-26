@@ -14,14 +14,14 @@ function pn_facebook_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'fboauth_id';
-  $strongarm->value = '171083649709967';
+  $strongarm->value = '140872182758463';
   $export['fboauth_id'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'fboauth_secret';
-  $strongarm->value = 'f86cfd389c1029c7815dbbeab9542d26';
+  $strongarm->value = ' b7bf16726ce8f939555219eba93eee13';
   $export['fboauth_secret'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -44,7 +44,7 @@ function pn_facebook_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'fboauth_user_picture';
-  $strongarm->value = FALSE;
+  $strongarm->value = TRUE;
   $export['fboauth_user_picture'] = $strongarm;
 
   $strongarm = new stdClass();

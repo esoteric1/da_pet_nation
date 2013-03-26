@@ -3,3 +3,22 @@
  * @file
  * Drupal needs this blank file.
  */
+
+ /**
+ * Implements hook_install_postinstall().
+ *
+ * This is a custom_config hook.
+ */
+function pn_facebook_install_postinstall() {
+  // These are in strongarm, but nothing seems to be happening... sooo
+  // let's explicitly set the vars here.
+ // variable_set('fboauth_id', '171083649709967');
+ // variable_set('fboauth_secret', 'f86cfd389c1029c7815dbbeab9542d26');
+  variable_set('fboauth_id','140872182758463');
+  variable_set('fboauth_secret','b7bf16726ce8f939555219eba93eee13');
+  variable_set('fboauth_user_connections', array(0 => 'activities'));
+  variable_set('fboauth_user_email', 1);
+  variable_set('fboauth_user_picture', TRUE);
+  variable_set('fboauth_user_properties', array(0 => 'about'));
+  variable_set('fboauth_user_username', 'username');
+}
