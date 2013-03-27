@@ -70,6 +70,7 @@
 }
 .view-new-content-view ul.front-page, .view-upcoming-events ul.front-page, .view-pn-dog-profiles-list ul.front-page {
   padding: 0;
+  margin-top: -2em;
 }
 .view-new-content-view ul.front-page li.front-page-news-item, .view-upcoming-events ul.front-page li.front-page-news-item, .view-pn-dog-profiles-list ul.front-page li.front-page-news-item {
   list-style-type: none;
@@ -269,10 +270,11 @@
   list-style-type: none;
 }
 
-.view-pn-dog-profiles-list .profile_stats {
-  padding: 0;
+.view-pn-dog-profiles-list ul.front-page {
+  margin-top: -2.5em;
 }
 .view-pn-dog-profiles-list h3 {
+  margin-top: 0;
   margin-bottom: 0.5em;
 }
 
