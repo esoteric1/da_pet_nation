@@ -163,14 +163,6 @@ ul.photo-album {
  * Sidebars
  */
 aside.sidebars {
-	// Join
-	#block-block-1 {
-		@include clearfix;
-		a.pn_button {
-			display: block;
-			float: right;
-		}
-	}
 	padding: 0.5em 2em 5.5em 2em;
 	background: url(../images/sidebar-bg.png) left bottom repeat-x $lightblue;
 	@include zen-grid-item(3,10);

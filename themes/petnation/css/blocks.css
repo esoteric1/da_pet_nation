@@ -2,7 +2,16 @@
  * @file
  * Block Styling
  */
+#block-block-1 {
+  overflow: hidden;
+}
+#block-block-1 a.pn_button {
+  margin-top: 3px;
+  display: block;
+  float: left;
+}
+
 #block-fboauth-login, .view-event-members {
-  padding: 15px 0 20px 9px;
-  float: right;
+  padding: 15px 0 20px 0;
+  float: left;
 }

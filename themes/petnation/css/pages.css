@@ -249,13 +249,6 @@ aside.sidebars {
   box-sizing: border-box;
   word-wrap: break-word;
 }
-aside.sidebars #block-block-1 {
-  overflow: hidden;
-}
-aside.sidebars #block-block-1 a.pn_button {
-  display: block;
-  float: right;
-}
 @media (max-width: 767px) {
   aside.sidebars {
     float: left;
