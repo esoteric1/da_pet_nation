@@ -47,7 +47,7 @@
  * New Content View - Front-page News Feed 
  * Upcoming Events View - Events page
  */
-.view-new-content-view, .view-upcoming-events {
+.view-new-content-view, .view-upcoming-events, .view-pn-dog-profiles-list {
 	clear: both;
 	a {
 		&.pn_button {
@@ -151,5 +151,14 @@
 		li {
 			list-style-type: none;
 		}
+	}
+}
+// Dog Profiles list
+.view-pn-dog-profiles-list {
+	.profile_stats {
+		padding: 0;
+	}
+	h3 {
+		margin-bottom: 0.5em;
 	}
 }

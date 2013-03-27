@@ -57,7 +57,7 @@ function pn_dog_profiles_list_views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['text'] = '<h3 class="profile-title">[title]</h3></br>';
+  $handler->display->display_options['fields']['title']['alter']['text'] = '<h3 class="profile-title">[title]</h3>';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_type'] = 'h3';
@@ -163,7 +163,7 @@ function pn_dog_profiles_list_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('<h3 class="profile-title">[title]</h3></br>'),
+    t('<h3 class="profile-title">[title]</h3>'),
     t('<span class="label">Breed</span> <span>[field_breed]</span><br/>'),
     t('<span class="label">Gender</span> <span>[field_gender]</span><br/>'),
     t('<span class="label">Special Talent</span> <span>[field_special_talent]</span><br/>'),
