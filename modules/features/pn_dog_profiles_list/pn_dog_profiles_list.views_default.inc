@@ -47,7 +47,7 @@ function pn_dog_profiles_list_views_default_views() {
   $handler->display->display_options['fields']['field_dog_picture']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_dog_picture']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dog_picture']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'large',
     'image_link' => 'content',
   );
   /* Field: Content: Title */
