@@ -84,7 +84,6 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_profile_reference']['table'] = 'field_data_field_profile_reference';
   $handler->display->display_options['fields']['field_profile_reference']['field'] = 'field_profile_reference';
   $handler->display->display_options['fields']['field_profile_reference']['label'] = 'for';
-  $handler->display->display_options['fields']['field_profile_reference']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['field_profile_reference']['alter']['path'] = 'content/[field_profile_reference]';
   $handler->display->display_options['fields']['field_profile_reference']['element_type'] = 'span';
   $handler->display->display_options['fields']['field_profile_reference']['element_class'] = 'referenced-dog-profile';
@@ -92,7 +91,7 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_profile_reference']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_profile_reference']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_profile_reference']['settings'] = array(
-    'link' => 0,
+    'link' => 1,
   );
   /* Field: Content: Post date */
   $handler->display->display_options['fields']['created']['id'] = 'created';
