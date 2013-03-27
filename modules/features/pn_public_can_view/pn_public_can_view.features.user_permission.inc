@@ -15,6 +15,7 @@ function pn_public_can_view_user_default_permissions() {
     'name' => 'access content',
     'roles' => array(
       0 => 'anonymous user',
+      1 => 'authenticated user',
     ),
     'module' => 'node',
   );

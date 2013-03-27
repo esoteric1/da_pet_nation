@@ -2,6 +2,7 @@ name = Public Can View
 description = This setting allows the general public to view published content
 core = 7.x
 package = Features
+php = 5.2.4
 dependencies[] = features
 dependencies[] = node
 features[features_api][] = api:1
