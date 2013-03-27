@@ -22,6 +22,7 @@ function pn_front_page_view_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'The State of the Nation';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -113,7 +114,7 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_image']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'large',
     'image_link' => 'content',
   );
   $handler->display->display_options['fields']['field_image']['field_api_classes'] = TRUE;
@@ -144,7 +145,7 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['fields']['field_dog_picture']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['field_dog_picture']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dog_picture']['settings'] = array(
-    'image_style' => 'medium',
+    'image_style' => 'large',
     'image_link' => 'content',
   );
   /* Field: Content: Date */
@@ -277,6 +278,7 @@ function pn_front_page_view_views_default_views() {
   $handler->display->display_options['path'] = 'new-content';
   $translatables['new_content_view'] = array(
     t('Master'),
+    t('The State of the Nation'),
     t('more'),
     t('Apply'),
     t('Reset'),

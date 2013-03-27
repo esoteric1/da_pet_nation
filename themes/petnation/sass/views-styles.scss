@@ -47,7 +47,7 @@
  * New Content View - Front-page News Feed 
  * Upcoming Events View - Events page
  */
-.view-new-content-view, .view-upcoming-events {
+.view-new-content-view, .view-upcoming-events, .view-pn-dog-profiles-list {
 	clear: both;
 	a {
 		&.pn_button {
@@ -70,6 +70,7 @@
 	}
 	ul.front-page {
 		padding: 0;
+		margin-top: -2em;
 		li.front-page-news-item {
 			list-style-type: none;
 			border-bottom: 1px solid $lightblue;
@@ -144,12 +145,47 @@
 		}
 	}
 }
-.view-event-members {
-	ul.event-members {
-		clear: both;
-		padding: 10px 0 0 0;
-		li {
-			list-style-type: none;
+// Dog Profiles list
+.view-pn-dog-profiles-list {
+	ul.front-page {
+		margin-top: -2.5em;
+	}
+	.profile_stats {
+		// padding-top: 0;
+	}
+	h3 {
+		margin-top: 0;
+		margin-bottom: 0.5em;
+	}
+}
+// User page
+.view-dog-profiles-by-user {
+	.views-row {
+		width: 30%;
+		margin-right: 3%;
+		float: left;
+		padding: 12px;
+		margin-bottom: 20px;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		text-align: center;
+		img {
+			margin-bottom: 5px;
+		}
+		a {
+			font-weight: 700;
+			color: $dark;
+		}
+		@include breakpoint($mobile) {
+			width: 96%;
+			margin: 10px auto 20px auto;
+			padding: 20px;
+			float: none;
+			img {
+				width: 100%;
+				margin-bottom: 10px;
+			}
 		}
 	}
 }

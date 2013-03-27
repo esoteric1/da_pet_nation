@@ -102,6 +102,9 @@ li a.active {
 #secondary-menu li {
   display: block;
   border-bottom: 1px solid rgba(0, 139, 170, 0.15);
+  clear: both;
+  padding: 0;
+  margin: 0;
 }
 #secondary-menu li:last-child {
   border: 0;
@@ -109,6 +112,7 @@ li a.active {
 #secondary-menu a {
   display: block;
   padding: 6px 10px;
+  margin: 0;
 }
 
 /*

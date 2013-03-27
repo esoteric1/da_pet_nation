@@ -5,7 +5,35 @@
 
 @import "base";
 
+// Join
+#block-block-1 {
+  @include clearfix;
+  a.pn_button {
+    margin-top: 3px;
+    display: block;
+    float: left;
+  }
+}
+// Facebook and Who's Attending
 #block-fboauth-login, .view-event-members {
-  padding: 15px 0 20px 9px;
-  float: right;
+  padding: 15px 0 20px 10px;
+  clear: both;
+}
+// Who's Attending
+#block-views-event-members-block-1 {
+  clear: both;
+  ul.event-members {
+    clear: both;
+  }
+}
+.view-event-members {
+  @include zen-grid-item(12,1);
+  ul.event-members {
+    clear: both;
+    padding: 0;
+    margin: 0 0 1em 0;
+    li {
+      list-style-type: none;
+    }
+  }
 }

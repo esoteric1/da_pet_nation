@@ -50,42 +50,43 @@
  * New Content View - Front-page News Feed 
  * Upcoming Events View - Events page
  */
-.view-new-content-view, .view-upcoming-events {
+.view-new-content-view, .view-upcoming-events, .view-pn-dog-profiles-list {
   clear: both;
 }
-.view-new-content-view a.pn_button, .view-upcoming-events a.pn_button {
+.view-new-content-view a.pn_button, .view-upcoming-events a.pn_button, .view-pn-dog-profiles-list a.pn_button {
   clear: both;
   float: right;
   margin: 0 auto 1em auto;
   text-align: center;
 }
-.view-new-content-view span.username, .view-new-content-view span.referenced-dog-profile, .view-new-content-view span.label, .view-upcoming-events span.username, .view-upcoming-events span.referenced-dog-profile, .view-upcoming-events span.label {
+.view-new-content-view span.username, .view-new-content-view span.referenced-dog-profile, .view-new-content-view span.label, .view-upcoming-events span.username, .view-upcoming-events span.referenced-dog-profile, .view-upcoming-events span.label, .view-pn-dog-profiles-list span.username, .view-pn-dog-profiles-list span.referenced-dog-profile, .view-pn-dog-profiles-list span.label {
   font-weight: 700;
 }
-.view-new-content-view span.label, .view-upcoming-events span.label {
+.view-new-content-view span.label, .view-upcoming-events span.label, .view-pn-dog-profiles-list span.label {
   clear: both;
 }
-.view-new-content-view span.front-page-news-date, .view-upcoming-events span.front-page-news-date {
+.view-new-content-view span.front-page-news-date, .view-upcoming-events span.front-page-news-date, .view-pn-dog-profiles-list span.front-page-news-date {
   color: gray;
 }
-.view-new-content-view ul.front-page, .view-upcoming-events ul.front-page {
+.view-new-content-view ul.front-page, .view-upcoming-events ul.front-page, .view-pn-dog-profiles-list ul.front-page {
   padding: 0;
+  margin-top: -2em;
 }
-.view-new-content-view ul.front-page li.front-page-news-item, .view-upcoming-events ul.front-page li.front-page-news-item {
+.view-new-content-view ul.front-page li.front-page-news-item, .view-upcoming-events ul.front-page li.front-page-news-item, .view-pn-dog-profiles-list ul.front-page li.front-page-news-item {
   list-style-type: none;
   border-bottom: 1px solid #e5f3f6;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   overflow: hidden;
 }
-.view-new-content-view ul.front-page li.front-page-news-item:last-child, .view-upcoming-events ul.front-page li.front-page-news-item:last-child {
+.view-new-content-view ul.front-page li.front-page-news-item:last-child, .view-upcoming-events ul.front-page li.front-page-news-item:last-child, .view-pn-dog-profiles-list ul.front-page li.front-page-news-item:last-child {
   border: 0;
 }
-.view-new-content-view h2.node-title, .view-upcoming-events h2.node-title {
+.view-new-content-view h2.node-title, .view-upcoming-events h2.node-title, .view-pn-dog-profiles-list h2.node-title {
   font-size: 1.2em;
   padding-bottom: 7px;
 }
-.view-new-content-view h3.content-title, .view-upcoming-events h3.content-title {
+.view-new-content-view h3.content-title, .view-upcoming-events h3.content-title, .view-pn-dog-profiles-list h3.content-title {
   margin: 0;
   display: block;
   float: left;
@@ -101,13 +102,13 @@
   word-wrap: break-word;
   clear: left;
 }
-.view-new-content-view h3.event-title, .view-upcoming-events h3.event-title {
+.view-new-content-view h3.event-title, .view-upcoming-events h3.event-title, .view-pn-dog-profiles-list h3.event-title {
   margin: 0 0 0.6em 0;
 }
-.view-new-content-view .dog-photo, .view-new-content-view .profile-picture, .view-upcoming-events .dog-photo, .view-upcoming-events .profile-picture {
+.view-new-content-view .dog-photo, .view-new-content-view .profile-picture, .view-upcoming-events .dog-photo, .view-upcoming-events .profile-picture, .view-pn-dog-profiles-list .dog-photo, .view-pn-dog-profiles-list .profile-picture {
   margin: 1.5em 0;
 }
-.view-new-content-view .dog-photo, .view-upcoming-events .dog-photo {
+.view-new-content-view .dog-photo, .view-upcoming-events .dog-photo, .view-pn-dog-profiles-list .dog-photo {
   float: left;
   width: 66.66667%;
   margin-left: 16.66667%;
@@ -121,7 +122,7 @@
   word-wrap: break-word;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .dog-photo, .view-upcoming-events .dog-photo {
+  .view-new-content-view .dog-photo, .view-upcoming-events .dog-photo, .view-pn-dog-profiles-list .dog-photo {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -134,12 +135,12 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  .view-new-content-view .dog-photo img, .view-upcoming-events .dog-photo img {
+  .view-new-content-view .dog-photo img, .view-upcoming-events .dog-photo img, .view-pn-dog-profiles-list .dog-photo img {
     margin: 0 auto;
     display: block;
   }
 }
-.view-new-content-view .profile-picture, .view-upcoming-events .profile-picture {
+.view-new-content-view .profile-picture, .view-upcoming-events .profile-picture, .view-pn-dog-profiles-list .profile-picture {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
@@ -153,7 +154,7 @@
   word-wrap: break-word;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .profile-picture, .view-upcoming-events .profile-picture {
+  .view-new-content-view .profile-picture, .view-upcoming-events .profile-picture, .view-pn-dog-profiles-list .profile-picture {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -167,7 +168,7 @@
     word-wrap: break-word;
   }
 }
-.view-new-content-view .profile_stats, .view-upcoming-events .profile_stats {
+.view-new-content-view .profile_stats, .view-upcoming-events .profile_stats, .view-pn-dog-profiles-list .profile_stats {
   float: left;
   width: 58.33333%;
   margin-left: 35.41667%;
@@ -182,7 +183,7 @@
   padding: 1.5em 0;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .profile_stats, .view-upcoming-events .profile_stats {
+  .view-new-content-view .profile_stats, .view-upcoming-events .profile_stats, .view-pn-dog-profiles-list .profile_stats {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -198,7 +199,7 @@
     padding-top: 0;
   }
 }
-.view-new-content-view .event-image, .view-upcoming-events .event-image {
+.view-new-content-view .event-image, .view-upcoming-events .event-image, .view-pn-dog-profiles-list .event-image {
   float: left;
   width: 41.66667%;
   margin-left: 0%;
@@ -213,7 +214,7 @@
   margin-top: 1.5em;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .event-image, .view-upcoming-events .event-image {
+  .view-new-content-view .event-image, .view-upcoming-events .event-image, .view-pn-dog-profiles-list .event-image {
     float: left;
     width: 100%;
     margin-left: 0%;
@@ -227,7 +228,7 @@
     word-wrap: break-word;
   }
 }
-.view-new-content-view .event_wrapper, .view-upcoming-events .event_wrapper {
+.view-new-content-view .event_wrapper, .view-upcoming-events .event_wrapper, .view-pn-dog-profiles-list .event_wrapper {
   float: left;
   width: 56.66667%;
   margin-left: 43.33333%;
@@ -244,7 +245,7 @@
   margin-bottom: 1.5em;
 }
 @media (max-width: 767px) {
-  .view-new-content-view .event_wrapper, .view-upcoming-events .event_wrapper {
+  .view-new-content-view .event_wrapper, .view-upcoming-events .event_wrapper, .view-pn-dog-profiles-list .event_wrapper {
     margin-top: 0;
     float: left;
     width: 100%;
@@ -261,10 +262,41 @@
   }
 }
 
-.view-event-members ul.event-members {
-  clear: both;
-  padding: 10px 0 0 0;
+.view-pn-dog-profiles-list ul.front-page {
+  margin-top: -2.5em;
 }
-.view-event-members ul.event-members li {
-  list-style-type: none;
+.view-pn-dog-profiles-list h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.view-dog-profiles-by-user .views-row {
+  width: 30%;
+  margin-right: 3%;
+  float: left;
+  padding: 12px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-align: center;
+}
+.view-dog-profiles-by-user .views-row img {
+  margin-bottom: 5px;
+}
+.view-dog-profiles-by-user .views-row a {
+  font-weight: 700;
+  color: #333333;
+}
+@media (max-width: 767px) {
+  .view-dog-profiles-by-user .views-row {
+    width: 96%;
+    margin: 10px auto 20px auto;
+    padding: 20px;
+    float: none;
+  }
+  .view-dog-profiles-by-user .views-row img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
