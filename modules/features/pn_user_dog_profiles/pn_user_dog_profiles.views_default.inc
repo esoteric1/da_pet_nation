@@ -32,14 +32,6 @@ function pn_user_dog_profiles_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Content: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Profile Picture */
   $handler->display->display_options['fields']['field_dog_picture']['id'] = 'field_dog_picture';
   $handler->display->display_options['fields']['field_dog_picture']['table'] = 'field_data_field_dog_picture';
@@ -48,9 +40,17 @@ function pn_user_dog_profiles_views_default_views() {
   $handler->display->display_options['fields']['field_dog_picture']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dog_picture']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dog_picture']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'large',
     'image_link' => 'content',
   );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
