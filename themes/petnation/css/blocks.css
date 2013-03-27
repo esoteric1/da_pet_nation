@@ -12,6 +12,35 @@
 }
 
 #block-fboauth-login, .view-event-members {
-  padding: 15px 0 20px 0;
+  padding: 15px 0 20px 10px;
+  clear: both;
+}
+
+#block-views-event-members-block-1 {
+  clear: both;
+}
+#block-views-event-members-block-1 ul.event-members {
+  clear: both;
+}
+
+.view-event-members {
   float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: -100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.view-event-members ul.event-members {
+  clear: both;
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+.view-event-members ul.event-members li {
+  list-style-type: none;
 }

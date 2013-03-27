@@ -262,14 +262,6 @@
   }
 }
 
-.view-event-members ul.event-members {
-  clear: both;
-  padding: 10px 0 0 0;
-}
-.view-event-members ul.event-members li {
-  list-style-type: none;
-}
-
 .view-pn-dog-profiles-list ul.front-page {
   margin-top: -2.5em;
 }
