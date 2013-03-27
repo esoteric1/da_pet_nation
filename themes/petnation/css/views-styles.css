@@ -275,3 +275,34 @@
 .view-pn-dog-profiles-list h3 {
   margin-bottom: 0.5em;
 }
+
+.view-dog-profiles-by-user .views-row {
+  width: 30%;
+  margin-right: 3%;
+  float: left;
+  padding: 12px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-align: center;
+}
+.view-dog-profiles-by-user .views-row img {
+  margin-bottom: 5px;
+}
+.view-dog-profiles-by-user .views-row a {
+  font-weight: 700;
+  color: #333333;
+}
+@media (max-width: 767px) {
+  .view-dog-profiles-by-user .views-row {
+    width: 96%;
+    margin: 10px auto 20px auto;
+    padding: 20px;
+    float: none;
+  }
+  .view-dog-profiles-by-user .views-row img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
