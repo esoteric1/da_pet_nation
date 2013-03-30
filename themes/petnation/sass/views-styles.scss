@@ -189,3 +189,20 @@
 		}
 	}
 }
+// Breed view 
+.page-taxonomy-term {
+	.view-dog-profile-photos {
+		margin-bottom: 1em;
+	}
+	li.node-readmore {
+		display: block;
+		padding-top: 2em;
+	}
+	a.pn_button {
+		margin: 0 auto;
+		display: block;
+		width: 80px;
+		clear: both;
+		text-align: center;
+	}
+}

@@ -279,6 +279,6 @@
 .search-results li {
   padding: 0.1em 2em 1em 2em;
 }
-.search-results li:nth-child(even) {
+.search-results li:nth-child(odd) {
   background: #e5f3f6;
 }

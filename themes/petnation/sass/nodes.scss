@@ -154,7 +154,7 @@
   padding: 0;
   li {
     padding: 0.1em 2em 1em 2em;
-    &:nth-child(even) {
+    &:nth-child(odd) {
       background: $lightblue;
     }
   }
