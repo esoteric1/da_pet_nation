@@ -48,6 +48,9 @@ projects[i18n][version] = 1.7
 ; Patch helps with installin from drush.
 projects[i18n][patch][] = "http://drupal.org/files/static_reset.patch"
 
+projects[konamicode][subdir] = contrib
+projects[konamicode][version] = 1.7
+
 projects[link][subdir] = contrib
 projects[link][version] = 1.0
 
