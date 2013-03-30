@@ -108,13 +108,15 @@ li a.active {
 /*
  * Pet Nation buttons for calls-to-action
  */
-a.pn_button {
+input[type=submit], a.pn_button {
   background: $blue;
   color: #fff;
   font-weight: 700;
   font-size: 0.9em;
   padding: 0.5em 1em;
+  border: 0;
   border-radius: 5px;
+  -webkit-font-smoothing: antialiased;
   &:hover {
     background: lighten($blue,8%);
   }

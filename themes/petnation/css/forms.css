@@ -69,7 +69,35 @@ a.button {
  * Search (search-block-form.tpl.php)
  */
 #block-search-form {
-  /* Wrapper for the search form */
+  margin: 20px 10px;
+}
+#block-search-form input[type=text] {
+  border: 1px solid rgba(0, 139, 170, 0.5);
+  padding: 0;
+  height: 24px;
+  vertical-align: middle;
+  text-indent: 0.3em;
+  font-size: 0.9em;
+  background: rgba(255, 255, 255, 0.6);
+  width: 60%;
+  border-radius: 3px;
+}
+#block-search-form input[type=text]:focus {
+  outline: none;
+  border-color: #008baa;
+  background: #fff;
+}
+#block-search-form input[type=submit] {
+  padding: 0 1em;
+  height: 26px;
+  vertical-align: middle;
+  width: 36%;
+}
+@media (max-width: 767px) {
+  #block-search-form input[type=submit] {
+    display: inline;
+    width: 33%;
+  }
 }
 
 /*

@@ -114,19 +114,21 @@ li a.active {
 /*
  * Pet Nation buttons for calls-to-action
  */
-a.pn_button {
+input[type=submit], a.pn_button {
   background: #008baa;
   color: #fff;
   font-weight: 700;
   font-size: 0.9em;
   padding: 0.5em 1em;
+  border: 0;
   border-radius: 5px;
+  -webkit-font-smoothing: antialiased;
 }
-a.pn_button:hover {
+input[type=submit]:hover, a.pn_button:hover {
   background: #00acd3;
 }
 @media (max-width: 767px) {
-  a.pn_button {
+  input[type=submit], a.pn_button {
     float: left;
     width: 100%;
     margin-left: 0%;

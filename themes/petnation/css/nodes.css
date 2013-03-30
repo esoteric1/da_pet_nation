@@ -269,3 +269,16 @@
     width: 96% !important;
   }
 }
+
+/*
+ * Search page
+ */
+.search-results {
+  padding: 0;
+}
+.search-results li {
+  padding: 0.1em 2em 1em 2em;
+}
+.search-results li:nth-child(even) {
+  background: #e5f3f6;
+}

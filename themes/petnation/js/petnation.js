@@ -27,6 +27,7 @@ $(document).ready(function(){
 	// $('ul.upcoming-events .field-items').dotdotdot();
 	$('aside.sidebars ul.upcoming-events li .field-name-body').dotdotdot();
 	$('.view-upcoming-events .more-link a').addClass('pn_button');
+	$('input[type=submit]').addClass('pn_button');
 });
 
 })(jQuery, Drupal, this, this.document);

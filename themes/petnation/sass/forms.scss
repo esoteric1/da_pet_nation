@@ -69,7 +69,36 @@ a.button { /* Buttons used by contrib modules like Media */
  * Search (search-block-form.tpl.php)
  */
 
-#block-search-form { /* Wrapper for the search form */
+#block-search-form {
+  margin: 20px 10px;
+  input[type=text] {
+    border: 1px solid rgba($blue,0.5);
+    padding: 0;
+    height: 24px;
+    vertical-align: middle;
+    text-indent: 0.3em;
+    font-size: 0.9em;
+    background: rgba(#fff,0.6);
+    width: 60%;
+    border-radius: 3px;
+    &:focus {
+      outline: none;
+      border-color: $blue;
+      background: #fff;
+    }
+  }
+  input[type=submit] {
+    padding: 0 1em;
+    height: 26px;
+    vertical-align: middle;
+    width: 36%;
+  }
+  @include breakpoint($mobile) {
+    input[type=submit] {
+      display: inline;
+      width: 33%;
+    }
+  }
 }
 
 /*
