@@ -91,12 +91,9 @@
     clear: both;
     .field-name-field-quote {
       background: url(../images/quotes.jpg) no-repeat top left;
-      padding: 2em 2em 0 2em;
+      padding: 2em 2em 0 4em;
       text-align: right;
       font-style: italic;
-      @include breakpoint($mobile) {
-        padding-left: 4em;
-      }
     }
     @include breakpoint($mobile) {
       @include zen-grid-item(12,1);

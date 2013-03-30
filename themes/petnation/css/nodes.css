@@ -176,14 +176,9 @@
 }
 .ds-3col-equal .dog_profile_large .field-name-field-quote {
   background: url(../images/quotes.jpg) no-repeat top left;
-  padding: 2em 2em 0 2em;
+  padding: 2em 2em 0 4em;
   text-align: right;
   font-style: italic;
-}
-@media (max-width: 767px) {
-  .ds-3col-equal .dog_profile_large .field-name-field-quote {
-    padding-left: 4em;
-  }
 }
 @media (max-width: 767px) {
   .ds-3col-equal .dog_profile_large {
