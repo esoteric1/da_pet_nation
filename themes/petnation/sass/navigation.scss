@@ -77,15 +77,14 @@ li a.active {
     float: right;
   }
   li {
-    display: inline;
+    display: inline-block;
   }
   @include breakpoint($mobile) {
     @include zen-grid-item(12,1);
-    @include zen-clear;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     ul {
-      float: none;
+      // float: none;
     }
   }
 }

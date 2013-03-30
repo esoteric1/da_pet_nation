@@ -72,7 +72,7 @@ li a.active {
   float: right;
 }
 #main-menu li {
-  display: inline;
+  display: inline-block;
 }
 @media (max-width: 767px) {
   #main-menu {
@@ -87,12 +87,8 @@ li a.active {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
-    clear: left;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-  }
-  #main-menu ul {
-    float: none;
   }
 }
 
